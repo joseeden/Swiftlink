@@ -22,8 +22,7 @@ Swiftly is a fictional movers, transportation, and delivery company, and this is
 
 Links: 
 
-- [Live Demo](https://circuitminds.netlify.app/) 
-- [Github](https://github.com/joseeden/Circuit-Minds) 
+- [Live Demo](https://swiftly-express.netlify.app/) 
 
 Screenshot:
 
