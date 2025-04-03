@@ -1,0 +1,199 @@
+/* General */
+.orange-header {
+  color: #EA7300 !important;
+}
+
+.orange-header-bold {
+  font-weight: 700;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.overflow-hidden {
+  max-height: 40vh;
+}
+
+.py-5 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.pt-5 {
+  padding-top: 5rem !important;
+}
+
+.general-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.general-header1 {
+  padding-bottom: 1.5rem;
+}
+
+.gen-box {
+  text-align: center;
+}
+
+
+/* Banner */
+.btn-primary {
+  background-color: #EA7300;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color:#fba70d;
+}
+
+.btn-primary:active {
+  background-color: #EB5B00 !important;
+}
+
+.btn-primary:visited {
+  background-color: #FFB200 !important;
+}
+
+.btn-outline-secondary {
+  color: #EA7300;
+  border-color: #EA7300;
+}
+
+.btn-outline-secondary:hover {
+  color: white !important;
+  border-color: #fba70d;
+  background-color: #fba70d !important;;
+}
+
+.btn-outline-secondary:active {
+  color: white !important;
+  border-color: #EC5228 !important;
+  background-color: #EC5228 !important;
+}
+
+
+/* Section - Why move with us */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+  background-color: #198754 !important;
+}
+
+.icon-svg {
+  height: 30px;
+}
+
+.get-a-quote-link {
+  color: green;
+}
+
+.carousel-section {
+  padding-top: 1rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+
+/* Section - ways to send a package/Shipping Services */
+#shipping-services-container {
+  background-color: #ffc400;
+}
+
+.ship-sec-icon {
+  height: 70px;
+}
+
+.ship-sec-h3 {
+  padding: 1rem;
+}
+
+.global-text-format {
+  display: flex;
+  color: black;
+  justify-content: center;
+}
+
+.shipping-sec-desc {
+  padding-top: 10px !important;
+  padding-bottom: 40px !important;
+}
+
+
+/* Section - logistics */
+.logistics-img {
+  max-width: 100%;
+  width: auto;
+  height: 600px;
+  border-radius: .80rem;
+ }
+
+/* Section - Warehouse */
+.logistics-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+/* Section - NVOCC */
+.nvocc-container {
+ background-color: #eeeeee;
+}
+
+.nvocc-img {
+  width: 550px;
+}
+
+/* Section - Cross Docking */
+.crdock-container {
+  background-color: #FAF9F6;
+}
+
+/* Section: Specialized Logistics */
+.spec-logis-container {
+  background-color: #eeeeee;
+}
+
+/* Section - Business Solutions  */
+.btn-biz {
+  background-color: #0a7c7c;
+  border: none;
+  color: white;
+}
+
+.btn-biz:hover {
+  background-color:#fba70d;
+}
+
+.btn-biz:active {
+  background-color: #EB5B00 !important;
+}
+
+.btn-biz:visited {
+  background-color: #FFB200 !important;
+}
+
+.biz-icons {
+  height: 50px;
+}
+
+
+@media (max-width: 576px) {
+  
+  .banner-padding-x {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  } 
+
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .shadow-lg { 
+    box-shadow: none !important;
+  }
+}

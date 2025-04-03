@@ -1,0 +1,62 @@
+/*  About Banner */
+.container {
+  padding: 30px 0;
+}
+
+.container .row {
+  text-align: center;
+}
+
+.container .col-lg-4 p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 50px 10px;
+}
+
+.about-banner-container {
+  background-color: #f0f3f5;
+}
+
+.nav-link {
+  color: #0a7c7c;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  /* background-color: #ffc400; */
+  background-color: #0a7c7c;
+  /* color: #0a7c7c; */
+  color: white;
+  font-weight: 500;
+}
+
+/*  About */
+.about-container {
+  height: auto; 
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.about-header {
+  padding-bottom: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.about-sec-tabs-h3 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.bright-orange-header {
+  color: #ff9a00;
+}
+
+.darker-orange-header {
+  color: #f2bd30;
+}
+.teal-green {
+  color: #0a7c7c;
+}
