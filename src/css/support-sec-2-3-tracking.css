@@ -1,0 +1,133 @@
+/*------------------- SECTION ------------------- */
+
+#tracking .form-control,
+#tracking .form-select {
+  width: 100%;
+}
+
+#tracking .d-flex {
+  margin-top: 10px;
+}
+#tracking {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 20px;
+}
+
+#tracking .row.supp-sec-2-tabs-container {
+  height: 408px;
+}
+
+/*------------------- INPUT FIELD ------------------- */
+
+#tracking .form-control,
+#tracking .form-select {
+  width: 100%;
+}
+
+#tracking .d-flex {
+  margin-top: 10px;
+}
+
+
+/*-------------------  TOGGLE SWITCH  ------------------- */
+
+#tracking .form-check-input {
+  transform: scale(1.5);  /* Toggle size */
+}
+
+#toggleReference.form-check-input:focus {
+  box-shadow: none;
+}
+
+/* Track color - off */
+#toggleReference.form-check-input {
+  background-color: #f8de97;
+  border: none;
+}
+
+/* Track color - on */
+#toggleReference.form-check-input:checked {
+  background-color: #b5d7d7;
+  border: none;
+}
+
+#tracking .form-check-label[for="toggleReference"] {
+  color: black;
+}
+
+
+/*-------------------  DROPDOWN MENU  ------------------- */
+
+#referenceDropdownWrapper {
+  display: block;
+  width: 100%;  
+  max-width: 80%;  
+  margin-right: auto;
+}
+
+/* Initially hide the dropdown */
+#referenceDropdown {
+  min-width: 200px;                 
+  visibility: hidden;
+  transition: visibility 0.3s ease; 
+}
+
+#referenceDropdown:hover,
+#referenceDropdown:focus {
+  background-color: white;
+  color: #333;               
+  border-color: red;     
+  box-shadow: none;
+}
+
+#referenceDropdown {
+  color: #6c757d; /* Default placeholder gray */
+}
+
+#referenceDropdown option {
+  color: black; /* item text color */
+}
+
+#referenceDropdown option:checked {
+  background-color: #e5e5e5; 
+  color: #000;               
+}
+
+
+/*-------------------  SEARCH BUTTON  ------------------- */
+
+/* Keep Search button in place */
+#tracking .d-flex .ms-2 {
+  flex-shrink: 0;              
+}
+
+#tracking .force-align-button {
+  .d-flex.justify-content-between.align-items-center.mb-3& {
+    justify-content: flex-end !important;
+  }
+}
+
+
+/*-------------------  SECOND COLUMN  - IMAGE  ------------------- */
+
+#tracking .supp-sec-2-box-img-in {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#tracking .supp-sec-2-3-tracking-column {
+  align-items: center;  
+  text-align: left;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+/* Hide image column on small screens */
+@media (max-width: 770px) {
+  #tracking .col-lg-6.d-none.d-lg-block {
+    display: none;
+  }
+}

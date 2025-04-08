@@ -1,0 +1,149 @@
+
+/* ==================== SUPPORT SECTION 2-1 - Manage your Account ==================== */
+
+#profile {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 20px;
+}
+
+#support-section-2 .supp-sec-2-background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  /* padding-bottom: 30px; */
+}
+
+#support-section-2 .row.supp-sec-2-tabs-container {
+  height: 408px;
+}
+
+#support-section-2 .supp-sec-2-set-margin-y {
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+
+#support-section-2 .supp-sec-2-nav-link {
+  color: #ffc107;
+  border-color: #ffc107;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 500;
+}
+
+
+#support-section-2 .nav-link.active {
+  background-color: #ffc107;
+  color: black;
+}
+
+#support-section-2 .nav-link.active:focus {
+  color: black;
+}
+
+#support-section-2 .nav-link.active:hover {
+  color: #005f6a !important;
+}
+
+#support-section-2 .-container a:hover,
+#support-section-2 .-container a:focus  {
+  color: white; 
+  outline: none;
+}
+
+
+#support-section-2 .supp-sec-2-main-container {
+  height: auto; 
+  padding-top: 3%;
+  padding-bottom: 0 !important;
+}
+
+/* #support-section-2 #aboutTabsContent {
+  height: 480px; 
+} */
+
+#support-section-2 .supp-sec-2-tabs-h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#support-section-2 .supp-sec-2-box-img-in {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#support-section-2 .supp-sec-2-1-auth-column {
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start; 
+  text-align: left;
+  padding-right: 30px;
+}
+
+#support-section-2 .supp-sec-2-1-auth-column p {
+  margin-bottom: 1.5rem;
+}
+
+#support-section-2 .supp-sec-2-tabs-nav li a {
+  border: none;
+  outline: none;
+}
+
+
+@media screen and (min-width: 1400px) {
+  #support-section-2 {
+    margin-top: -83px !important;
+    z-index: 20;
+    min-height: 590px !important;
+  }
+
+  #support-section-2 .nav-link {
+    font-size: 18px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  #support-section-2 {
+    margin-top: -78px !important;
+    z-index: 20;
+  }
+
+  #support-section-2 .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #support-section-2 {
+    margin-top: -70px !important;
+    z-index: 20;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 991px) {
+  #support-section-2 {
+    margin-top: -63px !important;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 769px) {
+  ul#aboutTabs {
+    flex-direction: column;
+  }
+}
+
+/* .about-header {
+  padding-bottom: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+} */

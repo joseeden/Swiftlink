@@ -21,16 +21,22 @@
   <link type="text/css" rel="stylesheet" href="./src/css/about.css" >
   <link type="text/css" rel="stylesheet" href="./src/css/subscribe.css" >
   <link type="text/css" rel="stylesheet" href="./src/css/stay-connected.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/footer.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/support-sec-0-1.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/support-sec-2-1-manage-account.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/support-sec-2-3-tracking.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/support-sec-8.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/video.css" >
 
 </head>
 
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky">
     <div class="container-fluid">
       <a class="navbar-brand navbar-items" href="#">
-        <img class="navbar-logo" src="./icons/cart-logo.png" alt="swiftlink logo"/>Swiftlink</a>
+        <!-- <img class="navbar-logo" src="./icons/cart-logo.png" alt="swiftlink logo"/>Swiftlink</a> -->
+        <img class="navbar-logo" src="./icons/swiftlink-logo-3-colored.png" alt="swiftlink logo"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,23 +46,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#about-container">About</a>
+            <a class="nav-link" href="#about-banner-container">About</a>
           </li>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#shipping-services-container" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Shipping Services
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#shipping-services-container">Land Freight</a></li>
               <li><a class="dropdown-item" href="#shipping-services-container">Sea Freight</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
               <li><a class="dropdown-item" href="#shipping-services-container">Air Freight</a></li>
             </ul>
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Logistics Solutions
             </a>
             <ul class="dropdown-menu">
@@ -69,7 +74,7 @@
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#biz-sol-container" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Business Solutions
             </a>
             <ul class="dropdown-menu">
@@ -84,94 +89,135 @@
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Support
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bills</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#support-section-banner">Profile</a></li>
+              <li><a class="dropdown-item" href="#support-section-banner">Get a Quote</a></li>
               <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item" href="#">Tracking</a></li>
-              <li><a class="dropdown-item" href="#">Shipping</a></li>
-              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#support-section-banner">Tracking</a></li>
+              <li><a class="dropdown-item" href="#support-section-banner">Shipping</a></li>
+              <li><a class="dropdown-item" href="#support-section-banner">Contact Us</a></li>
             </ul>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li> -->
         </ul>
-        <form class="d-flex" role="search">
-          <input 
-            class="form-control me-2" 
-            type="search" 
-            placeholder="Postal Code" 
-            aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+      <!-- Items aligned to the right -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-items">
+
+          <li class="nav-item">
+            <a class="nav-link nav-left-text" href="#">
+              <img src="./icons/nav-left-search.png" alt="Search" class="nav-left-icons"> Search
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-left-text" href="#">
+              <img src="./icons//nav-left-global.png" alt="Global" class="nav-left-icons"> Global
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-left-text" href="#">
+              <!-- Login Icon -->
+              <img src="./icons/nav-left-login.png" alt="Login" class="nav-left-icons"> Login
+            </a>
+          </li>
+        </ul>
+
       </div>
     </div>
   </nav>
 
-  <!-- Banner -->
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis orange-header">We Like to Move It</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Moving should be effortless and stress-free. With Swiftlink, you get a smooth, hassle-free experience designed to make your transition easy and exciting. Whether you're moving across town or across the country, we handle the heavy lifting—so you can focus on the next chapter of your journey.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Get a Quote</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+  <section class="banner">
+    <div class="video-header-container">
+      <div class="video-iframe-wrapper">
+        <div class="video-inside">
+          <iframe
+            src="https://player.vimeo.com/video/1073237590?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+            title="Site-Swiftlink-banner-vid">
+          </iframe>
+        </div>
+      </div>
+  
+      <div class="video-overlay-content text-white">
+        <h1 class="display-4 fw-bold orange-header">We like to move it</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 sec-banner-desc">
+            Moving should be effortless and stress-free. With Swiftlink, you get a smooth, hassle-free experience designed to make your transition easy and exciting. Whether it's across town or across the sea, we'll handle the heavy lifting — so you can focus on what matters most.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="#logistics-container">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                See solutions
+              </button>
+            </a>
+            <a href="#">
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                Talk to us
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="overflow-hidden">
-      <div class="container banner-padding-x">
-        <img src="./images/stock-photo-movers.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+  </section>
+  
+  <section class="why-move-with-us">
+    <div class="container px-4 why-move-with-us-sec-container" id="featured-3">
+      <h1 class="orange-header orange-header-bold text-center why-move-with-us-sec-h1">Why Move With Us?</h1>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img class="icon-svg" src="./icons/briefcase.svg" alt="briefcase"/>
+          </div>
+          <h3 class="fs-2 orange-header">Expertise</h3>
+          <p>With decades of experience and a global footprint, our logistics professionals manage every move with precision. From delicate cargo to complex international relocations, we ensure excellence at every step.</p>
+          <a href="#" class="get-a-quote-link">
+            Get a quote
+            <img src="./icons/chevron-right.svg" alt="chevron-right">
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img class="icon-svg" src="./icons/globe.svg" alt="bus-front"/>
+          </div>
+          <h3 class="fs-2 orange-header">Global</h3>
+          <p>From local cities to global hubs, our reach spans continents. We provide end-to-end solutions powered by advanced tracking, real-time coordination, and an extensive international network..</p>
+          <a href="#" class="get-a-quote-link">
+            Get a quote
+            <img src="./icons/chevron-right.svg" alt="chevron-right">
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img class="icon-svg" src="./icons/icon-hand-commited.png" alt="bus-front"/>
+          </div>
+          <h3 class="fs-2 orange-header">Commitment</h3>
+          <p>Every shipment tells a story, and we treat it with the care it deserves. Our customer-focused approach ensures personalized service, proactive communication, and peace of mind from pickup to delivery. </p>
+          <a href="#" class="get-a-quote-link">
+            Get a quote
+            <img src="./icons/chevron-right.svg" alt="chevron-right">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Why move with Us -Section -->
-  <div class="container px-4 py-5" id="featured-3">
-    <h1 class="pb-2 border-bottom orange-header orange-header-bold">Why Move With Us?</h1>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-           <img class="icon-svg" src="./icons/briefcase.svg" alt="briefcase"/>
-        </div>
-        <h3 class="fs-2 text-body-emphasis orange-header">Expertise</h3>
-        <p>Our professional movers are trained to handle your belongings with care and precision. We know your possessions hold memories and sentimental value, so we take every step to ensure they are packed, transported, and delivered safely.</p>
-        <a href="#" class="get-a-quote-link">
-          Get a quote
-          <img src="./icons/chevron-right.svg" alt="chevron-right">
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img class="icon-svg" src="./icons/bus-front.svg" alt="bus-front"/>
-        </div>
-        <h3 class="fs-2 text-body-emphasis orange-header">Nationwide</h3>
-        <p>Whether you're moving across the street or to another state, we’ve got you covered. Our services include packing, loading, transportation, unloading, and unpacking—tailored to your needs.</p>
-        <a href="#" class="get-a-quote-link">
-          Get a quote
-          <img src="./icons/chevron-right.svg" alt="chevron-right">
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <img class="icon-svg" src="./icons/bus-front.svg" alt="bus-front"/>
-        </div>
-        <h3 class="fs-2 text-body-emphasis orange-header">Care</h3>
-        <p>We believe moving should be an exciting new chapter, not a headache. That’s why we focus on providing a personalized experience that makes the process smooth and enjoyable. Let us handle the heavy lifting while you settle into your new home with ease.</p>
-        <a href="#" class="get-a-quote-link">
-          Get a quote
-          <img src="./icons/chevron-right.svg" alt="chevron-right">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Carousel -->
-   <div class="container carousel-section">
-    <div id="carouselExampleIndicators" class="carousel slide">
+  <section class="carousel">
+    <div class="container carousel-section">
+    <div id="carouselExampleIndicators" 
+          class="carousel slide"
+          data-bs-ride="carousel" 
+          data-bs-interval="3000" 
+          data-bs-pause="false" 
+          data-bs-wrap="true">">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -197,110 +243,123 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+    </div>
+  </section>
   
-  <div class="about-banner-container">
-    <div class="container">
-      <div class="row text-center">
+  <section class="about-banner">
+    <div id="about-banner-container" class="about-banner-container">
+      <div class="container set-padding-y-none">
+        <div class="row text-center">
 
-        <div class="col-lg-4 px-4">
-            <p>Around 1,520 locations around the world</p>
-        </div>
+          <div class="col-lg-4 px-4">
+              <p>Around 1,520 locations around the world</p>
+          </div>
 
-        <div class="col-lg-4">
-            <p>More than 68,900 employees worldwide</p>
-        </div>
+          <div class="col-lg-4">
+              <p>More than 68,900 employees worldwide</p>
+          </div>
 
-        <div class="col-lg-4">
-            <p>More than 796 warehouses worldwide</p>
+          <div class="col-lg-4">
+              <p>More than 796 warehouses worldwide</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- About -->
-  <div class="container">
-    <div id="about-container" class="container px-5 about-container">
-      <h1 class="about-header orange-header">About Us</h1>
-      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, distinctio. Necessitatibus doloremque pariatur eos quos ad earum, architecto, accusantium aliquam, sapiente quibusdam corporis officiis consequatur nam magni tenetur magnam ab!</p> -->
+  <section class="about">
+    <div class="container container-set-padding">
+      <div id="about-container" class="container px-5 about-container">
+        <h1 class="about-header orange-header">About Us</h1>
 
-      <!-- Tabs Navigation -->
-      <ul class="nav nav-pills justify-content-center" id="aboutTabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="origin-tab" data-bs-toggle="pill" href="#origin" role="tab" aria-controls="origin" aria-selected="true">Our Origins</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="services-tab" data-bs-toggle="pill" href="#services" role="tab" aria-controls="services" aria-selected="false">Our Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="mission-tab" data-bs-toggle="pill" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="commitment-tab" data-bs-toggle="pill" href="#commitment" role="tab" aria-controls="commitment" aria-selected="false">Our Commitment</a>
-        </li>
-      </ul>
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-pills justify-content-center" id="aboutTabs" role="tablist">
 
-      <!-- Tabs Content -->
-      <div class="tab-content" id="aboutTabsContent">
+          <li class="nav-item">
+            <a class="nav-link active" 
+                id="origin-tab" 
+                data-bs-toggle="pill" 
+                href="#origin" 
+                role="tab" 
+                aria-controls="origin" 
+                aria-selected="true">
+                Our Origins
+            </a>
+          </li>
 
-        <div class="tab-pane fade show active" 
-             id="origin" 
-             role="tabpanel" 
-             aria-labelledby="origin-tab">
-          <h3 class="about-sec-tabs-h3 teal-green">Our Origins</h3>
-          <p>Founded in 1993 in the Philippines, Swiftlink began as a small, local delivery service with a mission to provide fast, reliable shipping for customers. From our humble beginnings, we recognized the growing need for efficient logistics solutions, which spurred our expansion into the global market. Over the years, we’ve steadily built a robust infrastructure and an ever-expanding network of partners, agents, and locations across more than 30 countries. This expansion has enabled us to meet the diverse logistics needs of businesses worldwide, while always staying true to our commitment to service excellence.<br>
-          <br>
-          Today, Swiftlink is a global leader in logistics and transportation, offering services for businesses of all sizes. Despite our rapid growth, we continue to focus on the personalized service that made us successful in the beginning. We are dedicated to providing reliable and efficient solutions that meet the evolving needs of our clients.</p>
+          <li class="nav-item">
+            <a class="nav-link" id="services-tab" data-bs-toggle="pill" href="#services" role="tab" aria-controls="services" aria-selected="false">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="mission-tab" data-bs-toggle="pill" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="commitment-tab" data-bs-toggle="pill" href="#commitment" role="tab" aria-controls="commitment" aria-selected="false">Our Commitment</a>
+          </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="aboutTabsContent">
+
+          <div class="tab-pane fade show active" 
+              id="origin" 
+              role="tabpanel" 
+              aria-labelledby="origin-tab">
+            <h3 class="about-sec-tabs-h3 teal-green">Our Origins</h3>
+            <p>Founded in 1993 in the Philippines, Swiftlink began as a small, local delivery service with a mission to provide fast, reliable shipping for customers. From our humble beginnings, we recognized the growing need for efficient logistics solutions, which spurred our expansion into the global market. Over the years, we’ve steadily built a robust infrastructure and an ever-expanding network of partners, agents, and locations across more than 30 countries. This expansion has enabled us to meet the diverse logistics needs of businesses worldwide, while always staying true to our commitment to service excellence.<br>
+            <br>
+            Today, Swiftlink is a global leader in logistics and transportation, offering services for businesses of all sizes. Despite our rapid growth, we continue to focus on the personalized service that made us successful in the beginning. We are dedicated to providing reliable and efficient solutions that meet the evolving needs of our clients.</p>
+          </div>
+
+          <div class="tab-pane fade" 
+              id="services" 
+              role="tabpanel" 
+              aria-labelledby="services-tab">
+            <h3 class="about-sec-tabs-h3 teal-green">Our Services</h3>
+            <p>At Swiftlink, we understand that no two businesses are alike, which is why we offer a wide range of logistics services designed to meet the unique needs of our customers. From parcel delivery to large-scale cargo shipping and payment processing, our services cover every aspect of the logistics process. We are committed to offering solutions that make it easier for businesses to get their goods to market, no matter the size or complexity of the shipment.<br>
+            <br>
+            Our services are powered by advanced technology and innovative strategies to ensure efficiency and reliability. We work closely with customers to create tailored solutions that help them overcome logistical challenges and improve their supply chain. Swiftlink is here to support businesses in moving goods swiftlink, securely, and cost-effectively, wherever they are needed.
+            </p>
+          </div>
+
+          <div class="tab-pane fade" 
+              id="mission" 
+              role="tabpanel" 
+              aria-labelledby="mission-tab">
+            <h3 class="about-sec-tabs-h3 teal-green">Our Mission</h3>
+            <p>At Swiftlink, our mission is clear: to exceed customer expectations by delivering fast, secure, and efficient logistics solutions. We believe that excellent service is the cornerstone of building lasting relationships with our clients, and we go the extra mile to ensure that each shipment is handled with the utmost care and attention to detail.<br>
+            <br>
+            We simplify logistics by offering reliable services that help businesses of all sizes meet their goals. Our commitment to speed and accuracy ensures on-time delivery, making us the trusted logistics partner for businesses worldwide. We are focused on optimizing supply chains and helping businesses thrive in an interconnected global market
+            </p>
+          </div>
+          
+          <div class="tab-pane fade" 
+              id="commitment" 
+              role="tabpanel" 
+              aria-labelledby="commitment-tab">
+            <h3 class="about-sec-tabs-h3 teal-green">Our Commitment</h3>
+            <p>Swiftlink is committed to helping businesses grow and succeed in the global marketplace. We pride ourselves on being more than just a logistics provider—we are a trusted partner that plays an essential role in global trade. By continuously refining our services, we ensure businesses can depend on us for efficient, reliable shipping across borders and continents.<br>
+            <br>
+            Beyond service, our commitment extends to sustainability and social responsibility. We actively engage in efforts that contribute positively to the environment and communities. Choosing Swiftlink means partnering with a company dedicated to delivering exceptional service while making a meaningful impact on the world around us.
+            </p>
+          </div>
         </div>
 
-        <div class="tab-pane fade" 
-             id="services" 
-             role="tabpanel" 
-             aria-labelledby="services-tab">
-          <h3 class="about-sec-tabs-h3 teal-green">Our Services</h3>
-          <p>At Swiftlink, we understand that no two businesses are alike, which is why we offer a wide range of logistics services designed to meet the unique needs of our customers. From parcel delivery to large-scale cargo shipping and payment processing, our services cover every aspect of the logistics process. We are committed to offering solutions that make it easier for businesses to get their goods to market, no matter the size or complexity of the shipment.<br>
-          <br>
-          Our services are powered by advanced technology and innovative strategies to ensure efficiency and reliability. We work closely with customers to create tailored solutions that help them overcome logistical challenges and improve their supply chain. Swiftlink is here to support businesses in moving goods swiftlink, securely, and cost-effectively, wherever they are needed.
-          </p>
-        </div>
-
-        <div class="tab-pane fade" 
-             id="mission" 
-             role="tabpanel" 
-             aria-labelledby="mission-tab">
-          <h3 class="about-sec-tabs-h3 teal-green">Our Mission</h3>
-          <p>At Swiftlink, our mission is clear: to exceed customer expectations by delivering fast, secure, and efficient logistics solutions. We believe that excellent service is the cornerstone of building lasting relationships with our clients, and we go the extra mile to ensure that each shipment is handled with the utmost care and attention to detail.<br>
-          <br>
-          We simplify logistics by offering reliable services that help businesses of all sizes meet their goals. Our commitment to speed and accuracy ensures on-time delivery, making us the trusted logistics partner for businesses worldwide. We are focused on optimizing supply chains and helping businesses thrive in an interconnected global market
-          </p>
-        </div>
-        
-        <div class="tab-pane fade" 
-             id="commitment" 
-             role="tabpanel" 
-             aria-labelledby="commitment-tab">
-          <h3 class="about-sec-tabs-h3 teal-green">Our Commitment</h3>
-          <p>Swiftlink is committed to helping businesses grow and succeed in the global marketplace. We pride ourselves on being more than just a logistics provider—we are a trusted partner that plays an essential role in global trade. By continuously refining our services, we ensure businesses can depend on us for efficient, reliable shipping across borders and continents.<br>
-          <br>
-          Beyond service, our commitment extends to sustainability and social responsibility. We actively engage in efforts that contribute positively to the environment and communities. Choosing Swiftlink means partnering with a company dedicated to delivering exceptional service while making a meaningful impact on the world around us.
-          </p>
-        </div>
       </div>
-
     </div>
-  </div>
+  </section>
   
-    <!-- Ads - Download the App -->
-    <div class="container stay-connected-container">
+  <section class="ads-download-app">
+    <div class="container stay-connected-container ">
       <div class="card stay-connected-card">
         <div class="row">
-  
+
           <div class="col-lg-8 stay-conn-box-desc">
             
             <div class="stay-conn-card-header left-align ">
               <h2 id="stay-connected">Stay Connected With the Swiftlink App</h2>
             </div>
-  
+
             <div class="stay-conn-card-body">
               <div>
                 <p class="stay-conn-card-body-content left-align ">
@@ -308,9 +367,9 @@
                 </p>
               </div>
             </div>
-  
+
           </div>    
-  
+
           <div class="col-lg-4">
             <div class="stay-conn-box-button">
               <button class="btn btn-warning rounded-pill px-4 stay-conn-dload-btn" type="button">
@@ -318,420 +377,791 @@
               </button>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
+  </section>
 
-  <!-- Ways to Send a Package / Shipping Services -->
-  <div id="shipping-services-container" class="shipping-services-container">
-    <div class="container px-4 py-5 ">
-      <div class="container pb-5 general-header1">
-        <h1>Ways to Send a Package</h1>
+  <section class="shipping-services">
+    <div id="shipping-services-container" class="shipping-services-container">
+      <div class="container px-4 py-5 ">
+        <div class="container pb-5 general-header1">
+          <!-- <h1>Ways to Send a Package</h1> -->
+        </div>
+        <div class="container pt-3 ship-main-container">
+          <div class="row">
+            
+            <div class="col-lg-4">
+              <div class="gen-box">
+                <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-land-freight.png">
+                <h3 class="px-3  pt-4 global-text-format">
+                  Land Freight
+                </h3>
+                <p class="global-text-format shipping-sec-desc">
+                  Need to move goods by road? We’ve got reliable trucks ready to get your shipments where they need to be — fast and hassle-free.
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="gen-box">
+                <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-air-freight-2.png">
+                <h3 class="px-3  pt-4 global-text-format">
+                  Air Freight
+                </h3>
+                <p class="global-text-format shipping-sec-desc">
+                  When speed matters, our air shipping delivers your packages to their destination quickly and safely, no matter where in the world.
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="gen-box">
+                <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-sea-freight.png">
+                <h3 class="px-3  pt-4 global-text-format">
+                  Sea Freight
+                </h3>
+                <p class="global-text-format shipping-sec-desc">
+                  Our sea freight service keeps things smooth and affordable, connecting ports worldwide with reliable deliveries.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </div>
-      <div class="container pt-3 ship-main-container">
+    </div>
+  </section>
+
+  <section class="logistics-solutions">
+    <div id="logistics-container" class="gen-container logistics-container">
+      <div class="container px-4 py-5">
+        <div class="container logistics-main-container">
+          <div class="row">
+
+            <div class="col-lg-6 logistics-box px-5">
+              <div>
+                <h1 class="py-4 global-text-format orange-header left-align">
+                  Storage and Warehouse Solutions
+                </h1>
+                <p class="global-text-format left-align">
+                  Our warehousing facilities provide secure storage and inventory management for businesses of all sizes. Whether you need short-term storage or a long-term solution, we offer flexible options to keep your goods safe and organized. With reliable logistics and value-added services, we help streamline operations and reduce costs.<br>
+                  <br>
+                  We'll take care of your storage and distribution needs so you can focus on growing your business.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="gen-box">
+                <img class="logistics-img" alt="warehouse" src="./images/warehouse-inside-2.jpg">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section class="nvocc-services">
+    <div id="nvocc-container" class="gen-container nvocc-container">
+      <div class="container px-4 py-5">
+        <div class="container nvocc-main-container">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="gen-box">
+                <img class="logistics-img nvocc-img" alt="nvocc" src="./images/stock-nvocc.png">
+              </div>
+            </div>
+
+            <div class="col-lg-6 logistics-box px-5">
+              <div>
+                <h1 class="py-4 global-text-format orange-header left-align">
+                  Secure Non Vessel Operating Common Carrier (NVOCC)
+                </h1>
+                <p class="global-text-format left-align">
+                  Shipping doesn’t have to be complicated or costly. Our NVOCC services provide a secure, flexible way to move cargo without requiring a full container. With reliable freight forwarding and a strong logistics network, we ensure smooth import and export, both locally and globally.<br>
+                  <br>
+                  No need to wait for a full load—ship your goods as soon as they’re ready. Plus, our NVOCC brokers help stabilize LCL shipping costs, ensuring you get competitive rates for efficient, cost-effective transport.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section class="cross-docking">
+    <div id="crdock-container" class="gen-container crdock-container">
+      <div class="container px-4 py-5">
+        <div class="container crdock-main-container">
+          <div class="row">
+
+            <div class="col-lg-6 logistics-box px-5">
+              <div>
+                <h1 class="py-4 global-text-format orange-header left-align">
+                  Cross Docking Logistics Solutions
+                </h1>
+                <p class="global-text-format left-align">
+                  Keep inventory moving and cut costs with our cross-docking freight services. By sorting and reassembling cargo for quick transfer, we minimize storage time and speed up deliveries. Your shipments move seamlessly from inbound to outbound transport, reducing warehouse reliance and handling.<br>
+                  <br>
+                  With a well-planned logistics process, we help businesses save time and money by eliminating unnecessary storage. Our efficient cross-docking operations simplify supply chains, lower inventory costs, and ensure goods reach their destination faster.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="gen-box">
+                <img class="logistics-img" alt="warehouse" src="./images/stock-cross-docking.jpg">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section class="specialized-logistics">
+    <div id="spec-logis-container" class="gen-container spec-logis-container">
+      <div class="container px-4 py-5">
+        <div class="container spec-logis-main-container">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="gen-box">
+                <img class="logistics-img nvocc-img" alt="nvocc" src="./images/stock-nvocc.png">
+              </div>
+            </div>
+
+            <div class="col-lg-6 logistics-box px-5">
+              <div>
+                <h1 class="py-4 orange-header left-align">
+                  Specialized Logistics
+                </h1>
+                <p class="global-text-format left-align">
+                  We offer reverse logistics for hassle-free returns, document return services for completed paperwork, and on-site management for secure handling. Our cash-on-delivery option ensures convenient payments with fast remittance to your account, streamlining transactions for both you and your customers.<br>
+                  <br>
+                  From parcels to large-scale cargo, we provide cost-effective logistics solutions that keep your supply chain running smoothly. With efficient handling and timely deliveries, we help businesses stay on track and meet customer demands.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <section class="subscribe-newsletters">
+    <div id="subscribe-container" class="subscribe-container">
+      <div class="container">
         <div class="row">
-          
-          <div class="col-lg-4">
-            <div class="gen-box">
-              <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-land-freight.png">
-              <h3 class="px-3  pt-4 global-text-format">
-                Land Freight
-              </h3>
-              <p class="global-text-format shipping-sec-desc">
-                Need to move goods by road? We’ve got reliable trucks ready to get your shipments where they need to be — fast and hassle-free.
-              </p>
+
+          <div class="col-lg-6 subscribe-header">
+            <div class="subscribe-box">
+              <h1 class="subscribe-h1">Be updated on the latest offers and promotions.</h1>
             </div>
           </div>
-          
-          <div class="col-lg-4">
-            <div class="gen-box">
-              <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-air-freight-2.png">
-              <h3 class="px-3  pt-4 global-text-format">
-                Air Freight
-              </h3>
-              <p class="global-text-format shipping-sec-desc">
-                When speed matters, our air shipping delivers your packages to their destination quickly and safely, no matter where in the world.
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-lg-4">
-            <div class="gen-box">
-              <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-sea-freight.png">
-              <h3 class="px-3  pt-4 global-text-format">
-                Sea Freight
-              </h3>
-              <p class="global-text-format shipping-sec-desc">
-                Our sea freight service keeps things smooth and affordable, connecting ports worldwide with reliable deliveries.
-              </p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
+    
+          <div id="mc_embed_shell" class="col-lg-6">
+              <div id="mc_embed_signup">
+                  <form action="https://gmail.us19.list-manage.com/subscribe/post?u=5545a82b0b0f32ce0f7e7fcd2&amp;id=8aa8a82c9e&amp;f_id=00c6c2e1f0" 
+                        method="post" 
+                        id="mc-embedded-subscribe-form" 
+                        name="mc-embedded-subscribe-form" 
+                        class="validate" 
+                        target="_blank">
+                        
+                      <div id="mc_embed_signup_scroll">
+                          <!-- <h2>Subscribe</h2> -->
+                          <!-- <div class="indicates-required">
+                              <span class="asterisk">*</span> indicates required
+                          </div> -->
 
-  <!-- Logistics Solutions -->
-  <div id="logistics-container" class="general-container">
-    <div class="container px-4 py-5">
-      <div class="container logistics-main-container">
-        <div class="row">
+                          <div class="mc-field-group">
+                              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                          </div>
 
-          <div class="col-lg-6 logistics-box ps-5 pe-3">
-            <div>
-              <h1 class="py-4 global-text-format orange-header left-align">
-                Storage and Warehouse Solutions
-              </h1>
-              <p class="global-text-format left-align">
-                Our warehousing facilities provide secure storage and inventory management for businesses of all sizes. Whether you need short-term storage or a long-term solution, we offer flexible options to keep your goods safe and organized. With reliable logistics and value-added services, we help streamline operations and reduce costs.<br>
-                <br>
-                We'll take care of your storage and distribution needs so you can focus on growing your business.
-              </p>
-            </div>
-          </div>
+                          <div class="mc-field-group">
+                              <label for="mce-FNAME">First Name</label>
+                              <input type="text" name="FNAME" class="text" id="mce-FNAME">
+                          </div>
 
-          <div class="col-lg-6">
-            <div class="gen-box">
-              <img class="logistics-img" alt="warehouse" src="./images/warehouse-inside-2.jpg">
-            </div>
-          </div>
+                          <div class="mc-field-group">
+                              <label for="mce-LNAME">Last Name</label>
+                              <input type="text" name="LNAME" class="text" id="mce-LNAME">
+                          </div>
+                          
+                          <div id="mce-responses" class="clear foot">
+                              <div class="response" id="mce-error-response" style="display: none;"></div>
+                              <div class="response" id="mce-success-response" style="display: none;"></div>
+                          </div>
 
-        </div>
-      </div>
-    </div>
-  </div>  
+                          <div aria-hidden="true" class="hidden-field">
+                              <input type="text" name="b_5545a82b0b0f32ce0f7e7fcd2_8aa8a82c9e" tabindex="-1">
+                          </div>
 
-  <!-- NVOCC Services -->
-  <div id="nvocc-container" class="general-container nvocc-container">
-    <div class="container px-4 py-5">
-      <div class="container nvocc-main-container">
-        <div class="row">
+                          <div class="optionalParent">
+                              <div class="clear foot">
+                                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Submit">
 
-          <div class="col-lg-6">
-            <div class="gen-box">
-              <img class="logistics-img nvocc-img" alt="nvocc" src="./images/stock-nvocc.png">
-            </div>
-          </div>
-
-          <div class="col-lg-6 logistics-box ps-2">
-            <div>
-              <h1 class="py-4 global-text-format orange-header left-align">
-                Secure Non Vessel Operating Common Carrier (NVOCC)
-              </h1>
-              <p class="global-text-format left-align">
-                Shipping doesn’t have to be complicated or costly. Our NVOCC services provide a secure, flexible way to move cargo without requiring a full container. With reliable freight forwarding and a strong logistics network, we ensure smooth import and export, both locally and globally.<br>
-                <br>
-                No need to wait for a full load—ship your goods as soon as they’re ready. Plus, our NVOCC brokers help stabilize LCL shipping costs, ensuring you get competitive rates for efficient, cost-effective transport.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <!-- Cross Docking -->
-  <div id="crdock-container" class="general-container crdock-container">
-    <div class="container px-4 py-5">
-      <div class="container crdock-main-container">
-        <div class="row">
-
-          <div class="col-lg-6 logistics-box ps-5 pe-3">
-            <div>
-              <h1 class="py-4 global-text-format orange-header left-align">
-                Cross Docking Logistics Solutions
-              </h1>
-              <p class="global-text-format left-align">
-                Keep inventory moving and cut costs with our cross-docking freight services. By sorting and reassembling cargo for quick transfer, we minimize storage time and speed up deliveries. Your shipments move seamlessly from inbound to outbound transport, reducing warehouse reliance and handling.<br>
-                <br>
-                With a well-planned logistics process, we help businesses save time and money by eliminating unnecessary storage. Our efficient cross-docking operations simplify supply chains, lower inventory costs, and ensure goods reach their destination faster.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="gen-box">
-              <img class="logistics-img" alt="warehouse" src="./images/stock-cross-docking.jpg">
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <!-- Specialized Logistics -->
-  <div id="spec-logis-container" class="general-container spec-logis-container">
-    <div class="container px-4 py-5">
-      <div class="container spec-logis-main-container">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="gen-box">
-              <img class="logistics-img nvocc-img" alt="nvocc" src="./images/stock-nvocc.png">
-            </div>
-          </div>
-
-          <div class="col-lg-6 logistics-box ps-2">
-            <div>
-              <h1 class="py-4 orange-header left-align">
-                Specialized Logistics
-              </h1>
-              <p class="global-text-format left-align">
-                We offer reverse logistics for hassle-free returns, document return services for completed paperwork, and on-site management for secure handling. Our cash-on-delivery option ensures convenient payments with fast remittance to your account, streamlining transactions for both you and your customers.<br>
-                <br>
-                From parcels to large-scale cargo, we provide cost-effective logistics solutions that keep your supply chain running smoothly. With efficient handling and timely deliveries, we help businesses stay on track and meet customer demands.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>  
-  
-  <!-- Business Solutions -->
-  <div id="biz-sol-container" class="general-container">
-    <div class="container px-4 py-5 ">
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="col d-flex flex-column align-items-start gap-3">
-          <h1 class="text-body-emphasis orange-header left-align">Business Solutions</h1>
-          <p class="text-body-secondary left-align">We offer tailored logistics solutions to help businesses of all sizes manage shipments efficiently and streamline operations.</p>
-          <a href="#" class="btn btn-biz btn-lg">Talk to Us</a>
-        </div>
-  
-        <div class="col">
-          <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons/biz-create-an-account.png">
+                                  <!-- <p class="mailchimp-badge">
+                                      <a href="http://eepurl.com/ja8x7-" title="Mailchimp - email marketing made easy and fun">
+                                          <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" 
+                                              alt="Intuit Mailchimp">
+                                      </a>
+                                  </p> -->
+                              </div>
+                          </div>
+                          
+                      </div>
+                  </form>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Create an Account</h4>
-              <p class="text-body-secondary left-align">Sign up for an account to access faster bookings, tracking tools, and customized shipping options designed for your business needs.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons/biz-smes.png">
+          </div> 
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="business-solutions">
+    <div id="biz-sol-container" class="gen-container">
+      <div class="container px-4 py-5 ">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-3">
+            <h1 class="orange-header left-align">Business Solutions</h1>
+            <p class="text-body-secondary left-align">We offer tailored logistics solutions to help businesses of all sizes manage shipments efficiently and streamline operations.</p>
+            <a href="#" class="btn btn-biz btn-lg">Talk to Us</a>
+          </div>
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="create-an-account" src="./icons/biz-create-an-account.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Create an Account</h5>
+                <p class="text-body-secondary left-align">Sign up for an account to access faster bookings, tracking tools, and customized shipping options designed for your business needs.</p>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Small and Medium Enterprises (SMEs)</h4>
-              <p class="text-body-secondary left-align">Flexible shipping and logistics support to help small businesses grow, reduce costs, and improve delivery times..</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons//biz-track-shipments.png">
+
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="small-and-medium-enterprises" src="./icons/biz-smes.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Small and Medium Enterprises (SMEs)</h5>
+                <p class="text-body-secondary left-align">Flexible shipping and logistics support to help small businesses grow, reduce costs, and improve delivery times..</p>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Track and Manage Shipments</h4>
-              <p class="text-body-secondary left-align">Stay in control of your deliveries with real-time tracking, shipment management tools, and status updates.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons/biz-enterprise-supply-chain.png">
+
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="track and managed shipments" src="./icons//biz-track-shipments.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Track and Manage Shipments</h5>
+                <p class="text-body-secondary left-align">Stay in control of your deliveries with real-time tracking, shipment management tools, and status updates.</p>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Enterprise Shipping Solutions</h4>
-              <p class="text-body-secondary left-align">Scalable logistics services for large businesses, offering bulk shipping, supply chain integration, and priority handling.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons/biz-pickup-dropoff.png">
+
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="Enterprise Shipping Solutions" src="./icons/biz-enterprise-supply-chain.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Enterprise Shipping Solutions</h5>
+                <p class="text-body-secondary left-align">Scalable logistics services for large businesses, offering bulk shipping, supply chain integration, and priority handling.</p>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Pickup and Drop-off Services</h4>
-              <p class="text-body-secondary left-align">Convenient options for sending and receiving shipments with multiple collection points and scheduled pickups.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="
-                feature-icon-small 
-                d-inline-flex 
-                align-items-center">
-                <img class="biz-icons" alt="create-an-account" src="./icons/biz-claims-and-returns.png">
+
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="Pickup and Drop-off Services" src="./icons/biz-pickup-dropoff.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Pickup and Drop-off Services</h5>
+                <p class="text-body-secondary left-align">Convenient options for sending and receiving shipments with multiple collection points and scheduled pickups.</p>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis orange-header left-align">Claims and Returns</h4>
-              <p class="text-body-secondary left-align">Streamlined processes for handling lost, damaged, or returned shipments to ensure smooth customer service and resolution.</p>
+
+              <div class="col d-flex flex-column gap-2">
+                <div class="
+                  feature-icon-small 
+                  d-inline-flex 
+                  align-items-center">
+                  <img class="biz-icons" alt="Claims and Returns" src="./icons/biz-claims-and-returns.png">
+                </div>
+                <h5 class="orange-header left-align mt-1">Claims and Returns</h5>
+                <p class="text-body-secondary left-align">Streamlined processes for handling lost, damaged, or returned shipments to ensure smooth customer service and resolution.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Ads - Download the App -->
-  <div class="container stay-connected-container">
-    <div class="card stay-connected-card">
-      <div class="row">
+  <section class="support-any-questions
+                support-section-banner
+                module 
+                supp-sec-0-grey 
+                supp-sec-0-primary 
+                medium-font">
+    <div id="support-section-banner" class="container supp-sec-0-out-container">
+      <div class="supp-sec-0-in-container">
+        <div class="supp-sec-0-box">
 
-        <div class="col-lg-8 stay-conn-box-desc">
-          
-          <div class="stay-conn-card-header left-align ">
-            <h2 id="stay-connected">Stay Connected With the Swiftlink App</h2>
+          <div class="supp-sec-0-box-header">
+            <h1 class="supp-sec-0-box-h2">
+              Any questions?
+            </h1>
+            <p class="supp-sec-0-box-desc">
+              Our experienced professionals are here to help you with any concerns. You’ll find the right person here.
+            </p>
           </div>
 
-          <div class="stay-conn-card-body">
-            <div>
-              <p class="stay-conn-card-body-content left-align ">
-                Get real-time delivery updates, create shipping labels on the go, and track your parcels effortlessly—all from your phone. 
-              </p>
-            </div>
+          <div class="supp-sec-0-box-img">
+            <img alt="Contact us" 
+                 class="lazy supp-sec-0-box-img-in" 
+                 src="./Images/site-stock-support-person.png" 
+                 data-src="./Images/site-stock-support-person.png" 
+                 loading="lazy">
           </div>
 
-        </div>    
 
-        <div class="col-lg-4">
-          <div class="stay-conn-box-button">
-            <button class="btn btn-warning rounded-pill px-4 stay-conn-dload-btn" type="button">
-              Download the App
-            </button>
-          </div>
         </div>
-
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Support -->
-  <div id="support-container" class="support-container">
-    <div class="container support-main-container">
-
-    </div>
-  </div>
-
-  <!-- Subscribe section -->
-   <div id="subscribe-container" class="subscribe-container">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6 subscribe-header">
-          <div class="subscribe-box">
-            <h1 class="subscribe-h1">Be updated on the latest offers and promotions.</h1>
+  <section class="support-tell-us-what-you-need
+                module 
+                supp-sec-1-box-default 
+                supp-sec-theme 
+                supp-sec-1-padding-small">
+    <div class="container support-main-container"
+         id="support-section-1">
+      <div class="supp-sec-1-banner-bg">
+        <div class="supp-sec-1-banner-content">
+          <div class="supp-sec-1-box">
+            <h1 class="module__header box-text-color">
+              Tell us what you need
+            </h1>
           </div>
         </div>
-   
-        <div id="mc_embed_shell" class="col-lg-6">
-            <div id="mc_embed_signup">
-                <form action="https://gmail.us19.list-manage.com/subscribe/post?u=5545a82b0b0f32ce0f7e7fcd2&amp;id=8aa8a82c9e&amp;f_id=00c6c2e1f0" 
-                      method="post" 
-                      id="mc-embedded-subscribe-form" 
-                      name="mc-embedded-subscribe-form" 
-                      class="validate" 
-                      target="_blank">
+      </div>
+    </div>
+  </section>
+
+  <section class="support-items-navtabs">
+
+    <div class="container   
+                supp-sec-2-background 
+                set-padding-y-none"
+          id="support-section-2">
+
+      <div class="container 
+                  px-5 
+                  supp-sec-2-main-container"
+           id="supp-sec-2-main-container">
+        
+        <section class="supp-sec-2-tabs-nav">
+          <ul class="nav nav-tabs justify-content-center" 
+              id="aboutTabs" 
+              role="tablist">
+            
+            <li class="nav-item">
+              <a class="nav-link supp-sec-2-nav-link active" 
+                  data-bs-toggle="tab" 
+                  href="#profile" 
+                  role="tab" 
+                  aria-controls="profile" 
+                  aria-selected="true"
+                  id="profile-tab">
+                  Profile
+              </a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link supp-sec-2-nav-link" 
+                data-bs-toggle="tab" 
+                href="#get-a-quote" 
+                role="tab" 
+                aria-controls="get-a-quote" 
+                aria-selected="false"
+                id="get-a-quote-tab">
+                Get a Quote</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link supp-sec-2-nav-link" 
+                data-bs-toggle="tab" 
+                href="#tracking" 
+                role="tab" 
+                aria-controls="tracking" 
+                aria-selected="false"
+                id="tracking-tab">
+                Tracking</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link supp-sec-2-nav-link" 
+                data-bs-toggle="tab" 
+                href="#shipping" 
+                role="tab" 
+                aria-controls="shipping" 
+                aria-selected="false"
+                id="shipping-tab">
+                Shipping</a>
+            </li>
+      
+            <li class="nav-item">
+              <a class="nav-link supp-sec-2-nav-link" 
+                data-bs-toggle="tab" 
+                href="#contact-us" 
+                role="tab" 
+                aria-controls="contact-us" 
+                aria-selected="false"
+                id="contact-us-tab">
+                Contact Us</a>
+            </li>
+      
+          </ul>
+        </section>
+        
+        <section class="supp-sec-2-tabs-content">
+          <div class="tab-content" id="aboutTabsContent">
+      
+            <!-- Manage your Account -->
+            <div class="tab-pane fade show active" 
+                  id="profile" 
+                  role="tabpanel" 
+                  aria-labelledby="profile-tab">
+                
+                <section class="supp-sec-2-1-manage-your-account" 
+                         id="supp-sec-2-1-manage-your-account">
+                  <div class="container">
+                    <div class="row supp-sec-2-tabs-container">
                       
-                    <div id="mc_embed_signup_scroll">
-                        <!-- <h2>Subscribe</h2> -->
-                        <!-- <div class="indicates-required">
-                            <span class="asterisk">*</span> indicates required
-                        </div> -->
+                      <!-- First Column: Texts -->
+                      <div class="col-lg-6 supp-sec-2-1-auth-column">
+                        <div>
 
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                        </div>
+                          <h1 class="supp-sec-2-tabs-h1 teal-green">
+                            Manage Your Account
+                          </h1>
 
-                        <div class="mc-field-group">
-                            <label for="mce-FNAME">First Name</label>
-                            <input type="text" name="FNAME" class="text" id="mce-FNAME">
+                          <p>
+                            Customize your Swiftlink experience. Tell us a bit about yourself and your needs.
+                            We’ll deliver more relevant tools, services, and support tailored to what matters most to you.
+                          </p>
+                          
+                          <div>
+                            <button type="button" 
+                                    class="btn btn-warning 
+                                          rounded-pill px-4 stay-conn-dload-btn">
+                              Manage your account
+                            </button>
+                          </div>
                         </div>
-
-                        <div class="mc-field-group">
-                            <label for="mce-LNAME">Last Name</label>
-                            <input type="text" name="LNAME" class="text" id="mce-LNAME">
-                        </div>
-
-                        <div class="mc-field-group">
-                          <label for="mce-MOBILE">Mobile Number</label>
-                          <input type="tel" name="MOBILE" class="form-control" id="mce-MOBILE" placeholder="Enter your mobile number">
-                        </div>
-                        
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                            <div class="response" id="mce-success-response" style="display: none;"></div>
-                        </div>
-
-                        <div aria-hidden="true" class="hidden-field">
-                            <input type="text" name="b_5545a82b0b0f32ce0f7e7fcd2_8aa8a82c9e" tabindex="-1">
-                        </div>
-
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Submit">
-
-                                <!-- <p class="mailchimp-badge">
-                                    <a href="http://eepurl.com/ja8x7-" title="Mailchimp - email marketing made easy and fun">
-                                        <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" 
-                                            alt="Intuit Mailchimp">
-                                    </a>
-                                </p> -->
-                            </div>
-                        </div>
-                        
+                      </div>
+                      
+                      <!-- Second Column: Image -->
+                      <div class="col-lg-6 d-none d-lg-block">
+                        <img alt="profile" 
+                            class="lazy img-fluid supp-sec-2-box-img-in" 
+                            loading="lazy"
+                            src="./Images/stock-photo-managing-profile.jpg" 
+                            data-src="./Images/site-stock-support-person.png">
+                      </div>
+                  
                     </div>
-                </form>
+                  </div>
+                </section>
+
             </div>
-        </div> 
+      
+            <!-- Get a Quote -->
+            <div class="tab-pane fade" 
+                id="get-a-quote" 
+                role="tabpanel" 
+                aria-labelledby="get-a-quote-tab">
 
+                <section class="supp-sec-2-2-get-a-quote" 
+                         id="supp-sec-2-2-get-a-quote">
+                  <h3 class="supp-sec-2-tabs-h1 teal-green">Our Services</h3>
+                  <p>At Swiftlink, we understand that no two businesses are alike, which is why we offer a wide range of logistics services designed to meet the unique needs of our customers. From parcel delivery to large-scale cargo shipping and payment processing, our services cover every aspect of the logistics process. We are committed to offering solutions that make it easier for businesses to get their goods to market, no matter the size or complexity of the shipment.<br>
+                  <br>
+                  Our services are powered by advanced technology and innovative strategies to ensure efficiency and reliability. We work closely with customers to create tailored solutions that help them overcome logistical challenges and improve their supply chain. Swiftlink is here to support businesses in moving goods swiftlink, securely, and cost-effectively, wherever they are needed.
+                  </p>
+                </section>
 
+            </div>
+      
+            <!-- Tracking -->
+            <div class="tab-pane fade" 
+                id="tracking" 
+                role="tabpanel" 
+                aria-labelledby="tracking-tab">
+
+                <section class="supp-sec-2-3-tracking" 
+                         id="supp-sec-2-3-tracking">
+                  <div class="container">
+                    <div class="row supp-sec-2-tabs-container">
+                      
+                      <!-- First Column: Form -->
+                      <div class="col-lg-6 supp-sec-2-3-tracking-column">
+                        <div>
+
+                          <h1 class="mb-4 text-start teal-green">
+                            Track your shipments
+                          </h1>
+                    
+                          <input type="text" 
+                                class="form-control mb-3" 
+                                placeholder="Reference number*">
+                    
+                          <!-- Toggle Switch -->
+                          <div class="d-flex align-items-center mb-3">
+                            <div class="form-check form-switch mx-2">
+                              <input class="form-check-input" 
+                                    type="checkbox" 
+                                    id="toggleReference">
+                            </div>
+                            <label for="toggleReference" 
+                                  class="form-check-label mb-0">
+                              Have a specific reference?
+                            </label>
+                          </div>
+                    
+                          <!-- Dropdown -->
+                          <div class="d-flex 
+                                      justify-content-between 
+                                      align-items-center 
+                                      mb-3 
+                                      force-align-button">
+                            <div id="referenceDropdownWrapper" class="referenceDropdownWrapper">
+                              <select id="referenceDropdown" class="form-select">
+                                <option disabled selected>Select Reference Type*</option>
+                                <option>Consignment Reference Number</option>
+                                <option>Booking Reference Number</option>
+                                <option>Waybill Number</option>
+                                <option>Purchase Order Number</option>
+                                <option>Shipping Order Number</option>
+                                <option>Container Number</option>
+                                <option>Booking ID</option>
+                                <option>Package ID</option>
+                                <option>Shipment ID</option>
+                                <option>Job ID</option>
+                              </select>
+                            </div>
+                    
+                            <!-- Search button -->
+                            <button class="btn btn-primary ms-2">Track</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- Second Column: Image -->
+                      <div class="col-lg-6 d-none d-lg-block">
+                        <img alt="Tracking Visual" 
+                             class="img-fluid supp-sec-2-box-img-in"
+                             src="./Images/tracking-shipments.png"
+                             data-src="./Images/tracking-shipments.png">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+            </div>
+            
+            <div class="tab-pane fade" 
+                id="commitment" 
+                role="tabpanel" 
+                aria-labelledby="commitment-tab">
+              <h3 class="supp-sec-2-tabs-h1 teal-green">Our Commitment</h3>
+              <p>Swiftlink is committed to helping businesses grow and succeed in the global marketplace. We pride ourselves on being more than just a logistics provider—we are a trusted partner that plays an essential role in global trade. By continuously refining our services, we ensure businesses can depend on us for efficient, reliable shipping across borders and continents.<br>
+              <br>
+              Beyond service, our commitment extends to sustainability and social responsibility. We actively engage in efforts that contribute positively to the environment and communities. Choosing Swiftlink means partnering with a company dedicated to delivering exceptional service while making a meaningful impact on the world around us.
+              </p>
+            </div>
+          </div>
+        </section>
+    
       </div>
     </div>
-  </div>
+  </section>
+ 
+  <!-- PLACEHOLDER -->
+  <section class="support-section-3" style="background-color: #f2f1ef;">
+    <div class="container supp-sec-3-background set-padding-y-none" >
+      <div class="supp-sec-3-box" style="height: 500px; ">
+        <div class="supp-sec-3-inside-container">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support section 8 -->
+  <section class="support-section-8">
+    <div class="container supp-sec-8-background set-padding-y-none">
+      <div class="supp-sec-8-box">
+        <div class="supp-sec-8-inside-container">
+          <div class="supp-sec-8-inside-box">
+            
+            <h2 class="supp-sec-8-header">
+              Still looking for the answer?
+            </h2>
+
+            <p class="supp-sec-8-desc">
+              Send us a question, and we'll email you a copy of your inquiry.
+            </p>
+
+            <button type="button" class="btn btn-primary btn-lg supp-sec-8-btn">
+              Send us a question
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <div id="footer-section" class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+  <footer id="footer-box" class="footer pb-5 footer-box">
+    <div class="container footer-out-container">
+      <div class="row pb-4">
+        <div class="container footer-logo-container py-5">
+          <img alt="swiftlink logo" src="./icons/swiftlink-logo-3-white.png" class="footer-logo">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <h5 class="footer-sections">Our Services</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Land Freight</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Air Freight</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Sea Freight</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Storage and Warehousing</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">NVOCC Solutions</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Specialized Logistics</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">All Solutions</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-6 col-md-3 mb-3">
+          <h5 class="footer-sections">Our Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">About Swiftlink</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Careers</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Investor Relations</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Compliance</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Corporate Sustainability</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Innovations</a></li>
+          </ul>
+        </div>
+   
+        <div class="col-6 col-md-3 mb-3">
+          <h5 class="footer-sections">Online Tools</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Get a Quote</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Features</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Tracking and Shipping</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Media Center</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Branch Locator</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Customer Service</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Self Service</a></li>
+          </ul>
+        </div>
+   
+        <div class="col-6 col-md-3 mb-3">
+          <h5 class="footer-sections">Legal</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Legal Notice</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Data Protection</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Website Terms of Service</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Cookies Settings</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Procurement Terms</a></li>
+            <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Standard Terms and Conditions</a></li>
+          </ul>
+        </div>
+  
+        <!-- <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div> -->
+
       </div>
   
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-   
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#footer-section">
-            <img alt="twitter-logo" src="./icons/icon-twitter.png" width="24" height="24" />
-          </a>
-        </li>
-   
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#footer-section">
-            <img alt="instagram-logo" src="./icons/icon-ig.png" width="24" height="24" />
-          </a>
-        </li>
-   
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#footer-section">
-            <img alt="facebook-logo" src="./icons/icon-fb.png" width="24" height="24" />
-          </a>
-        </li>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© Swiftlink Inc - All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
 
-      </ul>
-    </footer>
-  </div>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#footer-section">
+              <img alt="linkedin-logo" src="./icons/icon-linkedin.png" width="24" height="24" aria-hidden="true" />
+            </a>
+          </li> 
 
-  
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#footer-section">
+              <img alt="twitter-logo" src="./icons/icon-twitter-2.png" width="24" height="24" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#footer-section" aria-label="Facebook">
+              <img alt="facebook-logo" src="./icons/icon-fb.png" width="24" height="24" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#footer-section" aria-label="Instagram">
+              <img alt="instagram-logo" src="./icons/icon-ig.png" width="24" height="24" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#footer-section">
+              <img alt="youtube-logo" src="./icons/icon-youtube.png" width="24" height="24" aria-hidden="true" />
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+   
   <!-- JS Files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./src/js/resize-video-fix.js"></script>
   <script src="./src/js/subscribe.js"></script>
-</body>
+  <script src="./src/js/scroll.js"></script>
+  <script src="./src/js/tracking-toggle.js"></script>
+  <script src="./src/js/tracking-field-validation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
 
+</body>
 </html>

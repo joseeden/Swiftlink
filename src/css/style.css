@@ -1,10 +1,40 @@
 /* General */
+.container {
+  padding: 30px 0;
+}
+
+.container .row {
+  text-align: center;
+}
+
+.container .col-lg-4 p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 50px 10px;
+}
+
+.container-set-padding {
+  padding: 20px 0;
+ }
+ 
 .orange-header {
-  color: #EA7300 !important;
+  color: #E26310 !important;
 }
 
 .orange-header-bold {
   font-weight: 700;
+}
+
+.bright-orange-header {
+  color: #ff9a00;
+}
+
+.darker-orange-header {
+  color: #f2bd30;
+}
+.teal-green {
+  color: #0a7c7c;
 }
 
 .left-align {
@@ -15,6 +45,10 @@
   max-height: 40vh;
 }
 
+.set-padding-y-none {
+  padding: 0;
+ }
+
 .py-5 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
@@ -24,19 +58,26 @@
   padding-top: 5rem !important;
 }
 
-.general-container {
+.gen-container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 
 .general-header1 {
   padding-bottom: 1.5rem;
 }
 
+.logistics-container {
+  padding-top: 3rem;
+}
+
 .gen-box {
   text-align: center;
+}
+
+.banner-header  {
+  margin-top: 60px;
 }
 
 
@@ -59,8 +100,10 @@
 }
 
 .btn-outline-secondary {
-  color: #EA7300;
-  border-color: #EA7300;
+  /* color: #EA7300; */
+  /* border-color: #EA7300; */
+  color: white;
+  border-color: white;
 }
 
 .btn-outline-secondary:hover {
@@ -77,25 +120,39 @@
 
 
 /* Section - Why move with us */
+.why-move-with-us-sec-container {
+  padding-top: 5rem !important;
+}
+
+.why-move-with-us-sec-h1 {
+  padding-bottom: 2.5rem !important;
+}
+
 .feature-icon {
   width: 4rem;
   height: 4rem;
   border-radius: .75rem;
-  background-color: #198754 !important;
+  background-color: #0a7c7c !important;
 }
 
 .icon-svg {
   height: 30px;
+  filter: brightness(0) invert(1); /* Turns the image white */
 }
 
 .get-a-quote-link {
-  color: green;
+  color: #0a7c7c;
 }
 
 .carousel-section {
   padding-top: 1rem !important;
   padding-bottom: 4.5rem !important;
 }
+
+.carousel-item {
+  transition: transform 3s ease-in-out;
+}
+
 
 
 /* Section - ways to send a package/Shipping Services */
@@ -141,7 +198,8 @@
 
 /* Section - NVOCC */
 .nvocc-container {
- background-color: #eeeeee;
+ /* background-color: #f0f3f5; */
+ background-color: white;
 }
 
 .nvocc-img {
@@ -150,12 +208,14 @@
 
 /* Section - Cross Docking */
 .crdock-container {
-  background-color: #FAF9F6;
+  background-color: #ffffff;
 }
 
 /* Section: Specialized Logistics */
 .spec-logis-container {
-  background-color: #eeeeee;
+  /* background-color: #f0f3f5; */
+  background-color: white;
+  padding-bottom: 3rem;
 }
 
 /* Section - Business Solutions  */
@@ -178,7 +238,7 @@
 }
 
 .biz-icons {
-  height: 50px;
+  height: 40px;
 }
 
 

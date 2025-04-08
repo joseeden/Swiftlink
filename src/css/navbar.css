@@ -1,13 +1,25 @@
 /*  Navbar */
 .navbar {
-  background-color: #EA7300 !important;
+  /* background-color: #EA7300 !important; */
+  background-color: white !important;
   position: fixed;
+  height: 100px;
   width: 100%;
   top: 0;
   z-index: 100;
 }
 
+ul.navbar-items li.nav-item a.nav-link {
+  /* color: white; */
+  color: #005f6a;
+}
+
+ul.navbar-items li.nav-item a.nav-link:hover {
+  color: #E26310;
+}
+
 .navbar-logo {
+  padding-left: 10px;
   padding-right: 10px;
   height:30px
 }
@@ -28,6 +40,25 @@
 } */
 
 
+.nav-left-icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; 
+  vertical-align: middle;
+}
+
+.nav-left-text {
+  /* color: #E26310 !important; */
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+/* Hide "Arrow-down" icons on navbar items with dropdown */
+/* .navbar .dropdown-toggle::after {
+  display: none !important;
+} */
+
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -38,19 +69,14 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 20px !important;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-ul.navbar-items li.nav-item a.nav-link {
-  color: white;
-}
 
-ul.navbar-items li.nav-item a.nav-link:hover {
-  color: black;
-}
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #198754; 
+  background-color: #EA7300; 
   /* background-color: #fba70d;  */
   color: white;
 }
