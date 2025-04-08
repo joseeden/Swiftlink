@@ -1,22 +1,19 @@
 /*------------------- SECTION ------------------- */
 
-#tracking .form-control,
-#tracking .form-select {
-  width: 100%;
-}
-
-#tracking .d-flex {
-  margin-top: 10px;
-}
 #tracking {
   padding-left: 0;
   padding-right: 0;
   margin-top: 20px;
 }
 
+#tracking .d-flex {
+  margin-top: 10px;
+}
+
 #tracking .row.supp-sec-2-tabs-container {
   height: 408px;
 }
+
 
 /*------------------- INPUT FIELD ------------------- */
 
@@ -24,11 +21,6 @@
 #tracking .form-select {
   width: 100%;
 }
-
-#tracking .d-flex {
-  margin-top: 10px;
-}
-
 
 /*-------------------  TOGGLE SWITCH  ------------------- */
 
@@ -67,47 +59,110 @@
 }
 
 /* Initially hide the dropdown */
-#referenceDropdown {
+/* #referenceDropdown {
   min-width: 200px;                 
   visibility: hidden;
   transition: visibility 0.3s ease; 
-}
-
-#referenceDropdown:hover,
-#referenceDropdown:focus {
-  background-color: white;
-  color: #333;               
-  border-color: red;     
-  box-shadow: none;
-}
-
-#referenceDropdown {
-  color: #6c757d; /* Default placeholder gray */
-}
-
-#referenceDropdown option {
-  color: black; /* item text color */
-}
+} */
 
 #referenceDropdown option:checked {
   background-color: #e5e5e5; 
   color: #000;               
 }
 
+#tracking .custom-select {
+  position: relative;
+  font-family: Arial;
+  display: none; /* Hide the dropdown by default */
+}
+
+#tracking .custom-select select {
+  display: none;
+}
+
+#tracking .select-selected {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Arrow */
+#tracking .select-selected:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+#tracking .select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 7px;
+}
+
+#tracking .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#tracking .select-items div,
+#tracking .select-selected {
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide dropdown initially */
+#tracking .select-hide {
+  display: none;
+}
+
+/* Hover and selected style */
+#tracking .select-items div:hover,
+#tracking .same-as-selected {
+  background-color: #e8f3f3;
+  color: #0a7c7c;
+}
+
+/* Show the dropdown when the toggle is on */
+#tracking .custom-select.show {
+  display: block;
+}
+
 
 /*-------------------  SEARCH BUTTON  ------------------- */
 
-/* Keep Search button in place */
-#tracking .d-flex .ms-2 {
-  flex-shrink: 0;              
+/* Keep the search button outside */
+#tracking .supp-sec-2-3-tracking-dropdown {
+  display: flex;
+  align-items: center;
 }
 
-#tracking .force-align-button {
+/* Keep Search button in place */
+#tracking .supp-sec-2-3-tracking-search {
+  flex-shrink: 0;   
+  padding: 8px 30px;           
+  border: 1px solid;
+}
+
+#tracking .supp-sec-2-3-tracking-dropdown {
   .d-flex.justify-content-between.align-items-center.mb-3& {
     justify-content: flex-end !important;
   }
 }
-
 
 /*-------------------  SECOND COLUMN  - IMAGE  ------------------- */
 
