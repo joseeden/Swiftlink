@@ -1,0 +1,119 @@
+/* ------------------- NAVBAR SEARCH  -----------------------*/
+
+#navbar-search-modal .search-modal-content {
+  width: 100%;
+  max-width: 900px;
+  position: relative;     /* absolute positioning of close button */
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  flex-direction: column; /* Stack the header and body */
+}
+
+/* close button container */
+#navbar-search-modal .search-modal-toolbar {
+  display: flex;
+  justify-content: flex-end; 
+  background-color: transparent;
+  border-bottom: none; 
+  list-style: none;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+#navbar-search-modal .search-modal-close-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+#navbar-search-modal .search-modal-close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Modal Body Content */
+#navbar-search-modal .search-modal-body {
+  padding-top: 0;
+  padding-bottom: 4.5rem;
+  padding-left: 4.5rem; 
+  padding-right: 4.5rem; 
+}
+
+/* Modal title */
+#navbar-search-modal .search-modal-title {
+  text-align: left;
+  font-weight: 400;
+}
+
+/* Input and button */
+#navbar-search-modal .search-modal-row {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+#navbar-search-modal .search-modal-input-wrapper {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#navbar-search-modal .search-modal-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+#navbar-search-modal .search-modal-input:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Search icon inside input field */
+#navbar-search-modal .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+}
+
+/* Search button */
+#navbar-search-modal .search-modal-btn-wrapper {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+#navbar-search-modal .search-modal-button {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Remove bootstrap's default close button */
+/* since i'm using an svg for close button */
+#navbar-search-modal .btn-close {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #navbar-search-modal .search-modal-input-wrapper {
+    flex: 0 0 100%;
+  }
+
+  #navbar-search-modal .search-modal-btn-wrapper {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+  }
+
+  #navbar-search-modal .search-modal-button {
+    width: 40%;
+  }
+}

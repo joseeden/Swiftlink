@@ -20,6 +20,7 @@
 
   <!-- CSS Files -->
   <link type="text/css" rel="stylesheet" href="./src/css/navbar.css" >
+  <link type="text/css" rel="stylesheet" href="./src/css/modals.css" >
   <link type="text/css" rel="stylesheet" href="./src/css/style.css" >
   <link type="text/css" rel="stylesheet" href="./src/css/about.css" >
   <link type="text/css" rel="stylesheet" href="./src/css/subscribe.css" >
@@ -43,15 +44,18 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-items">
           <!-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li> -->
+
           <li class="nav-item">
             <a class="nav-link" href="#about-banner-container">About</a>
           </li>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Shipping Services
@@ -113,11 +117,14 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-items">
 
           <li class="nav-item">
-            <a class="nav-link nav-left-text" href="#">
+            <a class="nav-link nav-left-text" 
+                href="#" 
+                data-bs-toggle="modal" 
+                data-bs-target="#navbar-search-modal">
               <img src="./icons/nav-left-search.png" alt="Search" class="nav-left-icons"> Search
             </a>
           </li>
-
+          
           <li class="nav-item">
             <a class="nav-link nav-left-text" href="#">
               <img src="./icons//nav-left-global.png" alt="Global" class="nav-left-icons"> Global
@@ -135,6 +142,69 @@
       </div>
     </div>
   </nav>
+
+  <section class="modals-all">
+
+    <div class="modal fade"
+         id="navbar-search-modal"
+         tabindex="-1"
+         aria-labelledby="searchModalLabel"
+         aria-hidden="true">
+
+         <div class="modal-dialog modal-lg">
+          <div class="modal-content search-modal-content mt-5">
+
+            <menu class="search-modal-toolbar" role="menu" >
+              <li>
+                <button type="button" 
+                        class="search-modal-close-button" 
+                        title="Close dialog" 
+                        aria-controls="dialog-id-search-in-header" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                  <svg class="search-modal-close-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 18 18">
+                    <polyline fill="none" 
+                              stroke="currentColor" 
+                              stroke-linecap="round" 
+                              stroke-linejoin="round" 
+                              stroke-width="2" 
+                              points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
+                    </polyline>
+                  </svg>
+                </button>
+              </li>
+            </menu>
+
+            <div class="search-modal-body">
+              <h4 class="search-modal-title mb-4">Tell us what you need</h4>
+
+              <div class="search-modal-row 
+                          d-flex 
+                          flex-wrap 
+                          align-items-start 
+                          gap-3">
+                <div class="search-modal-input-wrapper position-relative">
+                  <img src="./icons/search.svg" alt="Search" class="search-icon">
+                  <input type="text" 
+                         class="search-modal-input form-control ps-5" 
+                         placeholder="Search" 
+                         autocomplete="off">
+                </div>
+
+                <div class="search-modal-btn-wrapper text-end">
+                  <button class="btn btn-primary search-modal-button">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </section>
+  
 
   <section class="banner">
     <div class="video-header-container">
@@ -1048,7 +1118,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer id="footer-box" class="footer pb-5 footer-box">
     <div class="container footer-out-container">
       <div class="row pb-4">
