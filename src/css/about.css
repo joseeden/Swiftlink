@@ -20,8 +20,7 @@
 /*  About */
 .about-container {
   height: auto; 
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 3rem 3rem;
 }
 
 .about-header {
@@ -32,23 +31,37 @@
 }
 
 .about-sec-tabs-h3 {
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.bright-orange-header {
-  color: #ff9a00;
+
+#aboutTabsContent {
+  margin-top: 2rem;
 }
 
-.darker-orange-header {
-  color: #f2bd30;
+#aboutTabsContent hr {
+  visibility: hidden;
 }
-.teal-green {
-  color: #0a7c7c;
-}
+
 
 @media (max-width: 769px) {
+
   ul#aboutTabs {
     flex-direction: column;
+  }
+
+  .about-container {
+    padding: 3rem 0;
+  }
+
+  #aboutTabsContent hr {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-container {
+    padding: 2rem 5vw;
   }
 }
