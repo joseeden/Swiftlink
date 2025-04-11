@@ -202,3 +202,10 @@
     width: 1000px;
   }
 }
+
+@media (max-width: 638px) {
+  #contact-us .support-contact-us-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

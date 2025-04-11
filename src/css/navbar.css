@@ -141,7 +141,7 @@
 @media (min-width: 1130px) {
 
   #navbar-section .dropdown-menu {
-    display: none;
+    display: none;  /* keeps all dropdown collapsed unless clicked */
     position: absolute;         
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -167,14 +167,17 @@
 }
 
 
+
 @media (max-width: 991px) {
 
   #navbar-section .navbar-nav-left-items {
     background-color: white;
   }
 
+  /* Ensure navbar-right-icons are stacked in row, not column */
   #navbar-section .navbar-nav {
     padding-left: 5px;
+    flex-direction: row;
   }
 }
 

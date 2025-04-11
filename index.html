@@ -447,7 +447,7 @@
   <section class="about-banner">
     <div id="about-banner-container" class="about-banner-container">
       <div class="container set-padding-y-none">
-        <div class="row text-center">
+        <div class="row text-center remove-def-row-my">
 
           <div class="col-lg-4 px-4">
               <p>Around 1,520 locations around the world</p>
@@ -797,7 +797,7 @@
   <section class="subscribe-newsletters">
     <div id="subscribe-container" class="subscribe-container">
       <div class="container">
-        <div class="row">
+        <div class="row remove-def-row-my">
 
           <div class="col-lg-6 subscribe-header">
             <div class="subscribe-box">
@@ -1079,7 +1079,7 @@
       <div class="supp-sec-1-banner-bg">
         <div class="supp-sec-1-banner-content">
           <div class="supp-sec-1-box">
-            <h1 class="module__header box-text-color">
+            <h1 class="module__header box-text-color text-center">
               Tell us what you need
             </h1>
           </div>
@@ -1598,8 +1598,8 @@
 
   <section class="support-resource-center" 
            id="support-resource-center">
-    <div class="container supp-sec-3-background" >
-      <div class="container supp-sec-3-inside-container">
+    <div class="container supp-sec-4-background" >
+      <div class="container supp-sec-4-inside-container">
         <h1 class="orange-header text-center">Resource Center</h1>
         <p class="text-center">You've got questions, we've got answers.</p>
 
@@ -1646,7 +1646,7 @@
     </div>
   </section>
 
-  <section class="support-section-8">
+  <section class="support-section-8" id="support-section-8">
     <div class="container supp-sec-8-background set-padding-y-none">
       <div class="supp-sec-8-box">
         <div class="supp-sec-8-inside-container">
@@ -1660,7 +1660,7 @@
               Send us a question, and we'll email you a copy of your inquiry.
             </p>
 
-            <button type="button" class="btn btn-primary btn-lg supp-sec-8-btn">
+            <button type="button" class="btn btn-primary btn-lg supp-sec-8-btn rounded-pill">
               Send us a question
             </button>
 
@@ -1670,13 +1670,18 @@
     </div>
   </section>
 
-  <footer id="footer-box" class="footer pb-5 footer-box">
+  <footer class="footer pb-5 footer-box" id="footer-box">
     <div class="container footer-out-container">
-      <div class="row pb-4">
+      <div class="row 
+                  pb-4 
+                  remove-def-row-my 
+                  footer-container-row">
         <div class="container footer-logo-container py-5">
-          <img alt="swiftlink logo" src="./icons/swiftlink-logo-3-white.png" class="footer-logo">
+          <img alt="swiftlink logo" 
+               src="./icons/swiftlink-logo-3-white.png" 
+               class="footer-logo">
         </div>
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3 mb-3 footer-most-bottom-sec">
           <h5 class="footer-sections">Our Services</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Land Freight</a></li>
@@ -1689,7 +1694,7 @@
           </ul>
         </div>
         
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3 mb-3 footer-most-bottom-sec">
           <h5 class="footer-sections">Our Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Contact Us</a></li>
@@ -1702,7 +1707,7 @@
           </ul>
         </div>
    
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3 mb-3 footer-most-bottom-sec">
           <h5 class="footer-sections">Online Tools</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Get a Quote</a></li>
@@ -1715,7 +1720,7 @@
           </ul>
         </div>
    
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3 mb-3 footer-most-bottom-sec">
           <h5 class="footer-sections">Legal</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#footer-box" class="footer-items p-0">Legal Notice</a></li>
@@ -1745,41 +1750,51 @@
 
       </div>
   
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <div class="d-flex 
+                  flex-column 
+                  flex-sm-row 
+                  justify-content-between 
+                  py-4 
+                  my-4 
+                  border-top
+                  footer-most-bottom">
         <p>© Swiftlink Inc - All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#footer-section">
-              <img alt="linkedin-logo" src="./icons/icon-linkedin.png" width="24" height="24" aria-hidden="true" />
-            </a>
-          </li> 
+        <div class="footer-socials">
+          <ul class="list-unstyled d-flex">
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#footer-section">
-              <img alt="twitter-logo" src="./icons/icon-twitter-2.png" width="24" height="24" aria-hidden="true" />
-            </a>
-          </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#footer-section">
+                <img alt="linkedin-logo" src="./icons/icon-linkedin.png" width="24" height="24" aria-hidden="true" />
+              </a>
+            </li> 
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#footer-section" aria-label="Facebook">
-              <img alt="facebook-logo" src="./icons/icon-fb.png" width="24" height="24" aria-hidden="true" />
-            </a>
-          </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#footer-section">
+                <img alt="twitter-logo" src="./icons/icon-twitter-2.png" width="24" height="24" aria-hidden="true" />
+              </a>
+            </li>
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#footer-section" aria-label="Instagram">
-              <img alt="instagram-logo" src="./icons/icon-ig.png" width="24" height="24" aria-hidden="true" />
-            </a>
-          </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#footer-section" aria-label="Facebook">
+                <img alt="facebook-logo" src="./icons/icon-fb.png" width="24" height="24" aria-hidden="true" />
+              </a>
+            </li>
 
-          <li class="ms-3">
-            <a class="text-body-secondary" href="#footer-section">
-              <img alt="youtube-logo" src="./icons/icon-youtube.png" width="24" height="24" aria-hidden="true" />
-            </a>
-          </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#footer-section" aria-label="Instagram">
+                <img alt="instagram-logo" src="./icons/icon-ig.png" width="24" height="24" aria-hidden="true" />
+              </a>
+            </li>
 
-        </ul>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#footer-section">
+                <img alt="youtube-logo" src="./icons/icon-youtube.png" width="24" height="24" aria-hidden="true" />
+              </a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </footer>

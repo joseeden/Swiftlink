@@ -25,7 +25,6 @@
 
 #mc_embed_signup {
   background-color: #fff;
-  max-width: 600px;
   margin: auto;
   padding: 20px;
   border-radius: 8px;
@@ -78,9 +77,14 @@
   left: -5000px;
 }
 
-#mc_embed_shell .mailchimp-badge img {
-  width: 220px;
-  height: 40px;
-  display: block;
-  margin: 10px auto;
+@media (max-width: 600px) {
+
+  #mc_embed_signup {
+    max-width: 600px;
+  }
+  
+  #mc_embed_shell {
+    padding: 20px 30px;
+  }
+  
 }

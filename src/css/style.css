@@ -243,6 +243,17 @@
 }
 
 
+@media (max-width: 600px) {
+
+  /* Bootstrap row has default side margins, which causes */
+  /* some y-axis overflow on small screens */
+  .remove-def-row-my {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  } 
+
+}
+
 @media (max-width: 576px) {
   
   .banner-padding-x {

@@ -1,7 +1,7 @@
 
 /* ==================== SUPPORT SECTION 8 ==================== */
 
-.supp-sec-8-background {
+#support-section-8 .supp-sec-8-background {
   width: 100%;
   height: 100%;
   top: 0;
@@ -12,34 +12,40 @@
   padding-bottom: 30px;
 }
 
-.supp-sec-8-inside-container {
+#support-section-8 .supp-sec-8-inside-container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.supp-sec-8-box {
+#support-section-8 .supp-sec-8-box {
   padding: 3rem;
 }
 
-.supp-sec-8-inside-box {
+#support-section-8 .supp-sec-8-inside-box {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.supp-sec-8-header,
-.supp-sec-8-desc,
-.supp-sec-8-btn {
+#support-section-8 .supp-sec-8-header,
+#support-section-8 .supp-sec-8-desc,
+#support-section-8 .supp-sec-8-btn {
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.supp-sec-8-header {
+#support-section-8 .supp-sec-8-header {
   font-size: 40px;
   margin-bottom: 20px;
 }
 
-.supp-sec-8-desc {
+#support-section-8 .supp-sec-8-desc {
   font-size: 24px;
   margin-bottom: 30px;
 }
+
+#support-section-8 .supp-sec-8-btn {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+

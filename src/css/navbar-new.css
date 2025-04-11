@@ -26,9 +26,6 @@ body {
 
 
 @media (max-width: 1129px) {
-  #navbar-section .navbar-toggler {
-    display: block !important;
-  }
 
   #navbar-section .navbar-collapse .navbar-nav-left-items {
     display: none !important;
@@ -40,7 +37,7 @@ body {
     align-items: center;
   }
 
-  #navbar-section .collapse.navbar-collapse {
+  #navbar-section .navbar-collapse {
     display: flex !important;
     justify-content: space-between;
   }

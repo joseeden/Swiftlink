@@ -52,10 +52,18 @@
   }
 }
 
+
 /* One column below 560px */
 @media (max-width: 559px) {
   #support-resource-center .resource-box {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 638px) {
+  #support-resource-center .supp-sec-4-background {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
