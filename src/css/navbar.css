@@ -1,101 +1,140 @@
-/*  Navbar */
+/* ==================== ==================== NAVBAR ==================== ==================== */
+
 .navbar {
-  /* background-color: #EA7300 !important; */
   background-color: white !important;
   position: fixed;
   height: 100px;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 1050;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul.navbar-items li.nav-item a.nav-link {
-  /* color: white; */
-  color: #005f6a;
+/* ==================== Logo ==================== */
+
+#navbar-section .navbar-logo {
+  padding: 0 10px;
+  height:30px;
+  width: auto;
+  max-height: 30px;
 }
 
-ul.navbar-items li.nav-item a.nav-link:hover {
+#navbar-section .navbar-brand:hover {
+  color: #333;
+}
+
+#navbar-section .navbar-brand:focus {
+  color: #333;
+}
+
+/* ==================== Navbar Items - Left ==================== */
+
+#navbar-section .nav-link {
+  color: #004f58;
+  transition: color 0.3s;
+}
+
+#navbar-section .nav-link:hover {
   color: #E26310;
 }
 
-.navbar-logo {
-  padding-left: 10px;
-  padding-right: 10px;
-  height:30px
+#navbar-section .navbar-brand,
+#navbar-section .nav-link {
+  max-height: 100px;
 }
 
-.navbar-items {
-  color: white;
-}
-
-.navbar-brand:hover {
-  color: black;
-}
-
-.navbar-brand:focus {
-  color: white;
-}
-/* .navbar-toggler-icon {
-  background-image: url("./Icon/icon-navbar-toggler.png") !important;
-} */
-
-
-.nav-left-icons {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px; 
-  vertical-align: middle;
-}
-
-.nav-left-text {
-  /* color: #E26310 !important; */
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
-
-/* Hide "Arrow-down" icons on navbar items with dropdown */
-/* .navbar .dropdown-toggle::after {
-  display: none !important;
-} */
-
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-
-.navbar-nav { 
-  padding-left: 5px;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
+#navbar-section .navbar-nav .nav-link {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* ==================== Dropdown menu ==================== */
 
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: #EA7300; 
-  /* background-color: #fba70d;  */
+#navbar-section .dropdown-menu .dropdown-item:hover {
+  background-color: #EA7300;
   color: white;
 }
 
-.dropdown-menu .dropdown-item:active {
-  background-color: #fba70d; 
+#navbar-section .dropdown-menu .dropdown-item:active {
+  background-color: #fba70d;
   color: white;
 }
 
+/* ==================== Navbar Items - Right ==================== */
 
-.navbar-toggler {
-  border-color: white;
+#navbar-section .nav-right-sec-icons {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
-.btn-outline-success {
-  border-color: white;
+#navbar-section .nav-right-sec-text {
+  display: inline;
+  padding: 0 15px !important;
+}
+
+/* ==================== Toggler and search styles ==================== */
+
+#navbar-section .navbar-toggler {
+  border-color: #ccc;
+}
+
+#navbar-section .btn-outline-success {
+  border-color: #005f6a;
+  color: #005f6a;
+}
+
+#navbar-section .btn-outline-success:hover {
+  background-color: #005f6a;
   color: white;
 }
 
-.search-section {
+#navbar-section .search-section {
   margin-left: auto;
 }
+
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Hide navbar-right texts, keep icons visible */
+/* when screen size is 1320px and below */
+@media (max-width: 1320px) {
+  #navbar-section .nav-text {
+    display: none;
+  }
+
+  #navbar-section .nav-right-sec-text {
+    font-size: 0;
+    padding: 0 10px !important;
+  }
+
+  #navbar-section .nav-right-sec-icons {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 991px) {
+
+  #navbar-section .navbar-nav-left-items {
+    background-color: white;
+  }
+
+  #navbar-section .navbar-nav {
+    padding-left: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ==================== Hide "Arrow-down" icons on navbar items with dropdown ==================== */
+/* .navbar .dropdown-toggle::after {
+  display: none !important;
+} ==================== */

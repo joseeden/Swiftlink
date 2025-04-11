@@ -40,29 +40,109 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky">
+  <nav class="navbar 
+              navbar-expand-lg 
+              bg-body-tertiary 
+              sticky"
+              id="navbar-section">
     <div class="container-fluid">
-      <a class="navbar-brand navbar-items" href="#">
-        <!-- <img class="navbar-logo" src="./icons/cart-logo.png" alt="swiftlink logo"/>Swiftlink</a> -->
-        <img class="navbar-logo" src="./icons/swiftlink-logo-3-colored.png" alt="swiftlink logo"/></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img class="navbar-logo" 
+             src="./icons/swiftlink-logo-3-colored.png" 
+             alt="swiftlink logo"/>
+      </a>
+
+      <!-- Navbar-right -->
+      <div class="d-flex 
+                  align-items-center 
+                  order-lg-2 
+                  navbar-nav-right">
+        <ul class="navbar-nav 
+                   mb-lg-0 
+                   ms-auto 
+                   navbar-nav-right-items
+                   navbar-nav-right-ul">
+
+          <li class="nav-item">
+            <a class="nav-link nav-right-sec-text" 
+                  href="#" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#navbar-search-modal">
+              <img src="./icons/nav-left-search.png" 
+                  alt="Search" 
+                  class="nav-right-sec-icons"> 
+                <span class="nav-text">
+                  Search
+                </span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link nav-right-sec-text" href="#">
+              <img src="./icons//nav-left-global.png" 
+                   alt="Global" 
+                   class="nav-right-sec-icons"> 
+                <span class="nav-text">
+                  Global
+                </span>                   
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-right-sec-text" href="#">
+              <img src="./icons/nav-left-login.png" 
+                   alt="Login" 
+                   class="nav-right-sec-icons"> 
+                <span class="nav-text">
+                Login
+                </span>
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Toggler Button -->
+        <!-- <button class="navbar-toggler ms-2" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#navbarOffcanvas" 
+                aria-controls="navbarOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      </div>
+
+      <!-- Navbar-left -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-items">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li> -->
+
+        <ul class="navbar-nav 
+                   me-auto 
+                   mb-2 
+                   mb-lg-0 
+                   navbar-nav-left-items">
 
           <li class="nav-item">
             <a class="nav-link" href="#about-banner-container">About</a>
           </li>
-          </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Shipping Services
+            <a class="nav-link dropdown-toggle" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">Shipping Services
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#shipping-services-container">Land Freight</a></li>
@@ -72,30 +152,34 @@
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Logistics Solutions
+            <a class="nav-link dropdown-toggle" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">Logistics Solutions
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#logistics-container">Warehousing</a></li>
               <li><a class="dropdown-item" href="#nvocc-container">NVOCC Solutions</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
               <li><a class="dropdown-item" href="#crdock-container">Cross Docking</a></li>
               <li><a class="dropdown-item" href="#spec-logis-container">Specialized Logistics</a></li>
             </ul>
           </li>
           
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Business Solutions
-            </a>
-            <ul class="dropdown-menu">
+            <a class="nav-link dropdown-toggle" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">Business Solutions
+             </a>
+             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#biz-sol-container">Create an Account</a></li>
-              <li><a class="dropdown-item" href="#biz-sol-container">Small and Medium Enterprises (SMEs)</a></li>
-              <li><a class="dropdown-item" href="#biz-sol-container">Track and Manage Shipments</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item" href="#biz-sol-container">Enterprise Shipping Solutions</a></li>
-              <li><a class="dropdown-item" href="#biz-sol-container">Pickup and Drop-off Services</a></li>
-              <li><a class="dropdown-item" href="#biz-sol-container">Claims and Returns</a></li>
+              <li><a class="dropdown-item" href="#biz-sol-container">SMEs</a></li>
+              <li><a class="dropdown-item" href="#biz-sol-container">Track & Manage Shipments</a></li>
+              <li><a class="dropdown-item" href="#biz-sol-container">Enterprise Shipping</a></li>
+              <li><a class="dropdown-item" href="#biz-sol-container">Pickup & Drop-off</a></li>
+              <li><a class="dropdown-item" href="#biz-sol-container">Claims & Returns</a></li>
             </ul>
           </li>
           
@@ -112,35 +196,7 @@
               <li><a class="dropdown-item" href="#support-section-banner">Contact Us</a></li>
             </ul>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li> -->
-        </ul>
 
-      <!-- Items aligned to the right -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-items">
-
-          <li class="nav-item">
-            <a class="nav-link nav-left-text" 
-                href="#" 
-                data-bs-toggle="modal" 
-                data-bs-target="#navbar-search-modal">
-              <img src="./icons/nav-left-search.png" alt="Search" class="nav-left-icons"> Search
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link nav-left-text" href="#">
-              <img src="./icons//nav-left-global.png" alt="Global" class="nav-left-icons"> Global
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link nav-left-text" href="#">
-              <!-- Login Icon -->
-              <img src="./icons/nav-left-login.png" alt="Login" class="nav-left-icons"> Login
-            </a>
-          </li>
         </ul>
 
       </div>
