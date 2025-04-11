@@ -1,4 +1,4 @@
-/* ==================== ==================== NAVBAR ==================== ==================== */
+/* ================================== NAVBAR ================================== */
 
 .navbar {
   background-color: white !important;
@@ -101,8 +101,9 @@
 /* Hide navbar-right texts, keep icons visible */
 /* when screen size is 1320px and below */
 @media (max-width: 1320px) {
-  #navbar-section .nav-text {
-    display: none;
+
+  #navbar-section .navbar-brand {
+    margin-right: 0;
   }
 
   #navbar-section .nav-right-sec-text {
@@ -113,7 +114,58 @@
   #navbar-section .nav-right-sec-icons {
     display: inline-block;
   }
+
+  #navbar-section .navbar-nav-right li.nav-item {
+    padding-bottom: 8px;
+  }
 }
+
+/* Ensure toggler-icon doesnt appear when */
+/* screensize is 1130px and bigger */
+@media (min-width: 1130px) {
+
+  #navbar-section .navbar-toggler {
+    display: none !important;
+  }
+
+  #navbar-section .navbar-nav-left-items {
+    display: flex !important;
+  }
+
+  #navbar-section .dropdown-menu.show {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1130px) {
+
+  #navbar-section .dropdown-menu {
+    display: none;
+    position: absolute;         
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  }
+
+  #navbar-section .dropdown-menu.show {
+    display: block;
+  }
+}
+
+/* Collapse navbar-left items and show toggler-icon */
+/* when screen size is 1120px and below */
+@media (max-width: 1129px) { 
+  #navbar-section .navbar-toggler {
+    display: block !important;
+  }
+
+  #navbar-section .navbar-collapse .navbar-nav-left-items {
+    display: none !important;
+  }
+}
+
 
 @media (max-width: 991px) {
 

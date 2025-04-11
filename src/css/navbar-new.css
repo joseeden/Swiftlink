@@ -23,30 +23,6 @@ body {
 
 
 
-@media (min-width: 1130px) {
-  #navbar-section .navbar-toggler {
-    display: none !important;
-  }
-
-  #navbar-section .navbar-nav-left-items {
-    display: flex !important;
-  }
-}
-
-@media (min-width: 1130px) {
-  #navbar-section .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    margin-top: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-  }
-
-  #navbar-section .dropdown-menu.show {
-    display: block;
-  }
-}
 
 
 @media (max-width: 1129px) {
