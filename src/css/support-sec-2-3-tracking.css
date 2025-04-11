@@ -1,3 +1,6 @@
+
+/* ==================== SUPPORT SECTION 2-3 - TRACKING ==================== */
+
 /*------------------- SECTION ------------------- */
 
 #tracking {
@@ -9,11 +12,6 @@
 #tracking .d-flex {
   margin-top: 10px;
 }
-
-#tracking .row.supp-sec-2-tabs-container {
-  height: 408px;
-}
-
 
 /*------------------- INPUT FIELD ------------------- */
 
@@ -47,7 +45,6 @@
 #tracking .form-check-label[for="toggleReference"] {
   color: black;
 }
-
 
 /*-------------------  DROPDOWN MENU  ------------------- */
 
@@ -134,14 +131,14 @@
 #tracking .select-items div:hover,
 #tracking .same-as-selected {
   background-color: #e8f3f3;
-  color: #0a7c7c;
+  /* color: #0a7c7c; */
+  color: black;
 }
 
 /* Show the dropdown when the toggle is on */
 #tracking .custom-select.show {
   display: block;
 }
-
 
 /*-------------------  SEARCH BUTTON  ------------------- */
 
@@ -182,7 +179,7 @@
 
 /* Hide image column on small screens */
 @media (max-width: 770px) {
-  #tracking .col-lg-6.d-none.d-lg-block {
+  #tracking .supp-sec-2-3-img {
     display: none;
   }
 }

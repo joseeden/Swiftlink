@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("toggleReference");
-  const container = document.getElementById("referenceDropdownWrapper"); // updated to match the ID
-  
-  // Toggle dropdown visibility based on switch
-  toggle.addEventListener("change", function () {
-    container.style.display = this.checked ? "block" : "none"; // Show or hide the dropdown
+  // Handle checkbox-based dropdowns (toggle visibility)
+  const toggles = document.querySelectorAll(".toggle-reference");
+  const containers = document.querySelectorAll(".reference-dropdown-wrapper");
+
+  // Loop through each toggle to add event listeners for visibility toggling
+  toggles.forEach((toggle, index) => {
+    toggle.addEventListener("change", function () {
+      // Show or hide based on checkbox state
+      containers[index].style.display = this.checked ? "block" : "none"; 
+    });
   });
 
-  // Custom dropdown logic
+
+  // Custom dropdown logic for both toggleable and always-visible dropdowns
   const customSelects = document.querySelectorAll(".custom-select");
 
   customSelects.forEach((selectWrapper) => {

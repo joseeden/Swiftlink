@@ -1,0 +1,74 @@
+/* ==================== SUPPORT SECTION 2-4 - SHIPPING ==================== */
+
+/* First row: Text Area */
+#shipping .supp-sec-2-4-text-area {
+  padding: 0;
+  margin: 0;
+  height: 120px;
+}
+#shipping .supp-sec-2-4-text-area-in {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#shipping .supp-sec-2-4-title {
+  padding-top: 0;
+}
+
+#shipping .supp-sec-2-4-desc {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Second row: Boxes */
+#shipping .supp-sec-2-4-box-in {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
+#shipping .supp-sec-2-4-box-in:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+#shipping .supp-sec-2-4-boxes {
+  justify-content: center;
+  text-align: left;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  height: 240px;
+}
+
+#shipping .supp-sec-2-4-box-out {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+#shipping .supp-sec-2-4-box-in p {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  #shipping .supp-sec-2-4-box-in {
+    padding: 14px 16px;
+    max-width: 100%;
+  }
+
+  #shipping .supp-sec-2-4-boxes .col-12 {
+    width: 100%;
+  }
+}

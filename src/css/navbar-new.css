@@ -1,0 +1,235 @@
+
+navbar
+/* ==================== NAVBAR ==================== */
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: white !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 100px; */
+  padding: 20px 0;
+  z-index: 1050;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-body {
+  padding-top: 100px;
+}
+
+
+#navbar-section .navbar-nav-right-ul {
+  padding-bottom: 8px;
+}
+
+#navbarOffcanvas {
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#navbar-section .navbar-logo {
+  padding: 0 10px;
+  height: 30px;
+  width: auto;
+  max-height: 30px;
+}
+
+#navbar-section .navbar-brand,
+#navbar-section .navbar-items,
+#navbar-section .nav-item,
+#navbar-section .nav-link {
+  max-height: 100px;
+}
+
+/* Link styles */
+#navbar-section ul.navbar-items li.nav-item a.nav-link {
+  color: #004f58;
+  transition: color 0.3s;
+}
+
+#navbar-section ul.navbar-items li.nav-item a.nav-link:hover {
+  color: #E26310;
+}
+
+/* Brand hover/focus */
+#navbar-section .navbar-brand:hover {
+  color: #333;
+}
+
+#navbar-section .navbar-brand:focus {
+  color: #333;
+}
+
+/* Icons and text right section */
+#navbar-section .nav-right-sec-icons {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#navbar-section .nav-right-sec-text {
+  display: inline;
+  padding: 0 15px !important;
+}
+
+/* Navbar nav padding */
+#navbar-section .navbar-nav {
+  padding-left: 5px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 20px;
+}
+
+/* Dropdown menu hover/focus */
+#navbar-section .dropdown-menu .dropdown-item:hover {
+  background-color: #EA7300;
+  color: white;
+}
+
+#navbar-section .dropdown-menu .dropdown-item:active {
+  background-color: #fba70d;
+  color: white;
+}
+
+/* Toggler and search styles */
+#navbar-section .navbar-toggler {
+  border-color: #ccc;
+}
+
+#navbar-section .btn-outline-success {
+  border-color: #005f6a;
+  color: #005f6a;
+}
+
+#navbar-section .btn-outline-success:hover {
+  background-color: #005f6a;
+  color: white;
+}
+
+#navbar-section .search-section {
+  margin-left: auto;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1320px) {
+  #navbar-section .nav-text {
+    display: none;
+  }
+
+  #navbar-section .nav-right-sec-text {
+    font-size: 0;
+    padding: 0 10px !important;
+  }
+
+  #navbar-section .nav-right-sec-icons {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1130px) {
+  #navbar-section .navbar-toggler {
+    display: none !important;
+  }
+
+  #navbar-section .left-nav-items {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1130px) {
+  #navbar-section .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  }
+
+  #navbar-section .dropdown-menu.show {
+    display: block;
+  }
+}
+
+
+@media (max-width: 1129px) {
+  #navbar-section .navbar-toggler {
+    display: block !important;
+  }
+
+  #navbar-section .navbar-collapse .left-nav-items {
+    display: none !important;
+  }
+
+  #navbar-section .navbar-nav-right {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navbar-section .collapse.navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+  }
+}
+
+/* ==================== NAV ITEMS ==================== */
+
+#navbar-section .left-nav-items li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#navbar-section .dropdown-menu {
+  padding-bottom: 0;
+}
+
+/* ==================== OFFCANVAS MENU ==================== */
+
+@media (max-width: 1129px) {
+  #navbarOffcanvas .dropdown-menu {
+    display: none;
+    position: static;
+    width: 100%;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+  }
+
+  #navbarOffcanvas .dropdown.show .dropdown-menu {
+    display: block;
+    max-height: 500px;
+  }
+
+  #navbarOffcanvas .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    padding: 4px 0;
+    padding-left: 12px;
+    color: #000;
+    background-color: transparent;
+  }
+
+  #navbarOffcanvas .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  #navbarOffcanvas .dropdown {
+    width: 100%;
+  }
+
+  #navbarOffcanvas .dropdown.show {
+    overflow: visible;
+    margin-bottom: 12px;
+  }
+}
