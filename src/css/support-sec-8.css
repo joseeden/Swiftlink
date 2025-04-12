@@ -34,8 +34,6 @@
   margin-right: auto;
 }
 
-
-
 #support-section-8 .supp-sec-8-btn {
   padding: 1rem;
   margin-top: 2rem;
@@ -50,5 +48,12 @@
   #support-section-8 .supp-sec-8-desc {
     font-size: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  #support-section-8 .supp-sec-8-btn {
+    font-size: 16px;
   }
 }
