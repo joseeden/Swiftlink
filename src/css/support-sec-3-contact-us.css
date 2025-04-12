@@ -208,4 +208,8 @@
     padding-left: 5vw;
     padding-right: 5vw;
   }
+
+  #contact-us .supp-sec-3-contact-form-box  {
+    padding: 30px 20px;
+  }
 }

@@ -90,6 +90,10 @@
   padding: 0;
 }
 
+#support-section-2 #supp-sec-2-tabs-content-items {
+  margin-top: 2rem;
+}
+
 /* ==================== SUPPORT SECTION 2 - MEDIA QUERIES ==================== */
 
 @media screen and (min-width: 1400px) {
@@ -123,6 +127,7 @@
     margin-top: -70px !important;
     z-index: 20;
   }
+  
 }
 
 @media screen and (min-width: 770px) and (max-width: 991px) {
@@ -138,7 +143,7 @@
 
   #support-section-2 .supp-sec-2-tabs-container {
     /* height: 750px; */
-    height: auto;
+    height: auto !important;
     margin-left: 0;
     margin-right: 0;
   }
@@ -155,15 +160,42 @@
     margin-bottom: 32px;
   }
 
-  .btn-manage-ur-acct {
+  .supp-sec-2-tabs-btn {
     margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 769px) {
+
   ul#aboutTabs {
     flex-direction: column;
   }
+
+  #support-section-2 .supp-sec-2-nav-link {
+    color: #0a7c7c !important;
+  }
+
+  #support-section-2 #supp-sec-2-tabs-content-items {
+    margin-top: 0;
+  }
+
+  #support-section-2 .supp-sec-2-tabs-container {
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+  #support-section-2 .btn.supp-sec-2-tabs-btn {
+    display: block;
+    width: 100%;
+  }
+
+  #support-section-2 .supp-sec-2-tabs-h1 {
+    padding-top: 0;
+  }
+
+
 }
 
 /* .about-header {
@@ -172,3 +204,42 @@
   display: flex;
   justify-content: center;
 } */
+
+@media (max-width: 769px) {
+
+}
+
+@media (max-width: 769px) and (min-width: 576px) {
+
+  #support-section-2 .supp-sec-2-main-container {
+    height: auto;
+    padding-top: 30px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+
+@media (max-width: 575px)  {
+
+  #support-section-2 .supp-sec-2-main-container {
+    padding-top: 30px;
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+  }
+  
+  #support-section-2 .supp-sec-2-text-area {
+    padding-right: 12px !important;
+  }
+}
+
+@media (max-width: 369px) {
+  #support-section-2 .supp-sec-2-1-manage-your-account {
+    height: auto;
+  }
+
+  #support-section-2 .supp-sec-2-text-area {
+    overflow: visible;
+  }
+}

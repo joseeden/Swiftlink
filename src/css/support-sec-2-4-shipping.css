@@ -64,11 +64,49 @@
 
 @media (max-width: 991px) {
   #shipping .supp-sec-2-4-box-in {
-    padding: 14px 16px;
+    padding: 40px 50px;
     max-width: 100%;
   }
 
   #shipping .supp-sec-2-4-boxes .col-12 {
     width: 100%;
+  }
+
+  #shipping .supp-sec-2-4-boxes {
+    height: auto !important;
+  }
+
+  #shipping .supp-sec-2-4-text-area {
+    margin-bottom: 20px;
+  }
+
+  #shipping .supp-sec-2-4-box-out  {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 769px) {
+
+  #shipping .supp-sec-2-4-boxes {
+    height: auto !important;
+  }
+
+  #shipping .supp-sec-2-4-box-out  {
+    margin-bottom: 30px;
+  }
+
+  #shipping .supp-sec-2-4-box-in {
+    padding: 40px 30px;
+    max-width: 100%;
+  }
+  
+  #shipping .supp-sec-2-4-text-area  {
+    margin-bottom: 20px;
+    height: auto !important;
+  }
+
+  #support-section-2 .supp-sec-2-4-shipping-container {
+    padding-bottom: 0 !important;
   }
 }
