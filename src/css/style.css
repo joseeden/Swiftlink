@@ -201,6 +201,24 @@
   .logistics-box {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-bottom: 2vh;
+  }
+
+  .logistics-image-wrapper {
+    height: 400px; 
+  }
+
+  #storage-and-warehouse {
+    padding-top: 0 !important;
+}
+
+  
+}
+
+@media (max-width: 767px) {
+ 
+  .logistics-image-wrapper {
+    height: 300px; 
   }
 }
 
