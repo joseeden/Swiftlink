@@ -1,7 +1,7 @@
 
 /* ==================== SUPPORT SECTION 8 ==================== */
 
-#support-section-8 .supp-sec-8-background {
+#support-sec-5 .support-sec-5-background {
   width: 100%;
   height: 100%;
   top: 0;
@@ -12,40 +12,40 @@
   padding-bottom: 30px;
 }
 
-#support-section-8 .supp-sec-8-inside-container {
+#support-sec-5 .support-sec-5-inside-container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-#support-section-8 .supp-sec-8-box {
+#support-sec-5 .support-sec-5-box {
   padding: 3rem;
 }
 
-#support-section-8 .supp-sec-8-inside-box {
+#support-sec-5 .support-sec-5-inside-box {
   font-family: 'Noto Sans', sans-serif;
 }
 
-#support-section-8 .supp-sec-8-header,
-#support-section-8 .supp-sec-8-desc,
-#support-section-8 .supp-sec-8-btn {
+#support-sec-5 .support-sec-5-header,
+#support-sec-5 .support-sec-5-desc,
+#support-sec-5 .support-sec-5-btn {
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-#support-section-8 .supp-sec-8-btn {
+#support-sec-5 .support-sec-5-btn {
   padding: 1rem;
   margin-top: 2rem;
 }
 
 @media (min-width: 1024px) {
-  #support-section-8 .supp-sec-8-header {
+  #support-sec-5 .support-sec-5-header {
     font-size: 40px;
     margin-bottom: 20px;
   }
   
-  #support-section-8 .supp-sec-8-desc {
+  #support-sec-5 .support-sec-5-desc {
     font-size: 24px;
     margin-bottom: 30px;
   }
@@ -53,7 +53,7 @@
 
 @media (max-width: 1023px) {
 
-  #support-section-8 .supp-sec-8-btn {
+  #support-sec-5 .support-sec-5-btn {
     font-size: 16px;
   }
 }

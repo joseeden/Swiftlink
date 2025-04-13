@@ -1,181 +1,210 @@
 /* ==================== SUPPORT BANNER / SUPPORT SECTION 0 ==================== */
-.module.supp-sec-0-grey {
+.support-any-questions {
   background-color: #eff0f0;
 }
 
-.module.medium-font .supp-module-h1,
-.module.medium-font .supp-sec-0-box-desc {
-  font-style: normal;
-  letter-spacing: 1px;
+#support-any-questions {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.supp-sec-0-box-header h1.supp-sec-0-box-h2,
-.supp-sec-0-box-header p.supp-sec-0-box-desc {
-  margin-bottom: 2rem;
-}
-
-.module.medium-font .supp-module-h1 {
-  font-size: 40px;
-  line-height: 52px;
-}
-
-.module.medium-font .supp-sec-0-box-desc {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 400;
-  font-family: FoundrySterlingOT3W03-Book, FoundrySterlingOT3W10-Book, Arial, Helvetica, sans-serif;
-}
-
-
-.supp-sec-0-box {
+#support-any-questions .supp-sec-0-box {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.supp-sec-0-box > div {
+#support-any-questions .supp-sec-0-box > div {
   flex: 1 0 30%;
 }
 
-.supp-sec-0-box > div.supp-sec-0-box-img {
-  flex: 1 0 40%;
-}
-
-.supp-sec-0-box-img {
-  order: 3;
-  text-align: center;
-  max-width: 432px;
-  margin-right: 50px;
-}
-
-.supp-sec-0-box-header {
+#support-any-questions .support-sec-0-text-area {
   padding-left: 50px;
 }
 
-.supp-module-box-2 {
+#support-any-questions .supp-sec-0-box-h1,
+#support-any-questions .supp-sec-0-box-desc {
+  font-style: normal;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+#support-any-questions .supp-sec-0-box-desc {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: FoundrySterlingOT3W03-Book, 
+               FoundrySterlingOT3W10-Book, 
+               Arial, Helvetica, sans-serif;
+}
+
+#support-any-questions .supp-sec-0-box-img {
+  flex: 1 0 40%;
+  order: 3;
   text-align: center;
+  max-width: 432px;
+  padding-right: 50px;
+  height: 100%;
 }
 
-.supp-sec-0-primary .supp-contact-box {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  color: #fff;
-  appearance: none;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  text-decoration: none !important;
-  user-select: none;
-  text-align: center;
-  min-height: 60px;
-  display: inline-flex;
-  align-items: center;
-  transition: all 0.3s linear;
-}
-
-.supp-module-contact .supp-contact,
-.supp-module-contact .more-link a,
-.supp-module-contact a.more-link,
-.more-link .supp-module-contact a {
-  margin-top: 6px;
-}
-
-.supp-sec-0-out-container {
-  padding-top: 60px;
-  padding-bottom: 0;
-}
-
-.supp-sec-0-box-img img.supp-sec-0-box-img-in {
+#support-any-questions .supp-sec-0-box-img-in {
   width: 70%; 
   height: auto; 
   max-width: 432px;
 }
 
-/* Media Queries */
-@media screen and (min-width: 48.0625em) {
-  .supp-sec-0-box {
-    flex-flow: row nowrap;
+@media  (min-width: 992px) {
+  #support-any-questions .supp-sec-0-box {
     min-height: 450px;
+  }
+}
+
+@media  (max-width: 991px) {
+
+  #support-any-questions {
+    padding-top: 5vh !important;
+  }
+  
+  #support-any-questions .supp-sec-0-box-img-in {
+    width: 80%; 
+    height: auto; 
+    max-width: 432px;
+  }
+
+  #support-any-questions .supp-sec-0-box-img {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #support-any-questions .supp-sec-0-box {
+    flex-flow: row nowrap;
     align-items: center;
   }
 
-  .supp-sec-0-box > div {
-    flex: 1 0 30%;
-  }
-
-  .supp-sec-0-box > div.supp-sec-0-box-img {
+  #support-any-questions .supp-sec-0-box-img {
     flex: 1 0 40%;
-  }
-
-  .supp-sec-0-box-img {
     order: 0;
     align-self: flex-end;
   }
 }
 
-/* ==================== SUPPORT SECTION 1 ==================== */
+@media (max-width: 767px) {
 
-@media screen and (min-width: 769px) {
-  .module.supp-sec-1-padding-small {
-      padding: 100px 0;
+  #support-any-questions .supp-sec-0-box {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .supp-sec-1-box-default 
-  .supp-sec-1-box {
-      flex-direction: row;
+  #support-any-questions .supp-sec-0-box-img {
+    padding-right: 0 !important;
+    text-align: center;
+    width: 100%; 
+  }
+
+  #support-any-questions .supp-sec-0-box-img-in {
+    width: 60%;  
+    height: auto;
+    max-width: 432px; 
+  }
+
+  #support-any-questions .support-sec-0-text-area {
+    padding-left: 0 !important;
+    text-align: center; 
+  }
+
+  #support-any-questions .supp-sec-0-box-desc {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  #support-any-questions .supp-sec-0-box-h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+  }
+
+  #support-any-questions .supp-sec-0-box-desc {
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .supp-sec-1-box-default {
-      display: block;
-      background-color: transparent;
+@media (max-width: 575px) {
+
+  #support-any-questions {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #support-any-questions .supp-sec-0-box-h1 {
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 1rem;
   }
   
-  .supp-sec-1-box {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-  }
-
-  .supp-sec-1-banner-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  #support-any-questions .supp-sec-0-box-desc {
+    font-style: normal;
+    font-size: 16px;
   }
 }
 
-@media screen and (min-width: 1330px) {
-  .supp-sec-1-banner-content {
-      max-width: 1280px;
-      margin: 0 auto;
+@media (max-width: 359px) {
+  #support-any-questions .supp-sec-0-box-img-in {
+    width: 80%;  
+    height: auto;
   }
 }
 
-.module.supp-sec-1-padding-small {
-  padding: 50px 0;
-}
+/* ==================== SUPPORT SECTION 1 ==================== */
 
-.module.supp-sec-theme {
+.support-tell-us-what-you-need {
   background-color: #0a7c7c;
-  color: #fff;
-
 }
 
-.supp-sec-1-banner-bg {
+#support-tell-us-what-you-need {
+  display: block;
+  background-color: transparent;
+  padding: 80px 0;
+  color: #fff;
+  z-index: 10;
+}
+
+#support-tell-us-what-you-need .supp-sec-1-banner-bg {
   position: relative;
   width: 100%;
 }
 
-.supp-sec-1-box {
+#support-tell-us-what-you-need .supp-sec-1-box {
   padding: 30px;
   z-index: 1;
 }
 
-#support-section-1 {
-  z-index: 10;
+@media screen and (min-width: 1330px) {
+
+  #support-tell-us-what-you-need .supp-sec-1-banner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
 
+
+@media screen and (max-width: 1024px) {
+  
+  #support-tell-us-what-you-need {
+    padding: 100px 0;
+  }
+
+  #support-tell-us-what-you-need .supp-sec-1-box {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Reserved for small screens if needed */
+}

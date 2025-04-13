@@ -1,6 +1,6 @@
 /* ==================== SUPPORT SECTION 3 - CONTACT US ==================== */
 
-#contact-us {
+#support-sec-3 {
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-#contact-us .supp-sec-3-contact-form-box {
+#support-sec-3 .supp-sec-3-contact-form-box {
   padding: 50px; 
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -22,73 +22,73 @@
   min-height: 100%;
 }
 
-#contact-us .form-group {
+#support-sec-3 .form-group {
   margin-bottom: 20px; /* Spacing between fields */
 }
 
-#contact-us .form-control {
+#support-sec-3 .form-control {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
 
-#contact-us .btn-primary {
+#support-sec-3 .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
   padding: 10px 20px;
   border-radius: 5px;
 }
 
-#contact-us .btn-primary:hover {
+#support-sec-3 .btn-primary:hover {
   background-color: #0056b3;
   border-color: #0056b3;
 }
 
-#contact-us .btn-secondary {
+#support-sec-3 .btn-secondary {
   background-color: #6c757d;
   border-color: #6c757d;
   padding: 10px 20px;
   border-radius: 5px;
 }
 
-#contact-us .btn-secondary:hover {
+#support-sec-3 .btn-secondary:hover {
   background-color: #5a6268;
   border-color: #545b62;
 }
 
-#contact-us .form-group select.form-control {
+#support-sec-3 .form-group select.form-control {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-right: 30px; 
 }
 
-#contact-us .form-group select.form-control {
+#support-sec-3 .form-group select.form-control {
   height: 45px;
 }
 
-#contact-us .form-group .col-sm-12 {
+#support-sec-3 .form-group .col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
 
-#contact-us .form-group select.form-control {
+#support-sec-3 .form-group select.form-control {
   font-size: 16px;
 }
 
-#contact-us .form-group.button-group {
+#support-sec-3 .form-group.button-group {
   display: flex;
   justify-content: center;
 }
 
-#contact-us .form-group button {
+#support-sec-3 .form-group button {
   width: 25%; 
   padding: 10px;
   border-radius: 5px;
   margin: 20px 20px 0 20px;
 }
 
-#contact-us .form-group .button-group {
+#support-sec-3 .form-group .button-group {
   margin-top: 30px; /* Spacing above buttons */
   display: flex;
   justify-content: center;
@@ -96,11 +96,11 @@
 }
 
 /* Dropdown arrow */
-#contact-us .supp-sec-3-select-wrapper {
+#support-sec-3 .supp-sec-3-select-wrapper {
   position: relative;
 }
 
-#contact-us .supp-sec-3-select-wrapper .dropdown-arrow {
+#support-sec-3 .supp-sec-3-select-wrapper .dropdown-arrow {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -110,25 +110,25 @@
 }
 
 /* "How can we help you?" */
-#contact-us .form-group textarea.form-control {
+#support-sec-3 .form-group textarea.form-control {
   font-size: 16px;
   height: auto;
   resize: vertical;
 }
 
 /* Newsletter consent checkbox */
-#contact-us .aligned-checkbox {
+#support-sec-3 .aligned-checkbox {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
-#contact-us .form-group .checkbox input {
+#support-sec-3 .form-group .checkbox input {
   margin: 0;
   cursor: pointer;
 }
 
-#contact-us .aligned-checkbox input[type="checkbox"] {
+#support-sec-3 .aligned-checkbox input[type="checkbox"] {
   margin-top: 5px; 
   flex-shrink: 0;
   transform: scale(1.5);
@@ -136,7 +136,7 @@
   cursor: pointer;
 }
 
-#contact-us .aligned-checkbox label {
+#support-sec-3 .aligned-checkbox label {
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
@@ -144,28 +144,28 @@
   max-width: 850px;
 }
 
-#contact-us .form-group p {
+#support-sec-3 .form-group p {
   font-size: 14px;
   color: #6c757d;
 }
 
 /*------------------- Dropdown - Salutation/Country -------------------*/
-#contact-us .custom-select {
+#support-sec-3 .custom-select {
   position: relative;
 }
 
-#contact-us .custom-select select {
+#support-sec-3 .custom-select select {
   display: none;
 }
 
-#contact-us .select-selected {
+#support-sec-3 .select-selected {
   background-color: #fff;
   padding: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
 }
 
-#contact-us .select-items {
+#support-sec-3 .select-items {
   position: absolute;
   background-color: white;
   border: 1px solid #ddd;
@@ -176,40 +176,40 @@
   overflow-y: auto;
 }
 
-#contact-us .select-items div {
+#support-sec-3 .select-items div {
   padding: 10px;
   cursor: pointer;
 }
 
 /* Color of hovered items */
-#contact-us .select-items div:hover {
+#support-sec-3 .select-items div:hover {
   background-color: #e8f3f3;
   color: black;
 }
 
-#contact-us .select-hide {
+#support-sec-3 .select-hide {
   display: none;
 }
 
-#contact-us .select-arrow-active::after {
+#support-sec-3 .select-arrow-active::after {
   content: "▲";
   float: right;
   margin-left: 10px;
 }
 
 @media screen and (min-width: 1000px) {
-  #contact-us .support-contact-us-container {
+  #support-sec-3 .support-contact-us-container {
     width: 1000px;
   }
 }
 
 @media (max-width: 638px) {
-  #contact-us .support-contact-us-container {
+  #support-sec-3 .support-contact-us-container {
     padding-left: 5vw;
     padding-right: 5vw;
   }
 
-  #contact-us .supp-sec-3-contact-form-box  {
+  #support-sec-3 .supp-sec-3-contact-form-box  {
     padding: 30px 20px;
   }
 }
