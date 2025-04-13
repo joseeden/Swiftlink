@@ -177,15 +177,36 @@
   padding-top: 40px;
 }
 
+
+/*-------------------  MEDIA QUERIES  ------------------- */
+
+@media (max-width: 991px) and (min-width: 941px) { 
+  #tracking .supp-sec-2-3-tracking-column {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 940px) and (min-width: 771px) { 
+  #tracking .supp-sec-2-3-tracking-column {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
 /* Hide image column on small screens */
 @media (max-width: 770px) {
+
   #tracking .supp-sec-2-3-img {
     display: none;
   }
 
   #tracking .supp-sec-2-3-tracking-column {
     padding-top: 0;
-    padding-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 50px;
@@ -195,4 +216,37 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+}
+
+/* Let dropdown take full width */
+/* Push "Track" button to next line */
+@media (max-width: 499px) {
+
+  #tracking .supp-sec-2-3-tracking-dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #referenceDropdownWrapper {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #tracking .supp-sec-2-3-tracking-search {
+    align-self: flex-end;
+    margin-left: 0; /* overrides .ms-2 */
+  }
+}
+
+/* Open dropdown upwards on small screens */
+@media (max-width: 499px) {
+
+  #tracking .custom-select .select-items {
+    top: auto;         /* Disable top positioning */
+    bottom: 100%;      /* Position the dropdown above the element */
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+  }
+
 }

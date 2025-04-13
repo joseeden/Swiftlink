@@ -17,7 +17,8 @@
 }
 
 #support-section-2 .supp-sec-2-tabs-container {
-  height: 408px;
+  /* height: 408px; */
+  height: auto;
   margin-left: 0;
   margin-right: 0;
 }
@@ -59,7 +60,6 @@
   padding-bottom: 0 !important;
 }
 
-
 #support-section-2 .supp-sec-2-tabs-h1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -97,6 +97,7 @@
 /* ==================== SUPPORT SECTION 2 - MEDIA QUERIES ==================== */
 
 @media screen and (min-width: 1400px) {
+
   #support-section-2 {
     margin-top: -83px !important;
     z-index: 20;
@@ -111,6 +112,7 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+
   #support-section-2 {
     margin-top: -78px !important;
     z-index: 20;
@@ -123,16 +125,23 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+
   #support-section-2 {
     margin-top: -70px !important;
     z-index: 20;
   }
-  
+}
+
+@media screen and (max-width: 1199px) {
+
+  #support-section-2 .supp-sec-2-tabs-h1 {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 770px) and (max-width: 991px) {
 
-  .support-items-navtabs {
+  #support-section-2 .support-items-navtabs {
     height: auto;
   }
 
@@ -142,7 +151,6 @@
   }
 
   #support-section-2 .supp-sec-2-tabs-container {
-    /* height: 750px; */
     height: auto !important;
     margin-left: 0;
     margin-right: 0;
@@ -150,7 +158,8 @@
 }
 
 @media (max-width: 991px) {
-  .supp-sec-2-text-area {
+
+  #support-section-2 .supp-sec-2-text-area {
     max-height: 250px; 
     overflow: hidden;
   }
@@ -160,14 +169,14 @@
     margin-bottom: 32px;
   }
 
-  .supp-sec-2-tabs-btn {
+  #support-section-2 .supp-sec-2-tabs-btn {
     margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 769px) {
 
-  ul#aboutTabs {
+  #support-section-2 ul#aboutTabs {
     flex-direction: column;
   }
 
@@ -185,28 +194,10 @@
     margin-right: 0;
   }
 
-
-  #support-section-2 .btn.supp-sec-2-tabs-btn {
+  #support-section-2 .supp-sec-2-tabs-btn {
     display: block;
     width: 100%;
   }
-
-  #support-section-2 .supp-sec-2-tabs-h1 {
-    padding-top: 0;
-  }
-
-
-}
-
-/* .about-header {
-  padding-bottom: 2rem;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-} */
-
-@media (max-width: 769px) {
-
 }
 
 @media (max-width: 769px) and (min-width: 576px) {
@@ -218,8 +209,6 @@
     padding-right: 0 !important;
   }
 }
-
-
 
 @media (max-width: 575px)  {
 
@@ -235,6 +224,7 @@
 }
 
 @media (max-width: 369px) {
+
   #support-section-2 .supp-sec-2-1-manage-your-account {
     height: auto;
   }

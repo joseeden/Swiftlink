@@ -24,12 +24,22 @@
 }
 
 #get-a-quote img {
-  filter: invert(31%) sepia(87%) saturate(1318%) hue-rotate(152deg) brightness(84%) contrast(92%); 
+  filter: invert(31%) 
+          sepia(87%) 
+          saturate(1318%) 
+          hue-rotate(152deg) 
+          brightness(84%) 
+          contrast(92%); 
 }
 
 #get-a-quote .supp-sec-2-2-box-text {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 1399px) {
 
-
+  #get-a-quote .supp-sec-2-2-box-text {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}

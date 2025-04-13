@@ -54,6 +54,22 @@ footer.footer img {
   filter: brightness(0) invert(1); 
 }
 
+@media (min-width: 1200px) {
+
+  #footer-box .footer-out-container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+
+  #footer-box .footer-out-container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
 @media (max-width: 600px) {
 
   #footer-box {
