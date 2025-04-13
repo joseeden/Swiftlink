@@ -81,10 +81,6 @@
   padding: 50px 10px;
 }
 
-.banner-header  {
-  margin-top: 60px;
-}
-
 /* Bootstrap row has default side margins, which causes */
 /* some y-axis overflow on small screens */
 @media (max-width: 600px) {
@@ -97,24 +93,37 @@
 
 /* ===================== WHY MOVE WITH US ===================== */
 
-#why-move-with-us-sec-container {
+#why-move-with-us-section {
   padding-top: 5rem !important;
 }
 
-#why-move-with-us-sec-container .why-move-with-us-sec-h1 {
+#why-move-with-us-section .wmwu-sec-h1 {
   padding-bottom: 2.5rem !important;
 }
 
-#why-move-with-us-sec-container .wmwu-feature-icon {
+#why-move-with-us-section .wmwu-feature-icon {
   width: 4rem;
   height: 4rem;
   border-radius: .75rem;
   background-color: #0a7c7c !important;
 }
 
-#why-move-with-us-sec-container .wmwu-icon-svg {
+#why-move-with-us-section .wmwu-icon-svg {
   height: 30px;
   filter: brightness(0) invert(1); /* Turns the image white */
+}
+
+@media (max-width: 991px) {
+  #why-move-with-us-section .wmwu-feature-col {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #why-move-with-us-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 /* ========================== CAROUSEL ========================== */
@@ -126,6 +135,14 @@
 
 #carousel-section .carousel-item {
   transition: transform 3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  #carousel-section {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 /* ========================== SHIPPING SERVICES ========================== */
@@ -210,9 +227,7 @@
 
   #storage-and-warehouse {
     padding-top: 0 !important;
-}
-
-  
+  }
 }
 
 @media (max-width: 767px) {

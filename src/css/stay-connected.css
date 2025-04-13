@@ -1,4 +1,11 @@
-.card {
+/* =============================== STAY CONNECTED =============================== */
+
+#stay-connected {
+  margin-bottom: 5rem;
+  padding: 0;
+}
+
+#stay-connected .card {
   background-color: #0a7c7c;
   position: relative;
   display: flex;
@@ -10,7 +17,7 @@
   padding: 1.5rem 4rem;
 }
 
-.stay-connected-card-body {
+#stay-connected .stay-connected-card-body {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
@@ -18,59 +25,62 @@
   flex-basis: 100%;
 }
 
-.stay-connected-container {
-  margin-bottom: 5rem;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-
-#stay-connected {
+#stay-connected .stay-connected-h2 {
   padding-bottom: 12px;
 }
 
-#stay-connected,
-.card {
+#stay-connected .stay-connected-h2,
+#stay-connected .card {
   color: #fffdf7;
 }
 
-.stay-connected-card,
-.stay-connected-card-body {
+#stay-connected .stay-connected-card,
+#stay-connected .stay-connected-card-body {
   background-color: #0a7c7c;
   color: #fffdf7;
 }
 
-.stay-conn-card-body-content {
+#stay-connected .stay-conn-card-body-content {
   margin-bottom: 8px;
 }
 
-.stay-conn-box-button {
+#stay-connected .stay-conn-box-button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%
 }
 
-.btn.stay-conn-dload-btn {
+#stay-connected .stay-conn-dload-btn {
   font-weight: 500; 
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.btn.stay-conn-dload-btn:hover {
+#stay-connected .stay-conn-dload-btn:hover {
   /* background-color: #EA7300; */
   background-color: #fba70d;
   /* background-color: #fba70d; */
 }
 
-.btn.stay-conn-dload-btn:active {
+#stay-connected .stay-conn-dload-btn:active {
   background-color: #ffcc00;
 }
 
+@media (max-width: 991px) {
+  
+  #stay-connected .card {
+    padding: 2rem 4rem;
+  }
+
+  #stay-connected .stay-conn-card-body-content {
+    margin-bottom: 2rem;
+}
+}
 
 @media (max-width: 576px) {
   
-  .stay-connected-container {
+  #stay-connected {
     padding: 30px 0 0 0;
   }
 }

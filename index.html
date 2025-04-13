@@ -327,7 +327,7 @@
   </section>
 
   <section class="banner">
-    <div class="video-header-container">
+    <div class="video-header" id="video-header">
       
       <!-- Background video -->
       <div class="video-iframe-wrapper">
@@ -354,7 +354,8 @@
                       gap-2 
                       d-sm-flex 
                       justify-content-sm-center 
-                      mb-5">
+                      mb-5
+                      video-banner-btns">
             <a href="#storage-and-warehouse">
               <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
                 See solutions
@@ -373,16 +374,17 @@
   </section>
   
   <section class="why-move-with-us">
-    <div class="container why-move-with-us-sec-container p-xy-30px " 
-         id="why-move-with-us-sec-container">
+    <div class="container why-move-with-us-section p-xy-30px " 
+         id="why-move-with-us-section">
       <h1 class="orange-header 
                  fw-bold 
                  text-center 
-                 why-move-with-us-sec-h1">
+                 wmwu-sec-h1">
         Why Move With Us?
       </h1>
       <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 mx-auto">
-        <div class="feature col">
+        
+        <div class="wmwu-feature-col">
           <div class="wmwu-feature-icon
                       d-inline-flex 
                       align-items-center 
@@ -404,7 +406,8 @@
             <img src="./icons/chevron-right.svg" alt="chevron-right">
           </a>
         </div>
-        <div class="feature col">
+
+        <div class="wmwu-feature-col">
           <div class="wmwu-feature-icon
                       d-inline-flex 
                       align-items-center 
@@ -422,7 +425,8 @@
             <img src="./icons/chevron-right.svg" alt="chevron-right">
           </a>
         </div>
-        <div class="feature col">
+
+        <div class="wmwu-feature-col">
           <div class="wmwu-feature-icon
                       d-inline-flex 
                       align-items-center 
@@ -442,6 +446,7 @@
             <img src="./icons/chevron-right.svg" alt="chevron-right">
           </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -632,14 +637,14 @@
   </section>
   
   <section class="ads-download-app">
-    <div class="container stay-connected-container ">
+    <div class="container stay-connected" id="stay-connected">
       <div class="card stay-connected-card">
         <div class="row">
 
-          <div class="col-lg-8 stay-conn-box-desc">
+          <div class="col-lg-9 stay-conn-box-desc">
             
             <div class="stay-conn-card-header text-start ">
-              <h2 id="stay-connected">Stay Connected With the Swiftlink App</h2>
+              <h2 class="stay-connected-h2">Stay Connected With the Swiftlink App</h2>
             </div>
 
             <div class="stay-conn-card-body">
@@ -652,7 +657,7 @@
 
           </div>    
 
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <div class="stay-conn-box-button">
               <button class="btn btn-warning rounded-pill px-4 stay-conn-dload-btn" 
                       type="button">
