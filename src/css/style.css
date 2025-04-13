@@ -1,30 +1,11 @@
-/* ==================== GLOBAL ==================== */
+/* =============================== GLOBAL - COLORS =============================== */
 
-.container {
-  padding: 30px 0;
-}
-
-.container .row {
-  text-align: center;
-}
-
-.container .col-lg-4 p {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  padding: 50px 10px;
-}
-
-.container-set-padding {
-  padding: 20px 0;
- }
- 
 .orange-header {
   color: #E26310 !important;
 }
 
-.orange-header-bold {
-  font-weight: 700;
+.princeton-header {
+  color: #EA7300 ;
 }
 
 .bright-orange-header {
@@ -34,55 +15,23 @@
 .darker-orange-header {
   color: #f2bd30;
 }
+
 .teal-green {
   color: #0a7c7c;
 }
 
-.left-align {
-  text-align: left;
+/* =============================== GLOBAL - PADDING =============================== */
+
+.p-xy-30px {
+  padding: 30px 0;
 }
 
-.overflow-hidden {
-  max-height: 40vh;
+.p-xy-20px {
+  padding: 20px 0;
 }
 
-.set-padding-y-none {
-  padding: 0;
- }
+/* =============================== GLOBAL - BUTTONS =============================== */
 
-.py-5 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
-.pt-5 {
-  padding-top: 5rem !important;
-}
-
-.gen-container {
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-bottom: 3rem; */
-}
-
-.general-header1 {
-  padding-bottom: 1.5rem;
-}
-
-.logistics-container {
-  padding-top: 3rem;
-}
-
-.gen-box {
-  text-align: center;
-}
-
-.banner-header  {
-  margin-top: 60px;
-}
-
-
-/* Banner */
 .btn-primary {
   background-color: #EA7300;
   border: none;
@@ -119,153 +68,189 @@
   background-color: #EC5228 !important;
 }
 
+/* =============================== GLOBAL - OTHERS =============================== */
 
-/* Section - Why move with us */
-.why-move-with-us-sec-container {
+.container .row {
+  text-align: center;
+}
+
+.container .col-lg-4 p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 50px 10px;
+}
+
+.banner-header  {
+  margin-top: 60px;
+}
+
+/* Bootstrap row has default side margins, which causes */
+/* some y-axis overflow on small screens */
+@media (max-width: 600px) {
+
+  .remove-def-row-my {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  } 
+}
+
+/* ===================== WHY MOVE WITH US ===================== */
+
+#why-move-with-us-sec-container {
   padding-top: 5rem !important;
 }
 
-.why-move-with-us-sec-h1 {
+#why-move-with-us-sec-container .why-move-with-us-sec-h1 {
   padding-bottom: 2.5rem !important;
 }
 
-.feature-icon {
+#why-move-with-us-sec-container .wmwu-feature-icon {
   width: 4rem;
   height: 4rem;
   border-radius: .75rem;
   background-color: #0a7c7c !important;
 }
 
-.icon-svg {
+#why-move-with-us-sec-container .wmwu-icon-svg {
   height: 30px;
   filter: brightness(0) invert(1); /* Turns the image white */
 }
 
-.get-a-quote-link {
-  color: #0a7c7c;
-}
+/* ========================== CAROUSEL ========================== */
 
-.carousel-section {
+#carousel-section {
   padding-top: 1rem !important;
   padding-bottom: 4.5rem !important;
 }
 
-.carousel-item {
+#carousel-section .carousel-item {
   transition: transform 3s ease-in-out;
 }
 
+/* ========================== SHIPPING SERVICES ========================== */
 
-
-/* Section - ways to send a package/Shipping Services */
-#shipping-services-container {
+#shipping-services-section {
   background-color: #ffc400;
 }
 
-.ship-sec-icon {
+#shipping-services-section .ship-sec-icon {
   height: 70px;
 }
 
-.ship-sec-h3 {
+#shipping-services-section .ship-sec-h3 {
   padding: 1rem;
 }
 
-.global-text-format {
-  display: flex;
-  color: black;
-  justify-content: center;
-}
-
-.shipping-sec-desc {
+#shipping-services-section .shipping-sec-desc {
   padding-top: 10px !important;
   padding-bottom: 40px !important;
 }
 
+/* ====================== LOGISTICS SOLUTIONS ==================== */
 
-/* Section - logistics */
-.logistics-img {
+.logistics-section-img {
+  display: block;
   max-width: 100%;
-  width: auto;
-  height: 600px;
-  border-radius: .80rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border-radius: 0;  
+  object-fit: cover;
  }
 
-/* Section - Warehouse */
 .logistics-box {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-
-/* Section - NVOCC */
-.nvocc-container {
- /* background-color: #f0f3f5; */
- background-color: white;
+.logistics-image-wrapper {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  height: 600px;
+  position: relative;
 }
 
-.nvocc-img {
-  width: 550px;
+@media (max-width: 1199px) and (min-width: 992px) {
+
+  #spec-logis-container .logistics-image-wrapper,
+  #nvocc-container .logistics-image-wrapper {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  #crdock-container .logistics-image-wrapper ,
+  #storage-and-warehouse .logistics-image-wrapper {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+   }
+
+  .logistics-sec-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
-/* Section - Cross Docking */
-.crdock-container {
-  background-color: #ffffff;
+@media (max-width: 991px) {
+ 
+  .logistics-box {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
-/* Section: Specialized Logistics */
-.spec-logis-container {
-  /* background-color: #f0f3f5; */
-  background-color: white;
+/* ==================== STORAGE AND WAREHOUSE ==================== */
+
+#storage-and-warehouse {
+  padding-top: 3rem;
+}
+
+/* ==================== SPECIALIZED LOGISTICS ==================== */
+
+#spec-logis-container {
   padding-bottom: 3rem;
 }
 
-/* Section - Business Solutions  */
-.btn-biz {
+/* ===================== BUSINESS SOLUTIONS ====================== */
+
+#business-solutions-section .btn-biz {
   background-color: #0a7c7c;
   border: none;
   color: white;
 }
 
-.btn-biz:hover {
+#business-solutions-section .btn-biz:hover {
   background-color:#fba70d;
 }
 
-.btn-biz:active {
+#business-solutions-section .btn-biz:active {
   background-color: #EB5B00 !important;
 }
 
-.btn-biz:visited {
+#business-solutions-section .btn-biz:visited {
   background-color: #FFB200 !important;
 }
 
-.biz-icons {
+#business-solutions-section .biz-icons {
   height: 40px;
 }
 
-
-@media (max-width: 600px) {
-
-  /* Bootstrap row has default side margins, which causes */
-  /* some y-axis overflow on small screens */
-  .remove-def-row-my {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  } 
-
-}
-
-@media (max-width: 576px) {
-  
-  .banner-padding-x {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  } 
-
-  .mb-4 {
-    margin-bottom: 1.5rem !important;
+@media (max-width: 991px) {
+  #business-solutions-section .business-solutions-row {
+    flex-direction: column !important;
   }
 
-  .shadow-lg { 
-    box-shadow: none !important;
+  #business-solutions-section .business-solutions-row > * {
+    width: 100% !important;
+  }
+
+  #business-solutions-section .responsive-two-row > .col {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }

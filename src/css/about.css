@@ -1,15 +1,19 @@
-/*  About Banner */
-.about-banner-container {
+/* ==================== ABOUT BANNER ==================== */
+#about-banner-section {
   background-color: #f0f3f5;
   margin-top: 50px;
 }
 
-.nav-link {
+#about-banner-section .nav-link {
   color: #0a7c7c;
   font-weight: 500;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+/* ==================== ABOUT ==================== */
+
+.about-tabs-nav .nav-link.active, 
+.about-tabs-nav .show >.nav-link {
   /* background-color: #ffc400; */
   background-color: #0a7c7c;
   /* color: #0a7c7c; */

@@ -91,7 +91,7 @@
 }
 
 #support-sec-2 #supp-sec-2-tabs-content-items {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* ==================== SUPPORT SECTION 2 - MEDIA QUERIES ==================== */
@@ -101,7 +101,6 @@
   #support-sec-2 {
     margin-top: -83px !important;
     z-index: 20;
-    min-height: 590px !important;
   }
 
   #support-sec-2 .nav-link {

@@ -1,14 +1,19 @@
 /* ==================== SUPPORT SECTION 3 - CONTACT US ==================== */
 
+.support-contact-us {
+  border-top: 1px solid gray;
+  margin: 0 auto;
+}
+
 #support-sec-3 {
   margin: 0 auto;
 }
 
-.support-contact-us {
-  border-top: 1px solid gray;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 auto;
+#support-sec-3 .support-contact-us-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 #support-sec-3 .supp-sec-3-contact-form-box {
