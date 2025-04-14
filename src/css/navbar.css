@@ -166,8 +166,6 @@
   }
 }
 
-
-
 @media (max-width: 991px) {
 
   #navbar-section .navbar-nav-left-items {
@@ -181,6 +179,16 @@
   }
 }
 
+/* Hide navbar-right icons, but keep the toggler icon */
+@media (max-width: 400px)  {
+  #navbar-section .navbar-nav-right-items {
+    display: none !important;
+  }
+
+  #navbar-section .navbar-toggler {
+    display: block !important;
+  }
+}
 
 
 
