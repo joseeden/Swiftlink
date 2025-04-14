@@ -40,227 +40,228 @@
 
 <body>
 
-  <nav class="navbar 
-              navbar-expand-lg 
-              bg-body-tertiary 
-              sticky"
-              id="navbar-section">
-    <div class="container-fluid">
+<nav class="navbar 
+            navbar-expand-lg 
+            bg-body-tertiary 
+            sticky" 
+        id="navbar-section">
+  <div class="container-fluid">
 
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img class="navbar-logo" 
-             src="./icons/swiftlink-logo-3-colored.png" 
-             alt="swiftlink logo"/>
-      </a>
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img class="navbar-logo" 
+           src="./icons/swiftlink-logo-3-colored.png" 
+           alt="swiftlink logo" />
+    </a>
 
-      <!-- Navbar-right -->
-      <div class="d-flex 
-                  align-items-center 
-                  order-lg-2 
-                  navbar-nav-right">
-        <ul class="navbar-nav 
-                   mb-lg-0 
-                   ms-auto 
-                   navbar-nav-right-items">
+    <!-- Navbar-right -->
+    <div class="d-flex 
+                align-items-center 
+                order-lg-2 
+                navbar-nav-right">
+      <ul class="navbar-nav 
+                  mb-lg-0 
+                  ms-auto 
+                  navbar-nav-right-items">
 
-          <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" 
-                  href="#" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#navbar-search-modal">
-              <img src="./icons/nav-left-search.png" 
+        <li class="nav-item">
+          <a class="nav-link nav-right-sec-text" 
+              href="#" 
+              data-bs-toggle="modal" 
+              data-bs-target="#navbar-search-modal">
+            <img src="./icons/nav-left-search.png" 
                   alt="Search" 
-                  class="nav-right-sec-icons"> 
-                <span class="nav-text">
-                  Search
-                </span>
-            </a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" href="#">
-              <img src="./icons//nav-left-global.png" 
-                   alt="Global" 
-                   class="nav-right-sec-icons"> 
-                <span class="nav-text">
-                  Global
-                </span>                   
-            </a>
-          </li>
+                  class="nav-right-sec-icons" />
+            <span class="nav-text">Search</span>
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" href="#">
-              <img src="./icons/nav-left-login.png" 
-                   alt="Login" 
-                   class="nav-right-sec-icons"> 
-                <span class="nav-text">
-                Login
-                </span>
-            </a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link nav-right-sec-text" href="#">
+            <img src="./icons/nav-left-global.png" 
+                  alt="Global" 
+                  class="nav-right-sec-icons" />
+            <span class="nav-text">Global</span>
+          </a>
+        </li>
 
-        </ul>
+        <li class="nav-item">
+          <a class="nav-link nav-right-sec-text" href="#">
+            <img src="./icons/nav-left-login.png" 
+                  alt="Login" 
+                  class="nav-right-sec-icons" />
+            <span class="nav-text">Login</span>
+          </a>
+        </li>
+      </ul>
 
-        <!-- Toggler Button -->
-        <button class="navbar-toggler ms-2" 
-                type="button" 
-                data-bs-toggle="offcanvas" 
-                data-bs-target="#navbarOffcanvas" 
-                aria-controls="navbarOffcanvas">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        
-      </div>
-
-      <!-- Navbar-left -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <ul class="navbar-nav 
-                   me-auto 
-                   mb-2 
-                   mb-lg-0 
-                   navbar-nav-left-items">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#about-banner-section">About</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" 
-                href="#" 
-                role="button" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">Shipping Services
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#shipping-services-section">Land Freight
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#shipping-services-section">Sea Freight
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#shipping-services-section">Air Freight
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" 
-                href="#" 
-                role="button" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">Logistics Solutions
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#storage-and-warehouse">Warehousing
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#nvocc-container">NVOCC Solutions
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#crdock-container">Cross Docking
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#spec-logis-container">Specialized Logistics
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" 
-                href="#" 
-                role="button" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">Business Solutions
-             </a>
-             <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  Create an Account
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  SMEs
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  Track & Manage Shipments
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  Enterprise Shipping
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  Pickup & Drop-off
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#business-solutions-section">
-                  Claims & Returns
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Support
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#support-sec-0">Profile
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#support-sec-0">Get a Quote
-                </a>
-              </li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <li>
-                <a class="dropdown-item" href="#support-sec-0">Tracking
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#support-sec-0">Shipping
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#support-sec-0">Contact Us
-                </a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-
-      </div>
+      <!-- Toggler Button -->
+      <button class="navbar-toggler ms-2" 
+              type="button" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#navbarOffcanvas" 
+              aria-controls="navbarOffcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-  </nav>
+
+    <!-- Normal Navbar (desktop view ≥1130px) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav 
+                  me-auto 
+                  mb-2 
+                  mb-lg-0 
+                  navbar-nav-left-items">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about-banner-section">About
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Shipping Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#shipping-services-section">Land Freight</a></li>
+            <li><a class="dropdown-item" href="#shipping-services-section">Sea Freight</a></li>
+            <li><a class="dropdown-item" href="#shipping-services-section">Air Freight</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" data-bs-toggle="dropdown">Logistics Solutions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#storage-and-warehouse">Warehousing</a></li>
+            <li><a class="dropdown-item" href="#nvocc-container">NVOCC Solutions</a></li>
+            <li><a class="dropdown-item" href="#crdock-container">Cross Docking</a></li>
+            <li><a class="dropdown-item" href="#spec-logis-container">Specialized Logistics</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Business Solutions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#business-solutions-section">Create an Account</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">SMEs</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Track & Manage Shipments</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Enterprise Shipping</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Pickup & Drop-off</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Claims & Returns</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#support-sec-0">Profile</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Get a Quote</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Tracking</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Shipping</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Offcanvas for mobile -->
+  <div class="offcanvas offcanvas-end" 
+        tabindex="-1" 
+        id="navbarOffcanvas" 
+        aria-labelledby="navbarOffcanvasLabel">
+
+    <div class="offcanvas-header">
+      <button type="button" 
+              class="btn-close" d
+              ata-bs-dismiss="offcanvas" 
+              aria-label="Close">
+      </button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="navbar-nav flex-column gap-3">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about-banner-section">About
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Shipping Services
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#shipping-services-section">Land Freight</a></li>
+            <li><a class="dropdown-item" href="#shipping-services-section">Sea Freight</a></li>
+            <li><a class="dropdown-item" href="#shipping-services-section">Air Freight</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Logistics Solutions
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#storage-and-warehouse">Warehousing</a></li>
+            <li><a class="dropdown-item" href="#nvocc-container">NVOCC Solutions</a></li>
+            <li><a class="dropdown-item" href="#crdock-container">Cross Docking</a></li>
+            <li><a class="dropdown-item" href="#spec-logis-container">Specialized Logistics</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Business Solutions
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#business-solutions-section">Create an Account</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">SMEs</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Track & Manage Shipments</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Enterprise Shipping</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Pickup & Drop-off</a></li>
+            <li><a class="dropdown-item" href="#business-solutions-section">Claims & Returns</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" 
+              href="#" 
+              role="button" 
+              data-bs-toggle="dropdown">Support
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#support-sec-0">Profile</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Get a Quote</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Tracking</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Shipping</a></li>
+            <li><a class="dropdown-item" href="#support-sec-0">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
   <section class="modals-all">
     <section class="modals-navbar-search">
@@ -1956,6 +1957,24 @@
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+  <script>
+    const navbarOffcanvas = document.getElementById('navbarOffcanvas');
   
+    function applyOffcanvasFixes() {
+      if (window.innerWidth >= 992 && window.innerWidth <= 1129) {
+        document.body.classList.add('custom-offcanvas-fix');
+      }
+    }
+  
+    function removeOffcanvasFixes() {
+      document.body.classList.remove('custom-offcanvas-fix');
+    }
+  
+    // Event listeners for when offcanvas opens and closes
+    navbarOffcanvas.addEventListener('shown.bs.offcanvas', applyOffcanvasFixes);
+    navbarOffcanvas.addEventListener('hidden.bs.offcanvas', removeOffcanvasFixes);
+  </script>
+
 </body>
 </html>

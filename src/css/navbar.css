@@ -1,33 +1,30 @@
-/* ================================== NAVBAR ================================== */
+/* ========================== NAVBAR ========================== */
 
 .navbar {
   background-color: white !important;
   position: fixed;
-  height: 100px;
-  width: 100%;
   top: 0;
+  width: 100%;
+  height: 100px;
   z-index: 1050;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ==================== Logo ==================== */
+/* ========================== LOGO ========================== */
 
 #navbar-section .navbar-logo {
   padding: 0 10px;
-  height:30px;
+  height: 30px;
   width: auto;
   max-height: 30px;
 }
 
-#navbar-section .navbar-brand:hover {
-  color: #333;
-}
-
+#navbar-section .navbar-brand:hover,
 #navbar-section .navbar-brand:focus {
   color: #333;
 }
 
-/* ==================== Navbar Items - Left ==================== */
+/* ==================== NAVBAR ITEMS - LEFT ==================== */
 
 #navbar-section .nav-link {
   color: #004f58;
@@ -44,23 +41,10 @@
 }
 
 #navbar-section .navbar-nav .nav-link {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
-/* ==================== Dropdown menu ==================== */
-
-#navbar-section .dropdown-menu .dropdown-item:hover {
-  background-color: #EA7300;
-  color: white;
-}
-
-#navbar-section .dropdown-menu .dropdown-item:active {
-  background-color: #fba70d;
-  color: white;
-}
-
-/* ==================== Navbar Items - Right ==================== */
+/* ==================== NAVBAR ITEMS - RIGHT ==================== */
 
 #navbar-section .nav-right-sec-icons {
   display: inline-block;
@@ -75,7 +59,19 @@
   padding: 0 15px !important;
 }
 
-/* ==================== Toggler and search styles ==================== */
+/* ==================== DROPDOWN MENU ==================== */
+
+#navbar-section .dropdown-menu .dropdown-item:hover {
+  background-color: #EA7300;
+  color: white;
+}
+
+#navbar-section .dropdown-menu .dropdown-item:active {
+  background-color: #fba70d;
+  color: white;
+}
+
+/* ==================== TOGGLER & SEARCH ==================== */
 
 #navbar-section .navbar-toggler {
   border-color: #ccc;
@@ -95,13 +91,70 @@
   margin-left: auto;
 }
 
+/* ========================== OFFCANVAS ========================== */
 
-/* ==================== MEDIA QUERIES ==================== */
+.offcanvas {
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, 
+              opacity 0.3s ease-in-out;
+  opacity: 0;   
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1045;
+  width: 300px;
+  background-color: white;
+}
 
-/* Hide navbar-right texts, keep icons visible */
-/* when screen size is 1320px and below */
+.offcanvas.show {
+  visibility: visible;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.offcanvas-backdrop {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.offcanvas .dropdown-menu {
+  position: static !important;
+  float: none;
+  display: none;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  
+}
+
+.offcanvas .dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.offcanvas-body .navbar-nav > li {
+  margin-bottom: 0.5rem;
+}
+
+.offcanvas:not(.show) .navbar-nav {
+  display: none;
+}
+
+.navbar-expand-lg .offcanvas .offcanvas-header {
+  display: flex;
+  margin-top: 10px !important;
+}
+
+.offcanvas-body {
+  margin-top: 100px !important;
+}
+
+/* ================ MEDIA QUERIES ================ */
+
+/* --- Up to 1320px --- */
 @media (max-width: 1320px) {
-
   #navbar-section .navbar-brand {
     margin-right: 0;
   }
@@ -111,38 +164,183 @@
     padding: 0 10px !important;
   }
 
-  #navbar-section .nav-right-sec-icons {
-    display: inline-block;
-  }
-
   #navbar-section .navbar-nav-right li.nav-item {
     padding-bottom: 8px;
   }
 }
 
-/* Ensure toggler-icon doesnt appear when */
-/* screensize is 1130px and bigger */
-@media (min-width: 1130px) {
 
-  #navbar-section .navbar-toggler {
+/* --- Below 1130px: Collapse to Offcanvas --- */
+@media (max-width: 1129px) {
+  #navbarSupportedContent {
     display: none !important;
   }
 
-  #navbar-section .navbar-nav-left-items {
-    display: flex !important;
+  .navbar-toggler {
+    display: block !important;
   }
 
-  #navbar-section .dropdown-menu.show {
-    display: block;
+  .offcanvas {
+    display: block !important;
+  }
+
+  .navbar-collapse .navbar-nav-left-items {
+    display: none !important;
   }
 }
 
+/* --- Between 992px and 1129px: Revised Offcanvas --- */
+@media (max-width: 1129px) and (min-width: 992px) {
+  #navbarSupportedContent {
+    display: none !important;
+    position: absolute !important;
+    top: -1000px !important;
+    left: -1000px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
 
+  .navbar-toggler {
+    display: block !important;
+    z-index: 1051 !important;
+  }
+
+  .offcanvas {
+    display: none !important;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050 !important;
+    width: 50vw !important;
+    background-color: white;
+  }
+
+  .offcanvas.show {
+    display: block !important;
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    z-index: 1049 !important;
+  }
+
+  .offcanvas .dropdown-menu {
+    position: static !important;
+    float: none;
+    display: none;
+    margin-top: 0.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  .offcanvas .dropdown.show .dropdown-menu {
+    display: block;
+    position: static !important;
+    width: 100%;
+  }
+
+  /* Make list flow vertically */
+  .offcanvas .dropdown {
+    width: 100%;
+  }
+
+  .offcanvas .dropdown-menu .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .offcanvas-body {
+    padding: 16px !important;
+  }
+
+  .offcanvas-body .navbar-nav > li {
+    margin-bottom: 0.5rem;
+  }
+
+  .offcanvas:not(.show) .navbar-nav {
+    display: none;
+  }
+}
+
+/* --- Offcanvas widths --- */
+@media (max-width: 1129px) and (min-width: 768px) {
+  .offcanvas-end {
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .offcanvas-end {
+    width: 100vw !important;
+  }
+}
+
+/* --- From 992px: Navbar behavior --- */
+@media (min-width: 992px) {
+  .navbar-expand-lg .offcanvas .offcanvas-header {
+    display: flex;
+    margin-top: 0 !important;
+  }
+
+  .navbar-expand-lg .offcanvas {
+    position: fixed !important;
+    background-color: white !important;
+    width: 50vw !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    z-index: 10 !important;
+  }
+}
+
+/* --- Below 991px: Mobile Tweaks --- */
+@media (max-width: 991px) {
+  #navbar-section .navbar-nav-left-items {
+    background-color: white;
+  }
+
+  #navbar-section .navbar-nav {
+    padding-left: 5px;
+    flex-direction: row;
+  }
+}
+
+/* --- Below 400px: Hide right icons --- */
+@media (max-width: 400px) {
+  #navbar-section .navbar-nav-right-items {
+    display: none !important;
+  }
+}
+
+/* --- From 1130px: Full Navbar --- */
 @media (min-width: 1130px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+
+  #navbar-section .navbar-nav-left-items,
+  #navbarSupportedContent {
+    display: flex !important;
+  }
+
+  .offcanvas {
+    display: none !important;
+  }
 
   #navbar-section .dropdown-menu {
-    display: none;  /* keeps all dropdown collapsed unless clicked */
-    position: absolute;         
+    display: none;
+    position: absolute;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.15);
     margin-top: 0.5rem;
@@ -153,51 +351,3 @@
     display: block;
   }
 }
-
-/* Collapse navbar-left items and show toggler-icon */
-/* when screen size is 1120px and below */
-@media (max-width: 1129px) { 
-  #navbar-section .navbar-toggler {
-    display: block !important;
-  }
-
-  #navbar-section .navbar-collapse .navbar-nav-left-items {
-    display: none !important;
-  }
-}
-
-@media (max-width: 991px) {
-
-  #navbar-section .navbar-nav-left-items {
-    background-color: white;
-  }
-
-  /* Ensure navbar-right-icons are stacked in row, not column */
-  #navbar-section .navbar-nav {
-    padding-left: 5px;
-    flex-direction: row;
-  }
-}
-
-/* Hide navbar-right icons, but keep the toggler icon */
-@media (max-width: 400px)  {
-  #navbar-section .navbar-nav-right-items {
-    display: none !important;
-  }
-
-  #navbar-section .navbar-toggler {
-    display: block !important;
-  }
-}
-
-
-
-
-
-
-
-
-/* ==================== Hide "Arrow-down" icons on navbar items with dropdown ==================== */
-/* .navbar .dropdown-toggle::after {
-  display: none !important;
-} ==================== */
