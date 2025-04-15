@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   background: white;
-  border-radius: 8px;
+  border-radius: 0;
   /* padding: 30px;  */
   max-width: 500px;
   width: 100%;
@@ -51,20 +51,20 @@
 
 #modal-navbar-login .login-modal-heading {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 28px; /* Slightly larger heading */
+  font-size: 28px; 
   margin-top: 24px;
   margin-bottom: 20px;
-  padding-top: 10%;
+  padding-top: 0;
 }
 
 #modal-navbar-login .login-modal-form-wrapper {
-  margin-bottom: 30px; /* Increased spacing */
+  margin-bottom: 0; 
 }
 
 #modal-navbar-login .login-modal-input {
   width: 100%;
-  padding: 12px; /* Slightly larger padding */
-  margin-bottom: 12px; /* Increased margin */
+  padding: 12px; 
+  margin-bottom: 12px; 
 }
 
 #modal-navbar-login .login-modal-info {
@@ -90,7 +90,7 @@
 }
 
 #modal-navbar-login .login-modal-social-section {
-  padding-top: 20%;
+  padding-top: 5%;
 }
 
 #modal-navbar-login .login-modal-social-heading {
@@ -108,8 +108,8 @@
 #modal-navbar-login .login-modal-social-icon {
   width: 50px;
   height: 50px;
-  background-color: #f1f1f1; /* or white, or transparent */
-  border-radius: 12px; /* or 50% if you want circular icons */
+  background-color: #f1f1f1; 
+  border-radius: 12px;    /* Use 50%  for circular icons */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +118,7 @@
 }
 
 #modal-navbar-login .login-modal-social-icon:hover {
-  background-color: #e0e0e0; /* subtle hover effect */
+  background-color: #e0e0e0; 
 }
 
 #modal-navbar-login .login-modal-social-icon img {
@@ -138,11 +138,160 @@
           contrast(87%);
 }
 
-
 #modal-navbar-login .login-modal-signup-link {
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 #modal-navbar-login .login-modal-signup-link a {
   color: #007bff;
+}
+
+
+#modal-navbar-login .login-panel,
+#modal-navbar-login .signup-panel {
+  display: none;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+#modal-navbar-login .login-panel.active,
+#modal-navbar-login .signup-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
+#modal-navbar-login .modal-body .login-modal-info a,
+#modal-navbar-login .modal-body .login-modal-signup-link a {
+  color: #0a7c7c;
+}
+
+#modal-navbar-login .modal-body a,
+
+#signup-panel .login-modal-box-contact-no {
+  width: 30%;
+}
+
+#signup-panel .login-modal-box-contact-country-code {
+  font-size: 0.75rem;
+}
+
+#signup-panel .login-modal-box-contact-country-code {
+  font-size: 0.75rem;
+}
+
+#signup-panel .login-modal-signup-link {
+  margin-bottom: 2rem;
+}
+
+#signup-panel .login-modal-social-section {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+@media (max-width: 575.98px) {
+  #modal-navbar-login .modal-dialog,
+  #modal-navbar-search .modal-dialog {
+    margin: 5vh auto; /* balanced spacing */
+    width: auto;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+  }
+
+  #modal-navbar-login .modal-content,
+  #modal-navbar-search .modal-content {
+    border-radius: 1rem;
+  }
+
+  .global-modal-toolbar {
+    padding: 1rem;
+  }
+
+  .global-modal-toolbar .close {
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .global-modal-body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  /* Force modal to fill entire screen */
+  #modal-navbar-login,
+  #modal-navbar-search {
+    padding: 0 !important;          
+  }
+
+  #modal-navbar-login .modal-dialog,
+  #modal-navbar-search .modal-dialog {
+    margin: 0 !important;            
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  #modal-navbar-login .modal-content,
+  #modal-navbar-search .modal-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 !important;    /* Remove border radius when fullscreen */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .global-modal-toolbar,
+  .global-modal-body {
+    flex-shrink: 0;
+  }
+
+  .global-modal-toolbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  .global-modal-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #modal-navbar-login .login-modal-heading { 
+    font-size: 25px;
+  }
+
+  #login-panel .login-modal-heading {
+    padding-top: 2rem !important;   
+  }
+
+  #login-panel .login-modal-social-section {
+    padding-top: 17% !important;
+  }
+
+  #signup-panel .login-modal-heading {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }

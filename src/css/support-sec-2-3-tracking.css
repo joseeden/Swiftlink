@@ -161,6 +161,10 @@
   }
 }
 
+#supp-sec-2-3-tracking .supp-sec-2-3-tracking-column input.form-control {
+  box-shadow: none !important;
+}
+
 /*-------------------  SECOND COLUMN  - IMAGE  ------------------- */
 
 #tracking .supp-sec-2-box-img-in {

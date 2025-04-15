@@ -72,7 +72,7 @@ section.banner {
 
   .video-header {
     top: 100px; /* navbar offset */
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   #video-header .video-iframe-wrapper iframe {
@@ -85,7 +85,7 @@ section.banner {
   
   .video-header {
     top: 90px; 
-    height: 80vh;
+    /* height: 80vh; */
   }
   
   #video-header .sec-banner-desc {

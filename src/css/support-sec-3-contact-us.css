@@ -16,6 +16,10 @@
   padding-bottom: 5rem !important;
 }
 
+#support-sec-3 .support-sec-3-header {
+  width: 100%;
+}
+
 #support-sec-3 .supp-sec-3-contact-form-box {
   padding: 50px; 
   border: 1px solid #ddd;

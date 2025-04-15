@@ -23,6 +23,7 @@
   <link type="text/css" rel="stylesheet" href="./src/css/modals-global.css">
   <link type="text/css" rel="stylesheet" href="./src/css/modal-navbar-search.css">
   <link type="text/css" rel="stylesheet" href="./src/css/modal-navbar-login.css">
+  <!-- <link type="text/css" rel="stylesheet" href="./src/css/modal-navbar-signup.css"> -->
   <link type="text/css" rel="stylesheet" href="./src/css/about.css">
   <link type="text/css" rel="stylesheet" href="./src/css/subscribe.css">
   <link type="text/css" rel="stylesheet" href="./src/css/stay-connected.css">
@@ -49,7 +50,9 @@
 
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img class="navbar-logo" src="./icons/swiftlink-logo-3-colored.png" alt="swiftlink logo" />
+        <img class="navbar-logo" 
+              src="./icons/swiftlink-logo-3-colored.png" 
+              alt="swiftlink logo" />
       </a>
 
       <!-- Navbar-right -->
@@ -64,6 +67,7 @@
 
           <li class="nav-item">
             <a class="nav-link nav-right-sec-text" 
+                id="open-search-modal"
                 href="#" 
                 data-bs-toggle="modal"
                 data-bs-target="#navbar-search-modal">
@@ -109,12 +113,12 @@
 
         </ul>
 
-
-
-
         <!-- Toggler Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
-          aria-controls="navbarOffcanvas">
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#navbarOffcanvas"
+                aria-controls="navbarOffcanvas">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -139,9 +143,9 @@
                 data-bs-toggle="dropdown" >Shipping Services
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#land-freight">Land Freight</a></li>
-              <li><a class="dropdown-item" href="#sea-freight">Sea Freight</a></li>
-              <li><a class="dropdown-item" href="#air-freight">Air Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Land Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Sea Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Air Freight</a></li>
             </ul>
           </li>
 
@@ -186,7 +190,7 @@
               <li><a class="dropdown-item" href="#support-sec-0">Get a Quote</a></li>
               <li><a class="dropdown-item" href="#support-sec-0">Tracking</a></li>
               <li><a class="dropdown-item" href="#support-sec-0">Shipping</a></li>
-              <li><a class="dropdown-item" href="#support-sec-0">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#support-sec-3">Contact Us</a></li>
             </ul>
           </li>
         </ul>
@@ -195,10 +199,16 @@
     </div>
 
     <!-- Offcanvas for mobile -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+    <div class="offcanvas offcanvas-end" 
+          tabindex="-1" 
+          id="navbarOffcanvas" 
+          aria-labelledby="navbarOffcanvasLabel">
 
       <div class="offcanvas-header">
-        <button type="button" class="btn-close" d ata-bs-dismiss="offcanvas" aria-label="Close">
+        <button type="button" 
+                class="btn-close" 
+                data-bs-dismiss="offcanvas" 
+                aria-label="Close">
         </button>
       </div>
 
@@ -217,9 +227,9 @@
                 data-bs-toggle="dropdown">Shipping Services
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#land-freight">Land Freight</a></li>
-              <li><a class="dropdown-item" href="#sea-freight">Sea Freight</a></li>
-              <li><a class="dropdown-item" href="#air-freight">Air Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Land Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Sea Freight</a></li>
+              <li><a class="dropdown-item" href="#shipping-services-section">Air Freight</a></li>
             </ul>
           </li>
 
@@ -264,7 +274,7 @@
               <li><a class="dropdown-item" href="#support-sec-0">Get a Quote</a></li>
               <li><a class="dropdown-item" href="#support-sec-0">Tracking</a></li>
               <li><a class="dropdown-item" href="#support-sec-0">Shipping</a></li>
-              <li><a class="dropdown-item" href="#support-sec-0">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#support-sec-3">Contact Us</a></li>
             </ul>
           </li>
         </ul>
@@ -322,11 +332,14 @@
                   <input type="text" 
                           class="search-modal-input form-control ps-5" 
                           placeholder="Search"
+                          id="searchInput"
                           autocomplete="off">
                 </div>
 
                 <div class="search-modal-btn-wrapper text-end">
-                  <button class="btn btn-primary search-modal-button">Search</button>
+                  <button class="btn btn-primary search-modal-button" 
+                          data-bs-dismiss="modal">Search
+                  </button>
                 </div>
               </div>
             </div>
@@ -337,83 +350,82 @@
       </div>
     </section>
 
-    <section class="modal-navbar-login" 
-              id="modal-navbar-login">
+    <section class="modal-navbar-login" id="modal-navbar-login">
       <div class="modal-dialog">
         <div class="modal-content global-modal-content">
-          
-            <!-- Close Button -->
-            <!-- <button type="button" 
-                          class="btn-close" 
-                          id="close-login-modal" 
-                          aria-label="Close">
-                  </button> -->
-          
-            <menu class="global-modal-toolbar" role="menu">
-              <li>
-                <button type="button" 
-                        class="btn-close global-modal-close-button login-btn-close" 
-                        title="Close dialog"
-                        aria-controls="dialog-id-search-in-header" 
-                        id="close-login-modal" 
-                        data-bs-dismiss="modal" 
-                        aria-label="Close">
-                  <svg class="global-modal-close-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 18 18">
-                    <polyline fill="none" 
-                              stroke="currentColor" 
-                              stroke-linecap="round" 
-                              stroke-linejoin="round"
-                              stroke-width="2" 
-                              points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
-                    </polyline>
-                  </svg>
-                </button>
-              </li>
-            </menu>
 
-            <div class="global-modal-body">
+          <!-- Close Button -->
+          <menu class="global-modal-toolbar" role="menu">
+            <li>
+              <button type="button"
+                      class="btn-close global-modal-close-button login-btn-close"
+                      title="Close dialog"
+                      aria-controls="dialog-id-search-in-header"
+                      id="close-login-modal"
+                      data-bs-dismiss="modal"
+                      aria-label="Close">
+                <svg class="global-modal-close-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18">
+                  <polyline fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
+                  </polyline>
+                </svg>
+              </button>
+            </li>
+          </menu>
 
-              <!-- Logo and Heading -->
+          <div class="global-modal-body">
+
+            <!-- Login -->
+            <div class="login-panel active" id="login-panel">
               <div class="login-modal-top text-center">
-                <img src="./icons/swiftlink-logo-3-colored.png" 
-                      alt="Company Logo" 
-                      class="login-modal-logo" />
+                <img src="./icons/swiftlink-logo-3-colored.png"
+                    alt="Company Logo"
+                    class="login-modal-logo" />
                 <h1 class="login-modal-heading">Welcome</h1>
               </div>
-        
-              <!-- Login Form Body -->
+
               <div class="modal-body">
                 <div class="login-modal-form-wrapper">
                   <form class="login-modal-form">
-                    <input type="text" placeholder="Username or email address*" class="form-control login-input login-modal-input" required />
+                    <input type="text" 
+                            placeholder="Username or email address*" 
+                            class="form-control login-input login-modal-input" 
+                            required />
                   </form>
-        
+
                   <div class="login-modal-info">
                     <div class="login-modal-forgot">
                       <a href="#" rel="noopener">Forgot Username/Password</a>
                       <div class="terms">
                         By continuing, I agree to the<br>
-                        <a href="#" rel="noopener">Terms of Service and Privacy Policy
-                        </a>
+                        <a href="#" rel="noopener">Terms of Service and Privacy Policy</a>
                       </div>
                     </div>
                     <div class="login-modal-button-wrapper">
-                      <button class="btn btn-primary rounded-pill login-modal-button">Continue
+                      <button class="btn 
+                                      btn-primary 
+                                      rounded-pill 
+                                      login-modal-button">Continue
                       </button>
                     </div>
                   </div>
                 </div>
-        
-                <!-- Alt Login Options -->
+
                 <div class="login-modal-alt-wrapper mt-4 text-center">
                   <div class="login-modal-signup-link">
-                    Don't have an account? 
-                    <a href="#" id="login-modal-signup-link" rel="noopener">Sign up
+                    Don't have an account?
+                    <a href="#" 
+                        id="login-modal-signup-link" 
+                        rel="noopener">Sign up
                     </a>
                   </div>
-        
+
                   <div class="login-modal-social-section">
                     <span class="login-modal-social-heading d-block mb-4">
                       Or Continue by using one of these sites
@@ -423,49 +435,178 @@
                                 justify-content-center 
                                 gap-2">
 
-                        <div class="login-modal-social-icon">
-                          <img src="./icons/icon-google-black.svg" 
-                                alt="Google" 
-                                width="24" 
-                                height="24">
-                        </div>
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-google-black.svg" 
+                              alt="Google" 
+                              width="24" 
+                              height="24">
+                      </div>
 
-                        <div class="login-modal-social-icon">
-                          <img src="./icons/icon-amazon.svg" 
-                                alt="Amazon" 
-                                width="24" 
-                                height="24">
-                        </div>
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-amazon.svg" 
+                              alt="Amazon" 
+                              width="24" 
+                              height="24">
+                      </div>
 
-                        <div class="login-modal-social-icon">
-                          <img src="./icons/icon-apple.svg" 
-                                alt="Apple" 
-                                width="24" 
-                                height="24">
-                        </div>
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-apple.svg" 
+                              alt="Apple" 
+                              width="24" 
+                              height="24">
+                      </div>
 
-                        <div class="login-modal-social-icon">
-                          <img src="./icons/icon-fb.png" 
-                                alt="Facebook" 
-                                width="24" 
-                                height="24">
-                        </div>
-                        
-                        <div class="login-modal-social-icon">
-                          <img src="./icons/icon-twitter-2.png" 
-                                alt="Twitter" 
-                                width="24" 
-                                height="24">
-                        </div>
-                        
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-fb.png" 
+                              alt="Facebook" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-twitter-2.png" 
+                              alt="Twitter" 
+                              width="24" 
+                              height="24">
+                      </div>
+
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
 
+            <!-- Signup -->
+            <div class="signup-panel" id="signup-panel">
+              <div class="login-modal-top text-center">
+                <img src="./icons/swiftlink-logo-3-colored.png"
+                    alt="Company Logo"
+                    class="login-modal-logo" />
+                <h1 class="login-modal-heading">Create Account</h1>
+              </div>
+
+              <div class="modal-body">
+                <div class="login-modal-form-wrapper">
+
+                  <form class="login-modal-form">
+
+                    <input type="text" 
+                            placeholder="Full Name*" 
+                            class="form-control login-input login-modal-input" 
+                            required />
+
+                    <input type="email" 
+                            placeholder="Email Address*" 
+                            class="form-control login-input login-modal-input" 
+                            required />
+
+                    <div class="d-flex gap-2">
+                      <div class="position-relative 
+                                  flex-shrink-0 
+                                  login-modal-box-contact-no">
+                        <input type="text" class="form-control 
+                                                  login-input 
+                                                  login-modal-input 
+                                                  pt-4" />
+
+                        <small class="position-absolute 
+                                top-0 
+                                start-0 
+                                ps-2 
+                                pt-1 
+                                text-muted
+                                login-modal-box-contact-country-code">Country Code
+                        </small>
+                      </div>
+
+                      <input type="tel" 
+                              placeholder="Phone Number (optional)" 
+                              class="form-control login-input login-modal-input" />
+                    </div>
+
+                    <input type="text" 
+                            placeholder="Username*" 
+                            class="form-control login-input login-modal-input" 
+                            required />
+
+                    <input type="password" 
+                            placeholder="Password*" 
+                            class="form-control login-input login-modal-input" 
+                            required />
+                  </form>
+
+                  <div class="login-modal-signup-link 
+                              text-center 
+                              mt-3">Already have an account?
+
+                    <a href="#" id="signup-modal-login-link" rel="noopener">Log in
+                    </a>
+                  </div>
+
+                  <div class="login-modal-button-wrapper mb-4">
+                    <button class="btn 
+                                    btn-primary 
+                                    rounded-pill 
+                                    login-modal-button">Sign Up
+                    </button>
+                  </div>
+
+                  <div class="login-modal-social-section text-center px-4">
+                    <span class="login-modal-social-heading d-block mb-4">
+                      Or sign up using one of these sites.
+                    </span>
+
+                    <div class="login-modal-socials 
+                                  d-flex 
+                                  justify-content-center 
+                                  gap-2">
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-google-black.svg" 
+                              alt="Google" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-amazon.svg" 
+                              alt="Amazon" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-apple.svg" 
+                              alt="Apple" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-fb.png" 
+                              alt="Facebook" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                      <div class="login-modal-social-icon">
+                        <img src="./icons/icon-twitter-2.png" 
+                              alt="Twitter" 
+                              width="24" 
+                              height="24">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
         </div>
+      </div>
     </section>
 
   </section>
@@ -477,9 +618,10 @@
       <div class="video-iframe-wrapper">
         <div class="video-inside">
           <iframe
-            src="https://player.vimeo.com/video/1073237590?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-            title="Site-Swiftlink-banner-vid">
+              src="https://player.vimeo.com/video/1073237590?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+              frameborder="0" 
+              allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+              title="Site-Swiftlink-banner-vid">
           </iframe>
         </div>
       </div>
@@ -519,14 +661,20 @@
   </section>
 
   <section class="why-move-with-us">
-    <div class="container why-move-with-us-section p-xy-30px " id="why-move-with-us-section">
+    <div class="container why-move-with-us-section p-xy-30px " 
+          id="why-move-with-us-section">
       <h1 class="orange-header 
                  fw-bold 
                  text-center 
                  wmwu-sec-h1">
         Why Move With Us?
       </h1>
-      <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 mx-auto">
+      <div class="row 
+                  g-4 
+                  py-4 
+                  row-cols-1 
+                  row-cols-lg-3 
+                  mx-auto">
 
         <div class="wmwu-feature-col">
           <div class="wmwu-feature-icon
@@ -537,6 +685,7 @@
                       bg-gradient 
                       fs-2 
                       mb-3">
+
             <img class="wmwu-icon-svg" src="./icons/briefcase.svg" alt="briefcase" />
           </div>
           <h3 class="fs-2 orange-header">
@@ -598,38 +747,63 @@
 
   <section class="carousel">
     <div class="container carousel-section p-xy-30px" id="carousel-section">
-      <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="carousel" data-bs-interval="3000"
-        data-bs-pause="false" data-bs-wrap="true">
+      <div class="carousel slide" 
+            id="carouselExampleIndicators" 
+            data-bs-ride="carousel" 
+            data-bs-interval="3000"
+            data-bs-pause="false" 
+            data-bs-wrap="true">
+
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1">
+          <button type="button" 
+                  data-bs-target="#carouselExampleIndicators" 
+                  data-bs-slide-to="0" class="active"
+                  aria-current="true" 
+                  aria-label="Slide 1">
           </button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+
+          <button type="button" 
+                  data-bs-target="#carouselExampleIndicators" 
+                  data-bs-slide-to="1" 
+                  aria-label="Slide 2">
           </button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+
+          <button type="button" 
+                  data-bs-target="#carouselExampleIndicators" 
+                  data-bs-slide-to="2" 
+                  aria-label="Slide 3">
           </button>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/couple.jpg" class="d-block w-100" alt="couple">
           </div>
+
           <div class="carousel-item">
             <img src="./images/dog.jpg" class="d-block w-100" alt="dog">
           </div>
+
           <div class="carousel-item">
             <img src="./images/family.jpg" class="d-block w-100" alt="family">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+
+        <button class="carousel-control-prev" 
+                type="button" 
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+        <button class="carousel-control-next" 
+                type="button" 
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+
       </div>
     </div>
   </section>
@@ -819,7 +993,11 @@
 
           <div class="col-lg-3">
             <div class="stay-conn-box-button">
-              <button class="btn btn-warning rounded-pill px-4 stay-conn-dload-btn" type="button">
+              <button class="btn 
+                            btn-warning 
+                            rounded-pill 
+                            px-4 
+                            stay-conn-dload-btn" type="button">
                 Download the App
               </button>
             </div>
@@ -841,11 +1019,12 @@
 
             <div class="col-lg-4">
               <div class="text-center">
-                <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-land-freight.png">
+                <img class="ship-sec-icon" 
+                      alt="land truck" 
+                      src="./icons/green-icon-land-freight.png">
                 <h3 class="px-3 pt-4 
                            d-flex 
-                          justify-content-center" id="land-freight">
-                  Land Freight
+                          justify-content-center" id="land-freight">Land Freight
                 </h3>
                 <p class="shipping-sec-desc 
                           d-flex 
@@ -858,11 +1037,12 @@
 
             <div class="col-lg-4">
               <div class="text-center">
-                <img class="ship-sec-icon" alt="air freight" src="./icons/green-icon-air-freight-2.png">
+                <img class="ship-sec-icon" 
+                      alt="air freight" 
+                      src="./icons/green-icon-air-freight-2.png">
                 <h3 class="px-3 pt-4 
                            d-flex 
-                          justify-content-center" id="air-freight">
-                  Air Freight
+                          justify-content-center" id="air-freight">Air Freight
                 </h3>
                 <p class="shipping-sec-desc 
                           d-flex 
@@ -875,11 +1055,12 @@
 
             <div class="col-lg-4">
               <div class="text-center">
-                <img class="ship-sec-icon" alt="land truck" src="./icons/green-icon-sea-freight.png">
+                <img class="ship-sec-icon" 
+                      alt="land truck" 
+                      src="./icons/green-icon-sea-freight.png">
                 <h3 class="px-3 pt-4 
                            d-flex 
-                           justify-content-center" id="sea-freight">
-                  Sea Freight
+                           justify-content-center" id="sea-freight">Sea Freight
                 </h3>
                 <p class="shipping-sec-desc 
                           d-flex 
@@ -932,7 +1113,9 @@
           <div class="col-lg-6
                       order-1 order-lg-2
                       logistics-image-wrapper">
-            <img class="logistics-section-img" alt="warehouse-image" src="./images/warehouse-inside-3.jpg">
+            <img class="logistics-section-img" 
+                  alt="warehouse-image" 
+                  src="./images/warehouse-inside-3.jpg">
           </div>
 
         </div>
@@ -951,7 +1134,9 @@
           <div class="col-lg-6 
                       order-2 order-lg-1
                       logistics-image-wrapper">
-            <img class="logistics-section-img" alt="nvocc-image" src="./images/stock-nvocc.png">
+            <img class="logistics-section-img" 
+                  alt="nvocc-image" 
+                  src="./images/stock-nvocc.png">
           </div>
 
           <!-- TEXT COLUMN -->
@@ -1023,7 +1208,9 @@
           <div class="col-lg-6
                       order-1 order-lg-2
                       logistics-image-wrapper">
-            <img class="logistics-section-img" alt="cross-docking-image" src="./images/stock-cross-docking.jpg">
+            <img class="logistics-section-img" 
+                  alt="cross-docking-image" 
+                  src="./images/stock-cross-docking.jpg">
           </div>
 
         </div>
@@ -1042,7 +1229,9 @@
           <div class="col-lg-6 
                       order-2 order-lg-1
                       logistics-image-wrapper">
-            <img class="logistics-section-img" alt="logistics-image" src="./images/stock-photo-spec-logis.jpg">
+            <img class="logistics-section-img" 
+                  alt="logistics-image" 
+                  src="./images/stock-photo-spec-logis.jpg">
           </div>
 
           <!-- TEXT COLUMN -->
@@ -1054,8 +1243,7 @@
                          orange-header 
                          d-flex 
                          text-start
-                         justify-content-center">
-                Specialized Logistics
+                         justify-content-center">Specialized Logistics
               </h1>
               <p class="d-flex 
                         text-start
@@ -1084,8 +1272,7 @@
 
           <div class="col-lg-6 subscribe-header">
             <div class="subscribe-box">
-              <h1 class="subscribe-h1">
-                Be updated on the latest offers and promotions.
+              <h1 class="subscribe-h1">Be updated on the latest offers and promotions.
               </h1>
             </div>
           </div>
@@ -1107,37 +1294,58 @@
                     <label for="mce-EMAIL">
                       Email Address <span class="asterisk">*</span>
                     </label>
-                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    <input type="email" 
+                            name="EMAIL" 
+                            class="required email" 
+                            id="mce-EMAIL" 
+                            required>
                   </div>
 
                   <div class="mc-field-group">
                     <label for="mce-FNAME">
                       First Name
                     </label>
-                    <input type="text" name="FNAME" class="text" id="mce-FNAME">
+                    <input type="text" 
+                            name="FNAME" 
+                            class="text" 
+                            id="mce-FNAME">
                   </div>
 
                   <div class="mc-field-group">
                     <label for="mce-LNAME">
                       Last Name
                     </label>
-                    <input type="text" name="LNAME" class="text" id="mce-LNAME">
+                    <input type="text" 
+                            name="LNAME" 
+                            class="text" 
+                            id="mce-LNAME">
                   </div>
 
                   <div class="clear foot" id="mce-responses">
 
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" 
+                          id="mce-error-response" 
+                          style="display: none;">
+                    </div>
 
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                    <div class="response" 
+                          id="mce-success-response" 
+                          style="display: none;"></div>
                   </div>
 
                   <div aria-hidden="true" class="hidden-field">
-                    <input type="text" name="b_5545a82b0b0f32ce0f7e7fcd2_8aa8a82c9e" tabindex="-1">
+                    <input type="text" 
+                            name="b_5545a82b0b0f32ce0f7e7fcd2_8aa8a82c9e" 
+                            tabindex="-1">
                   </div>
 
                   <div class="optionalParent">
                     <div class="clear foot">
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Submit">
+                      <input type="submit" 
+                              name="subscribe" 
+                              id="mc-embedded-subscribe" 
+                              class="button" 
+                              value="Submit">
 
                       <!-- <p class="mailchimp-badge">
                                       <a href="http://eepurl.com/ja8x7-" title="Mailchimp - email marketing made easy and fun">
@@ -1174,15 +1382,13 @@
                       flex-column 
                       align-items-start 
                       gap-3">
-            <h1 class="orange-header text-start">
-              Business Solutions
+            <h1 class="orange-header text-start">Business Solutions
             </h1>
             <p class="text-body-secondary text-start">
               We offer tailored logistics solutions to help businesses of all sizes manage shipments efficiently and
               streamline operations.
             </p>
-            <a href="#" class="btn btn-biz btn-lg">
-              Talk to Us
+            <a href="#" class="btn btn-biz btn-lg">Talk to Us
             </a>
           </div>
 
@@ -1194,10 +1400,11 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="create-an-account" src="./icons/biz-create-an-account.png">
+                  <img class="biz-icons" 
+                        alt="create-an-account" 
+                        src="./icons/biz-create-an-account.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Create an Account
+                <h5 class="orange-header text-start mt-1">Create an Account
                 </h5>
                 <p class="text-body-secondary text-start">
                   Sign up for an account to access faster bookings, tracking tools, and customized shipping options
@@ -1210,10 +1417,11 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="small-and-medium-enterprises" src="./icons/biz-smes.png">
+                  <img class="biz-icons" 
+                        alt="small-and-medium-enterprises" 
+                        src="./icons/biz-smes.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Small and Medium Enterprises (SMEs)
+                <h5 class="orange-header text-start mt-1">Small and Medium Enterprises (SMEs)
                 </h5>
                 <p class="text-body-secondary text-start">
                   Flexible shipping and logistics support to help small businesses grow, reduce costs, and improve
@@ -1226,10 +1434,11 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="track and managed shipments" src="./icons//biz-track-shipments.png">
+                  <img class="biz-icons" 
+                        alt="track and managed shipments" 
+                        src="./icons//biz-track-shipments.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Track and Manage Shipments
+                <h5 class="orange-header text-start mt-1">Track and Manage Shipments
                 </h5>
                 <p class="text-body-secondary text-start">
                   Stay in control of your deliveries with real-time tracking, shipment management tools, and status
@@ -1242,11 +1451,12 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="Enterprise Shipping Solutions"
-                    src="./icons/biz-enterprise-supply-chain.png">
+
+                  <img class="biz-icons" 
+                        alt="Enterprise Shipping Solutions"
+                        src="./icons/biz-enterprise-supply-chain.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Enterprise Shipping Solutions
+                <h5 class="orange-header text-start mt-1">Enterprise Shipping Solutions
                 </h5>
                 <p class="text-body-secondary text-start">
                   Scalable logistics services for large businesses, offering bulk shipping, supply chain integration,
@@ -1259,10 +1469,11 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="Pickup and Drop-off Services" src="./icons/biz-pickup-dropoff.png">
+                  <img class="biz-icons" 
+                        alt="Pickup and Drop-off Services" 
+                        src="./icons/biz-pickup-dropoff.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Pickup and Drop-off Services
+                <h5 class="orange-header text-start mt-1">Pickup and Drop-off Services
                 </h5>
                 <p class="text-body-secondary text-start">
                   Convenient options for sending and receiving shipments with multiple collection points and scheduled
@@ -1275,10 +1486,11 @@
                   feature-icon-small 
                   d-inline-flex 
                   align-items-center">
-                  <img class="biz-icons" alt="Claims and Returns" src="./icons/biz-claims-and-returns.png">
+                  <img class="biz-icons" 
+                        alt="Claims and Returns" 
+                        src="./icons/biz-claims-and-returns.png">
                 </div>
-                <h5 class="orange-header text-start mt-1">
-                  Claims and Returns
+                <h5 class="orange-header text-start mt-1">Claims and Returns
                 </h5>
                 <p class="text-body-secondary text-start">
                   Streamlined processes for handling lost, damaged, or returned shipments to ensure smooth customer
@@ -1311,8 +1523,11 @@
             </div>
 
             <div class="supp-sec-0-box-img">
-              <img alt="Contact us" class="lazy supp-sec-0-box-img-in" src="./Images/site-stock-support-person.png"
-                data-src="./Images/site-stock-support-person.png" loading="lazy">
+              <img alt="Contact us" 
+                    class="lazy supp-sec-0-box-img-in" 
+                    src="./Images/site-stock-support-person.png"
+                    data-src="./Images/site-stock-support-person.png" 
+                    loading="lazy">
             </div>
 
           </div>
@@ -1347,31 +1562,53 @@
                     supp-sec-2-main-container" id="supp-sec-2-main-container">
 
           <section class="supp-sec-2-tabs-nav">
-            <ul class="nav nav-tabs justify-content-center" id="aboutTabs" role="tablist">
+            <ul class="nav nav-tabs justify-content-center" 
+                  id="aboutTabs" 
+                  role="tablist">
 
               <li class="nav-item">
-                <a class="nav-link supp-sec-2-nav-link active" data-bs-toggle="tab" href="#profile" role="tab"
-                  aria-controls="profile" aria-selected="true" id="profile-tab">
-                  Profile
+                <a class="nav-link supp-sec-2-nav-link active" 
+                    data-bs-toggle="tab" 
+                    href="#profile" role="tab"
+                    aria-controls="profile" 
+                    aria-selected="true" 
+                    id="profile-tab">
+                    Profile
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link supp-sec-2-nav-link" data-bs-toggle="tab" href="#get-a-quote" role="tab"
-                  aria-controls="get-a-quote" aria-selected="false" id="get-a-quote-tab">
-                  Get a Quote</a>
+                <a class="nav-link supp-sec-2-nav-link"   
+                    data-bs-toggle="tab"  
+                    href="#get-a-quote" role="tab"
+                    aria-controls="get-a-quote" 
+                    aria-selected="false" 
+                    id="get-a-quote-tab">
+                    Get a Quote
+                </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link supp-sec-2-nav-link" data-bs-toggle="tab" href="#tracking" role="tab"
-                  aria-controls="tracking" aria-selected="false" id="tracking-tab">
-                  Tracking</a>
+                <a class="nav-link supp-sec-2-nav-link" 
+                    data-bs-toggle="tab" 
+                    href="#tracking" 
+                    role="tab"
+                    aria-controls="tracking" 
+                    aria-selected="false" 
+                    id="tracking-tab">
+                    Tracking
+                </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link supp-sec-2-nav-link" data-bs-toggle="tab" href="#shipping" role="tab"
-                  aria-controls="shipping" aria-selected="false" id="shipping-tab">
-                  Shipping</a>
+                <a class="nav-link supp-sec-2-nav-link" 
+                    data-bs-toggle="tab" 
+                    href="#shipping" role="tab"
+                    aria-controls="shipping" 
+                    aria-selected="false" 
+                    id="shipping-tab">
+                    Shipping
+                </a>
               </li>
 
             </ul>
@@ -1381,10 +1618,13 @@
             <div class="tab-content" id="supp-sec-2-tabs-content-items">
 
               <!-- Manage your Account -->
-              <div class="tab-pane fade show active supp-sec-2-box" id="profile" role="tabpanel"
-                aria-labelledby="profile-tab">
+              <div class="tab-pane fade show active supp-sec-2-box" 
+                    id="profile" 
+                    role="tabpanel"
+                    aria-labelledby="profile-tab">
 
-                <section class="supp-sec-2-1-manage-your-account" id="supp-sec-2-1-manage-your-account">
+                <section class="supp-sec-2-1-manage-your-account" 
+                          id="supp-sec-2-1-manage-your-account">
                   <div class="container">
                     <div class="row supp-sec-2-tabs-container">
 
@@ -1404,10 +1644,10 @@
                           </p>
 
                           <div>
-                            <button type="button" class="btn btn-warning 
+                            <button class="btn btn-warning 
                                             rounded-pill 
                                             px-4 
-                                            supp-sec-2-tabs-btn">
+                                            supp-sec-2-tabs-btn" type="button">
                               Manage your account
                             </button>
                           </div>
@@ -1419,9 +1659,11 @@
                                     col-12
                                     d-lg-block
                                     supp-sec-2-1-img">
-                        <img alt="profile" class="lazy img-fluid supp-sec-2-box-img-in" loading="lazy"
-                          src="./Images/stock-photo-managing-profile.jpg"
-                          data-src="./Images/site-stock-support-person.png">
+                        <img alt="profile" 
+                              class="lazy img-fluid supp-sec-2-box-img-in" 
+                              loading="lazy"
+                              src="./Images/stock-photo-managing-profile.jpg"
+                              data-src="./Images/site-stock-support-person.png">
                       </div>
 
                     </div>
@@ -1523,7 +1765,10 @@
               </div>
 
               <!-- Tracking -->
-              <div class="tab-pane fade supp-sec-2-box" id="tracking" role="tabpanel" aria-labelledby="tracking-tab">
+              <div class="tab-pane fade supp-sec-2-box" 
+                    id="tracking" 
+                    role="tabpanel" 
+                    aria-labelledby="tracking-tab">
 
                 <section class="supp-sec-2-3-tracking" id="supp-sec-2-3-tracking">
                   <div class="container supp-sec-2-3-tracking-container">
@@ -1537,14 +1782,18 @@
                             Track your shipments
                           </h1>
 
-                          <input type="text" class="form-control mb-3" style="box-shadow: none;"
-                            placeholder="Reference number*">
+                          <input type="text" 
+                                  class="form-control mb-3" 
+                                  placeholder="Reference number*">
 
                           <!-- Toggle Switch -->
                           <div class="d-flex align-items-center mb-3">
                             <div class="form-check form-switch mx-2">
-                              <input class="form-check-input" type="checkbox" id="toggleReference">
+                              <input class="form-check-input" 
+                                      type="checkbox" 
+                                      id="toggleReference">
                             </div>
+
                             <label for="toggleReference" class="form-check-label mb-0">
                               Have a specific reference?
                             </label>
@@ -1576,8 +1825,10 @@
                             </div>
 
                             <!-- Search button -->
-                            <button class="btn btn-primary ms-2 supp-sec-2-3-tracking-search">
-                              Track
+                            <button class="btn 
+                                    btn-primary 
+                                    ms-2 
+                                    supp-sec-2-3-tracking-search">Track
                             </button>
                           </div>
                         </div>
@@ -1586,8 +1837,10 @@
                       <!-- Second Column: Image -->
                       <div class="col-lg-6 d-none d-lg-block
                                     supp-sec-2-3-img">
-                        <img alt="Tracking Visual" class="img-fluid supp-sec-2-box-img-in"
-                          src="./Images/tracking-shipments.png" data-src="./Images/tracking-shipments.png">
+                        <img alt="Tracking Visual" 
+                              class="img-fluid supp-sec-2-box-img-in"
+                              src="./Images/tracking-shipments.png" 
+                              data-src="./Images/tracking-shipments.png">
                       </div>
                     </div>
                   </div>
@@ -1596,7 +1849,10 @@
               </div>
 
               <!-- Shipping -->
-              <div class="tab-pane fade supp-sec-2-box" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+              <div class="tab-pane fade supp-sec-2-box" 
+                    id="shipping" 
+                    role="tabpanel" 
+                    aria-labelledby="shipping-tab">
 
                 <section class="supp-sec-2-4-shipping" id="supp-sec-2-4-shipping">
 
@@ -1703,7 +1959,7 @@
     <div class="support-sec-3" id="support-sec-3">
       <div class="container support-contact-us-container py-5">
 
-        <div style="width: 100%;">
+        <div class="support-sec-3-header">
           <h1 class="teal-green mb-4">
             Contact Us
           </h1>
@@ -1721,24 +1977,38 @@
                   <option>Ms.</option>
                   <option>Prefer not to specify</option>
                 </select>
-                <img src="./icons/arrow-down.svg" class="dropdown-arrow" alt="arrow icon">
+                <img src="./icons/arrow-down.svg" 
+                      class="dropdown-arrow" 
+                      alt="arrow icon">
               </div>
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Name">
+              <input type="text" 
+                      class="form-control" 
+                      id="name" 
+                      placeholder="Name">
             </div>
 
             <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input type="email" 
+                      class="form-control" 
+                      id="email" 
+                      placeholder="Email">
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" id="company" placeholder="Company">
+              <input type="text" 
+                      class="form-control" 
+                      id="company" 
+                      placeholder="Company">
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" id="contactNo" placeholder="Phone Number">
+              <input type="text" 
+                      class="form-control" 
+                      id="contactNo" 
+                      placeholder="Phone Number">
             </div>
 
             <div class="form-group">
@@ -1747,21 +2017,33 @@
                 <select class="form-control" id="country">
                   <option value="" disabled selected>Country/Region</option>
                 </select>
-                <img src="./icons/arrow-down.svg" class="dropdown-arrow" alt="arrow icon">
+                <img src="./icons/arrow-down.svg" 
+                      class="dropdown-arrow" 
+                      alt="arrow icon">
               </div>
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" id="city" placeholder="City">
+              <input type="text" 
+                      class="form-control" 
+                      id="city" 
+                      placeholder="City">
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+              <input type="text" 
+                      class="form-control" 
+                      id="zipcode" 
+                      placeholder="Zip Code">
             </div>
 
             <div class="form-group">
-              <textarea class="form-control" id="help" placeholder="How can we help you?" rows="5"
-                maxlength="1000"></textarea>
+              <textarea class="form-control" 
+                      id="help" 
+                      placeholder="How can we help you?" 
+                      rows="5"
+                      maxlength="1000">
+              </textarea>
             </div>
 
             <!-- Data Processing Notice -->
@@ -1800,42 +2082,52 @@
           <p class="text-center">You've got questions, we've got answers.</p>
 
           <div class="resource-center-grid">
+
             <div class="resource-box">
               <h5 class="teal-green">Shipping Guidelines</h5>
               <p>Tips for packaging, labeling, and sending your shipments.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Customs Clearance</h5>
               <p>Important documents for international shipping.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Tracking Tools</h5>
               <p>Track and manage your shipments in real time.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Warehouse Locations</h5>
               <p>See where our global warehouses are located.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Returns Policy</h5>
               <p>Learn how to handle returns and exchanges.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Billing Help</h5>
               <p>Get assistance for invoices, payments, and accounts.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">FAQ</h5>
               <p>Quick answers to common shipping questions.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Careers</h5>
               <p>Explore job openings and grow your career with us.</p>
             </div>
+
             <div class="resource-box">
               <h5 class="teal-green">Service Updates</h5>
               <p>Get the latest service news and alerts.</p>
             </div>
+
           </div>
 
         </div>
@@ -1859,9 +2151,14 @@
               </p>
 
 
-              <button type="button" class="btn btn-primary btn-lg support-sec-5-btn rounded-pill"
-                onclick="window.location.href='#support-sec-3'">
-                Send us a question
+              <button class="btn 
+                            btn-primary 
+                            btn-lg 
+                            support-sec-5-btn 
+                            rounded-pill"
+                      type="button"
+                      onclick="window.location.href='#support-sec-3'">
+                      Send us a question
               </button>
 
             </div>
@@ -1878,7 +2175,9 @@
                   remove-def-row-my 
                   footer-container-row">
         <div class="container footer-logo-container py-4">
-          <img alt="swiftlink logo" src="./icons/swiftlink-logo-3-white.png" class="footer-logo">
+          <img alt="swiftlink logo" 
+                src="./icons/swiftlink-logo-3-white.png" 
+                class="footer-logo">
         </div>
         <div class="col-12 col-sm-6 col-md-3 mb-3 footer-most-bottom-sec">
           <h5 class="footer-sections">Our Services</h5>
@@ -2033,6 +2332,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./src/js/custom-offcanvas-fix-5.js"></script>
   <script src="./src/js/modal-navbar-login.js"></script>
+  <script src="./src/js/modal-navbar-search.js"></script>
+  <!-- <script src="./src/js/modal-navbar-signup.js"></script> -->
   <script src="./src/js/scroll.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="./src/js/resize-video-fix.js"></script>

@@ -288,3 +288,9 @@
     max-width: 100% !important;
   }
 }
+
+@media (max-width: 500px) {
+  #why-move-with-us-section {
+    padding-top: 3rem !important;
+  }
+}
