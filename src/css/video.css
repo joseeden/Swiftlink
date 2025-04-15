@@ -94,9 +94,38 @@ section.banner {
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 500px) {
 
-    #video-header .video-banner-btns {
-      gap: 1rem !important;
+    #video-header .video-overlay-content > h1 {
+      font-size: 35px;
     }
+
+    #video-header .sec-banner-desc,
+    #video-header .btn.btn-primary,
+    #video-header .btn.btn-outline-secondary {
+      font-size: 16px;
+    }
+
+    #video-header .btn.btn-primary,
+    #video-header .btn.btn-outline-secondary {
+      width: 145px;
+      margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+  #video-header .video-overlay-content > h1 {
+    font-size: 30px;
+  }
+
+  #video-header .sec-banner-desc,
+  #video-header .btn.btn-primary,
+  #video-header .btn.btn-outline-secondary {
+    font-size: 14px;
+  }
+
+  #video-header .sec-banner-desc {
+    margin-bottom: 2rem !important;
+  }
 }
