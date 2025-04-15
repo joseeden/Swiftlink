@@ -288,7 +288,7 @@
 
 @media (max-width: 767px) and (min-width: 400px) {
   .offcanvas-end {
-    width: 60vw !important;
+    width: 75vw !important;
   }
 
   .offcanvas-body {

@@ -12,8 +12,13 @@
 
 /* ==================== ABOUT ==================== */
 
-.about-tabs-nav .nav-link.active, 
-.about-tabs-nav .show >.nav-link {
+#about-container .about-tabs-nav .nav-link {
+  color: #0a7c7c;
+  font-weight: 500;
+}
+
+#about-container .about-tabs-nav .nav-link.active, 
+#about-container .about-tabs-nav .show >.nav-link {
   /* background-color: #ffc400; */
   background-color: #0a7c7c;
   /* color: #0a7c7c; */
@@ -22,19 +27,19 @@
 }
 
 /*  About */
-.about-container {
+#about-container {
   height: auto; 
   padding: 3rem 3rem;
 }
 
-.about-header {
+#about-container .about-header {
   padding-bottom: 2rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
 }
 
-.about-sec-tabs-h3 {
+#about-container .about-sec-tabs-h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -55,7 +60,7 @@
     flex-direction: column;
   }
 
-  .about-container {
+  #about-banner-section {
     padding: 3rem 0;
   }
 
@@ -63,13 +68,13 @@
     visibility: visible;
   }
 
-  .about-override-padding {
+  #about-banner-section .about-override-padding {
     padding-bottom: 0 !important;
   }
 }
 
 @media (max-width: 575px) {
-  .about-container {
+  #about-banner-section {
     padding: 2rem 5vw;
   }
 }
