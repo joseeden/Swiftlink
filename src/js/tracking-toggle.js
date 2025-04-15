@@ -1,3 +1,15 @@
+/**==============================================================
+ * Toggle Dropdown Visibility
+ *===============================================================
+ *
+ * This script toggles the visibility of a dropdown and its wrapper
+ * based on the state of a checkbox toggle.
+ * 
+ * - Shows or hides the dropdown based on checkbox state
+ * - Adjusts display and visibility of dropdown and its wrapper
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("toggleReference");
   const dropdown = document.getElementById("referenceDropdown");

@@ -1,3 +1,19 @@
+/**==============================================================
+ * Toggle & Custom Select Dropdown Script (Single Reference)
+ *===============================================================
+ *
+ * This script manages a single checkbox-controlled dropdown
+ * along with custom select styling and functionality.
+ *
+ * - Shows/hides reference dropdown based on checkbox toggle
+ * - Converts native <select> into a stylized dropdown
+ * - Updates selected value and highlights active option
+ * - Ensures only one dropdown is open at a time
+ *
+ * This improves UI clarity and provides interactive controls.
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("toggleReference");
   const container = document.getElementById("referenceDropdownWrapper"); 

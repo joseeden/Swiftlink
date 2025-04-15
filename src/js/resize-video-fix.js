@@ -1,11 +1,16 @@
-/**
- * Ensures background video always fills the banner area
- * correctly on all screen sizes, including very large screens
- * and when resizing or exiting browser dev tools.
- *
- * It dynamically adjusts the video's width and height based on
- * the aspect ratio to maintain a fullscreen appearance and
- * keep the video centered.
+/**==============================================================
+ * Responsive Fullscreen Background Video Script
+ *===============================================================
+ * 
+ * This script resizes a background video to fully cover the
+ * banner area across all screen sizes and aspect ratios.
+ * 
+ * - Maintains 16:9 aspect ratio by adjusting width or height
+ * - Recalculates on page load and window resize
+ * - Keeps video centered with absolute positioning
+ * 
+ * Prevents letterboxing or black bars on ultrawide or tall screens.
+ *===============================================================
  */
 
 function adjustVideo() {

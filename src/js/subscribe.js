@@ -1,3 +1,19 @@
+/**==============================================================
+ * Mailchimp Form Validation Loader
+ *===============================================================
+ *
+ * Dynamically loads Mailchimp's mc-validate.js script on page
+ * load, ensuring that form validation is set up for Mailchimp
+ * newsletter forms.
+ *
+ * - Appends external script from Mailchimp CDN
+ * - Initializes Mailchimp field names and types
+ * - Supports jQuery compatibility with noConflict
+ *
+ * Keeps global scope clean and ensures proper validation.
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   var script = document.createElement("script");
   script.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";

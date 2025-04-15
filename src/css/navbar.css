@@ -134,6 +134,10 @@
   display: block;
 }
 
+.offcanvas-body {
+  margin-top: 100px !important;
+}
+
 .offcanvas-body .navbar-nav > li {
   margin-bottom: 0.5rem;
 }
@@ -142,14 +146,16 @@
   display: none;
 }
 
+.offcanvas.offcanvas-end {
+  border-left: none;
+}
+
 .navbar-expand-lg .offcanvas .offcanvas-header {
   display: flex;
   margin-top: 10px !important;
 }
 
-.offcanvas-body {
-  margin-top: 100px !important;
-}
+
 
 /* ================ MEDIA QUERIES ================ */
 
@@ -280,11 +286,26 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 400px) {
+  .offcanvas-end {
+    width: 60vw !important;
+  }
+
+  .offcanvas-body {
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 399px) {
   .offcanvas-end {
     width: 100vw !important;
   }
+
+  .offcanvas-body {
+    margin-top: 0 !important;
+  }
 }
+
 
 /* --- From 992px: Navbar behavior --- */
 @media (min-width: 992px) {

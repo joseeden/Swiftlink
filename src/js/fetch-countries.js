@@ -1,3 +1,19 @@
+/**==============================================================
+ * Country Dropdown Auto-Population Script
+ *===============================================================
+ * 
+ * This script populates a select dropdown with all countries
+ * using ISO 3166-1 alpha-2 codes and their display names.
+ * 
+ * - Generates country names from ISO codes
+ * - Clears default options except placeholder
+ * - Sorts country names alphabetically
+ * - Appends each country as an option in the dropdown
+ * 
+ * This provides accurate, localized country listing without external APIs.
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   const countrySelect = document.getElementById("country");
 

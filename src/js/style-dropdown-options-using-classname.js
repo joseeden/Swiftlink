@@ -1,18 +1,34 @@
+/**==============================================================
+ * Custom Select Dropdown & Checkbox Toggle Script
+ *===============================================================
+ * 
+ * This script handles dynamic dropdown behavior for both custom
+ * select boxes and checkbox-controlled dropdown visibility.
+ * 
+ * - Shows/hides reference dropdowns based on checkbox state
+ * - Replaces native <select> with stylized custom dropdowns
+ * - Updates selected value and highlights active option
+ * - Closes other open dropdowns when one is activated
+ *
+ * Enhances form UX with visually consistent and interactive elements.
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   // Handle checkbox-based dropdowns (toggle visibility)
   const toggles = document.querySelectorAll(".toggle-reference");
   const containers = document.querySelectorAll(".reference-dropdown-wrapper");
 
-  // Loop through each toggle to add event listeners for visibility toggling
+  // Add event listeners for each toggler (visibility toggling)
   toggles.forEach((toggle, index) => {
     toggle.addEventListener("change", function () {
-      // Show or hide based on checkbox state
+      // Show/hide based on checkbox state
       containers[index].style.display = this.checked ? "block" : "none"; 
     });
   });
 
 
-  // Custom dropdown logic for both toggleable and always-visible dropdowns
+  // Dropdown logic for both toggleable and always-visible dropdowns
   const customSelects = document.querySelectorAll(".custom-select");
 
   customSelects.forEach((selectWrapper) => {

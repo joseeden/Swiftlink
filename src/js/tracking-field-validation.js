@@ -1,3 +1,18 @@
+/**==============================================================
+ * Toggle Dropdown Visibility and Form Validation
+ *===============================================================
+ *
+ * This script manages the visibility of the reference dropdown 
+ * and validates the form when the "Search" button is clicked.
+ * - Toggles dropdown visibility based on checkbox state
+ * - Validates input fields on the "Search" button click
+ * - Applies validation error styles for required fields
+ * 
+ * It ensures the dropdown and input field are correctly displayed 
+ * and validates the required fields based on user interaction.
+ *===============================================================
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("toggleReference");
   const referenceInput = document.getElementById("referenceInput");
