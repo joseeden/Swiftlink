@@ -51,7 +51,7 @@ footer.footer h5.footer-sections {
 }
 
 footer.footer img {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1); /* Turns the image white */
 }
 
 @media (min-width: 1200px) {

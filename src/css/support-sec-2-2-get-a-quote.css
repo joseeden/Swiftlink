@@ -23,8 +23,9 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
 }
 
+/* Turns image color to teal-green or hex code #0a7c7c */
 #get-a-quote img {
-  filter: invert(31%) 
+  filter: invert(31%)           
           sepia(87%) 
           saturate(1318%) 
           hue-rotate(152deg) 

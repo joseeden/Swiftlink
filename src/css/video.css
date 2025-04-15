@@ -65,9 +65,10 @@ section.banner {
 }
 
 @media (max-width: 1300px) {
-  section.banner {
+  
+  /* section.banner {
     height: 100vh;
-  }
+  } */
 
   .video-header {
     top: 100px; /* navbar offset */

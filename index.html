@@ -16,12 +16,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-  <!-- Choice.js - for styling dropdowns -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"> -->
-
   <!-- CSS Files -->
   <link type="text/css" rel="stylesheet" href="./src/css/navbar.css">
   <link type="text/css" rel="stylesheet" href="./src/css/style.css">
+  <!-- <link type="text/css" rel="stylesheet" href="./src/css/modals.css"> -->
+  <link type="text/css" rel="stylesheet" href="./src/css/modals-global.css">
   <link type="text/css" rel="stylesheet" href="./src/css/modal-navbar-search.css">
   <link type="text/css" rel="stylesheet" href="./src/css/modal-navbar-login.css">
   <link type="text/css" rel="stylesheet" href="./src/css/about.css">
@@ -64,27 +63,54 @@
                     navbar-nav-right-items">
 
           <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" href="#" data-bs-toggle="modal"
-              data-bs-target="#navbar-search-modal">
-              <img src="./icons/nav-left-search.png" alt="Search" class="nav-right-sec-icons" />
+            <a class="nav-link nav-right-sec-text" 
+                href="#" 
+                data-bs-toggle="modal"
+                data-bs-target="#navbar-search-modal">
+              <img src="./icons/nav-left-search.png" 
+                    alt="Search" 
+                    class="nav-right-sec-icons" />
               <span class="nav-text">Search</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" href="#">
-              <img src="./icons/nav-left-global.png" alt="Global" class="nav-right-sec-icons" />
+            <a class="nav-link nav-right-sec-text" 
+                href="#">
+              <img src="./icons/nav-left-global.png" 
+                    alt="Global" 
+                    class="nav-right-sec-icons" />
               <span class="nav-text">Global</span>
             </a>
           </li>
 
+          <!-- <li class="nav-item">
+            <a class="nav-link nav-right-sec-text" 
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#navbar-login-modal">
+              <img src="./icons/nav-left-login.png" 
+                    alt="Login" 
+                    class="nav-right-sec-icons" />
+              <span class="nav-text">Login</span>
+            </a>
+          </li> -->
+
           <li class="nav-item">
-            <a class="nav-link nav-right-sec-text" href="#">
-              <img src="./icons/nav-left-login.png" alt="Login" class="nav-right-sec-icons" />
+            <a class="nav-link nav-right-sec-text" 
+                href="#" 
+                id="open-login-modal">
+              <img src="./icons/nav-left-login.png" 
+                    alt="Login" 
+                    class="nav-right-sec-icons" />
               <span class="nav-text">Login</span>
             </a>
           </li>
+
         </ul>
+
+
+
 
         <!-- Toggler Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
@@ -252,35 +278,36 @@
       <div class="modal fade" 
             id="navbar-search-modal" 
             tabindex="-1" 
-            aria-labelledby="searchModalLabel"
-            aria-hidden="true">
+            aria-labelledby="searchModalLabel">
+            <!-- aria-hidden="true" -->
 
         <div class="modal-dialog modal-lg">
-          <div class="modal-content search-modal-content mt-5">
+          <div class="modal-content global-modal-content mt-5">
 
-            <menu class="search-modal-toolbar" role="menu">
+            <menu class="global-modal-toolbar" role="menu">
               <li>
                 <button type="button" 
-                        class="search-modal-close-button" 
+                        class="global-modal-close-button" 
                         title="Close dialog"
                         aria-controls="dialog-id-search-in-header" 
                         data-bs-dismiss="modal" 
                         aria-label="Close">
-                  <svg class="search-modal-close-icon" 
+                  <svg class="global-modal-close-icon" 
                         xmlns="http://www.w3.org/2000/svg" 
                         viewBox="0 0 18 18">
                     <polyline fill="none" 
                               stroke="currentColor" 
                               stroke-linecap="round" 
                               stroke-linejoin="round"
-                      stroke-width="2" points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
+                              stroke-width="2" 
+                              points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
                     </polyline>
                   </svg>
                 </button>
               </li>
             </menu>
 
-            <div class="search-modal-body">
+            <div class="global-modal-body">
               <h4 class="search-modal-title mb-4">Tell us what you need</h4>
 
               <div class="search-modal-row 
@@ -289,9 +316,13 @@
                             align-items-start 
                             gap-3">
                 <div class="search-modal-input-wrapper position-relative">
-                  <img src="./icons/search.svg" alt="Search" class="search-icon">
-                  <input type="text" class="search-modal-input form-control ps-5" placeholder="Search"
-                    autocomplete="off">
+                  <img src="./icons/search.svg" 
+                        alt="Search" 
+                        class="search-icon">
+                  <input type="text" 
+                          class="search-modal-input form-control ps-5" 
+                          placeholder="Search"
+                          autocomplete="off">
                 </div>
 
                 <div class="search-modal-btn-wrapper text-end">
@@ -299,10 +330,142 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
       </div>
+    </section>
+
+    <section class="modal-navbar-login" 
+              id="modal-navbar-login">
+      <div class="modal-dialog">
+        <div class="modal-content global-modal-content">
+          
+            <!-- Close Button -->
+            <!-- <button type="button" 
+                          class="btn-close" 
+                          id="close-login-modal" 
+                          aria-label="Close">
+                  </button> -->
+          
+            <menu class="global-modal-toolbar" role="menu">
+              <li>
+                <button type="button" 
+                        class="btn-close global-modal-close-button login-btn-close" 
+                        title="Close dialog"
+                        aria-controls="dialog-id-search-in-header" 
+                        id="close-login-modal" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                  <svg class="global-modal-close-icon" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 18 18">
+                    <polyline fill="none" 
+                              stroke="currentColor" 
+                              stroke-linecap="round" 
+                              stroke-linejoin="round"
+                              stroke-width="2" 
+                              points="1 1, 9 9, 1 17, 9 9, 17 1, 9 9, 17 17">
+                    </polyline>
+                  </svg>
+                </button>
+              </li>
+            </menu>
+
+            <div class="global-modal-body">
+
+              <!-- Logo and Heading -->
+              <div class="login-modal-top text-center">
+                <img src="./icons/swiftlink-logo-3-colored.png" 
+                      alt="Company Logo" 
+                      class="login-modal-logo" />
+                <h1 class="login-modal-heading">Welcome</h1>
+              </div>
+        
+              <!-- Login Form Body -->
+              <div class="modal-body">
+                <div class="login-modal-form-wrapper">
+                  <form class="login-modal-form">
+                    <input type="text" placeholder="Username or email address*" class="form-control login-input login-modal-input" required />
+                  </form>
+        
+                  <div class="login-modal-info">
+                    <div class="login-modal-forgot">
+                      <a href="#" rel="noopener">Forgot Username/Password</a>
+                      <div class="terms">
+                        By continuing, I agree to the<br>
+                        <a href="#" rel="noopener">Terms of Service and Privacy Policy
+                        </a>
+                      </div>
+                    </div>
+                    <div class="login-modal-button-wrapper">
+                      <button class="btn btn-primary rounded-pill login-modal-button">Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Alt Login Options -->
+                <div class="login-modal-alt-wrapper mt-4 text-center">
+                  <div class="login-modal-signup-link">
+                    Don't have an account? 
+                    <a href="#" id="login-modal-signup-link" rel="noopener">Sign up
+                    </a>
+                  </div>
+        
+                  <div class="login-modal-social-section">
+                    <span class="login-modal-social-heading d-block mb-4">
+                      Or Continue by using one of these sites
+                    </span>
+                    <div class="login-modal-socials 
+                                d-flex 
+                                justify-content-center 
+                                gap-2">
+
+                        <div class="login-modal-social-icon">
+                          <img src="./icons/icon-google-black.svg" 
+                                alt="Google" 
+                                width="24" 
+                                height="24">
+                        </div>
+
+                        <div class="login-modal-social-icon">
+                          <img src="./icons/icon-amazon.svg" 
+                                alt="Amazon" 
+                                width="24" 
+                                height="24">
+                        </div>
+
+                        <div class="login-modal-social-icon">
+                          <img src="./icons/icon-apple.svg" 
+                                alt="Apple" 
+                                width="24" 
+                                height="24">
+                        </div>
+
+                        <div class="login-modal-social-icon">
+                          <img src="./icons/icon-fb.png" 
+                                alt="Facebook" 
+                                width="24" 
+                                height="24">
+                        </div>
+                        
+                        <div class="login-modal-social-icon">
+                          <img src="./icons/icon-twitter-2.png" 
+                                alt="Twitter" 
+                                width="24" 
+                                height="24">
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
     </section>
 
   </section>
@@ -1801,32 +1964,62 @@
           <ul class="list-unstyled d-flex">
 
             <li class="ms-3">
-              <a class="text-body-secondary" href="#footer-section">
-                <img alt="linkedin-logo" src="./icons/icon-linkedin.png" width="24" height="24" aria-hidden="true" />
+              <a class="text-body-secondary" 
+                  href="#footer-section"
+                  aria-label="Linkedin">
+                <img alt="linkedin-logo" 
+                      src="./icons/icon-linkedin.png" 
+                      width="24" 
+                      height="24" 
+                      aria-hidden="true" />
               </a>
             </li>
 
             <li class="ms-3">
-              <a class="text-body-secondary" href="#footer-section">
-                <img alt="twitter-logo" src="./icons/icon-twitter-2.png" width="24" height="24" aria-hidden="true" />
+              <a class="text-body-secondary" 
+                  href="#footer-section"
+                  aria-label="Twitter-X">
+                <img alt="twitter-logo" 
+                      src="./icons/icon-twitter-2.png" 
+                      width="24" 
+                      height="24" 
+                      aria-hidden="true" />
               </a>
             </li>
 
             <li class="ms-3">
-              <a class="text-body-secondary" href="#footer-section" aria-label="Facebook">
-                <img alt="facebook-logo" src="./icons/icon-fb.png" width="24" height="24" aria-hidden="true" />
+              <a class="text-body-secondary" 
+                  href="#footer-section" 
+                  aria-label="Facebook">
+                <img alt="facebook-logo" 
+                      src="./icons/icon-fb.png" 
+                      width="24" 
+                      height="24" 
+                      aria-hidden="true" />
               </a>
             </li>
 
             <li class="ms-3">
-              <a class="text-body-secondary" href="#footer-section" aria-label="Instagram">
-                <img alt="instagram-logo" src="./icons/icon-ig.png" width="24" height="24" aria-hidden="true" />
+              <a class="text-body-secondary" 
+                  href="#footer-section" 
+                  aria-label="Instagram">
+                <img alt="instagram-logo" 
+                      src="./icons/icon-ig.png" 
+                      width="24" 
+                      height="24" 
+                      aria-hidden="true" />
               </a>
             </li>
 
             <li class="ms-3">
-              <a class="text-body-secondary" href="#footer-section">
-                <img alt="youtube-logo" src="./icons/icon-youtube.png" width="24" height="24" aria-hidden="true" />
+              <a class="text-body-secondary" 
+                  href="#footer-section"
+                  aria-label="Youtube">
+                <img alt="youtube-logo" 
+                      src="./icons/icon-youtube.png" 
+                      width="24" 
+                      height="24" 
+                      aria-hidden="true" />
               </a>
             </li>
 
@@ -1839,6 +2032,7 @@
   <!-- JS Files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./src/js/custom-offcanvas-fix-5.js"></script>
+  <script src="./src/js/modal-navbar-login.js"></script>
   <script src="./src/js/scroll.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="./src/js/resize-video-fix.js"></script>

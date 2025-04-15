@@ -1,0 +1,39 @@
+.global-modal-body {
+  padding-top: 0;
+  padding-bottom: 4.5rem;
+  padding-left: 4.5rem; 
+  padding-right: 4.5rem; 
+}
+
+.global-modal-content {
+  width: 100%;
+  max-width: 900px;
+  position: relative;     /* absolute positioning of close button */
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  flex-direction: column; /* Stack the header and body */
+}
+
+.global-modal-toolbar {
+  display: flex;
+  justify-content: flex-end; 
+  background-color: transparent;
+  border-bottom: none; 
+  list-style: none;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.global-modal-close-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.global-modal-close-icon {
+  width: 18px;
+  height: 18px;
+}
