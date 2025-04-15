@@ -286,7 +286,7 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 400px) {
+@media (max-width: 767px) and (min-width: 380px) {
   .offcanvas-end {
     width: 75vw !important;
   }
@@ -296,7 +296,7 @@
   }
 }
 
-@media (max-width: 399px) {
+@media (max-width: 379px) {
   .offcanvas-end {
     width: 100vw !important;
   }
@@ -338,7 +338,7 @@
 }
 
 /* --- Below 400px: Hide right icons --- */
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   #navbar-section .navbar-nav-right-items {
     display: none !important;
   }
