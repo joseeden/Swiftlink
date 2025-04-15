@@ -74,7 +74,8 @@
 /* ==================== TOGGLER & SEARCH ==================== */
 
 #navbar-section .navbar-toggler {
-  border-color: #ccc;
+  border: none;
+  /* border-color: #ccc; */
 }
 
 #navbar-section .btn-outline-success {
