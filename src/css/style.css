@@ -75,6 +75,10 @@ button {
 
 /* =============================== GLOBAL - OTHERS =============================== */
 
+body {
+  overflow-x: hidden;
+}
+
 .container .row {
   text-align: center;
 }
