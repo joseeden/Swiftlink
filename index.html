@@ -848,7 +848,7 @@
             <a class="nav-link teal-green active" 
                 id="origin-tab" 
                 data-bs-toggle="pill" 
-                href="#origin" 
+                data-bs-target="#origin" 
                 role="tab"
                 aria-controls="origin" 
                 aria-selected="true">Our Origins
@@ -859,7 +859,7 @@
             <a class="nav-link teal-green" 
                 id="services-tab" 
                 data-bs-toggle="pill" 
-                href="#services" 
+                data-bs-target="#services" 
                 role="tab"
                 aria-controls="services" 
                 aria-selected="false">Our Services
@@ -870,7 +870,7 @@
             <a class="nav-link teal-green" 
                 id="mission-tab" 
                 data-bs-toggle="pill" 
-                href="#mission" 
+                data-bs-target="#mission" 
                 role="tab"
                 aria-controls="mission" 
                 aria-selected="false">Our Mission
@@ -881,7 +881,7 @@
             <a class="nav-link teal-green" 
                 id="commitment-tab" 
                 data-bs-toggle="pill" 
-                href="#commitment" 
+                data-bs-target="#commitment" 
                 role="tab"
                 aria-controls="commitment" 
                 aria-selected="false">Our Commitment
@@ -1561,6 +1561,7 @@
                     px-5 
                     supp-sec-2-main-container" id="supp-sec-2-main-container">
 
+           <!-- Tabs Navigation -->          
           <section class="supp-sec-2-tabs-nav">
             <ul class="nav nav-tabs justify-content-center" 
                   id="aboutTabs" 
@@ -1569,7 +1570,8 @@
               <li class="nav-item">
                 <a class="nav-link supp-sec-2-nav-link active" 
                     data-bs-toggle="tab" 
-                    href="#profile" role="tab"
+                    data-bs-target="#profile" 
+                    role="tab"
                     aria-controls="profile" 
                     aria-selected="true" 
                     id="profile-tab">
@@ -1580,7 +1582,8 @@
               <li class="nav-item">
                 <a class="nav-link supp-sec-2-nav-link"   
                     data-bs-toggle="tab"  
-                    href="#get-a-quote" role="tab"
+                    data-bs-target="#get-a-quote" 
+                    role="tab"
                     aria-controls="get-a-quote" 
                     aria-selected="false" 
                     id="get-a-quote-tab">
@@ -1591,7 +1594,7 @@
               <li class="nav-item">
                 <a class="nav-link supp-sec-2-nav-link" 
                     data-bs-toggle="tab" 
-                    href="#tracking" 
+                    data-bs-target="#tracking" 
                     role="tab"
                     aria-controls="tracking" 
                     aria-selected="false" 
@@ -1603,7 +1606,8 @@
               <li class="nav-item">
                 <a class="nav-link supp-sec-2-nav-link" 
                     data-bs-toggle="tab" 
-                    href="#shipping" role="tab"
+                    data-bs-target="#shipping" 
+                    role="tab"
                     aria-controls="shipping" 
                     aria-selected="false" 
                     id="shipping-tab">
@@ -1614,6 +1618,7 @@
             </ul>
           </section>
 
+          <!-- Tabs Content -->
           <section class="supp-sec-2-tabs-content">
             <div class="tab-content" id="supp-sec-2-tabs-content-items">
 
@@ -1697,11 +1702,13 @@
                           </p>
 
                           <div>
-                            <button type="button" class="btn btn-warning 
-                                            rounded-pill px-4 
-                                            supp-sec-2-tabs-btn">
-                              Ask for a quote
-                            </button>
+                            <a href="#support-sec-3">
+                              <button type="button" class="btn btn-warning 
+                                              rounded-pill px-4 
+                                              supp-sec-2-tabs-btn">
+                                Ask for a quote
+                              </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -2341,6 +2348,7 @@
   <script src="./src/js/scroll-navbar-btn.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="./src/js/resize-video-fix.js"></script>
+  <script src="./src/js/download-app.js"></script>
   <script src="./src/js/fetch-countries.js"></script>
   <script src="./src/js/style-dropdown-options-using-classname.js"></script>
   <script src="./src/js/subscribe.js"></script>

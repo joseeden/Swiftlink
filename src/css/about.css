@@ -14,6 +14,14 @@
 
 /* ==================== ABOUT ==================== */
 
+#about-container .about-tabs-nav {
+  position: sticky;
+  top: 100px;
+  z-index: 1000;
+  background-color: white; /* or match your background */
+}
+
+
 #about-container .about-tabs-nav .nav-link {
   color: #0a7c7c;
   font-weight: 500;
@@ -45,6 +53,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 
 
 #aboutTabsContent {
