@@ -11,9 +11,7 @@
   font-weight: 500;
 }
 
-
 /* ==================== ABOUT ==================== */
-
 #about-container .about-tabs-nav {
   position: sticky;
   top: 100px;
@@ -53,8 +51,6 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
-
 
 #aboutTabsContent {
   margin-top: 2rem;

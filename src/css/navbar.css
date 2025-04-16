@@ -1,5 +1,4 @@
 /* ========================== NAVBAR ========================== */
-
 .navbar {
   background-color: white !important;
   position: fixed;
@@ -156,8 +155,6 @@
   margin-top: 10px !important;
 }
 
-
-
 /* ================ MEDIA QUERIES ================ */
 
 /* --- Up to 1320px --- */
@@ -176,8 +173,8 @@
   }
 }
 
-
 /* --- Below 1130px: Collapse to Offcanvas --- */
+
 @media (max-width: 1129px) {
   #navbarSupportedContent {
     display: none !important;
@@ -197,6 +194,7 @@
 }
 
 /* --- Between 992px and 1129px: Revised Offcanvas --- */
+
 @media (max-width: 1129px) and (min-width: 992px) {
   #navbarSupportedContent {
     display: none !important;
@@ -257,6 +255,7 @@
   }
 
   /* Make list flow vertically */
+
   .offcanvas .dropdown {
     width: 100%;
   }
@@ -281,6 +280,7 @@
 }
 
 /* --- Offcanvas widths --- */
+
 @media (max-width: 1129px) and (min-width: 768px) {
   .offcanvas-end {
     width: 50vw !important;
@@ -309,6 +309,7 @@
 
 
 /* --- From 992px: Navbar behavior --- */
+
 @media (min-width: 992px) {
   .navbar-expand-lg .offcanvas .offcanvas-header {
     display: flex;
@@ -327,6 +328,7 @@
 }
 
 /* --- Below 991px: Mobile Tweaks --- */
+
 @media (max-width: 991px) {
   #navbar-section .navbar-nav-left-items {
     background-color: white;
@@ -339,6 +341,7 @@
 }
 
 /* --- Below 400px: Hide right icons --- */
+
 @media (max-width: 380px) {
   #navbar-section .navbar-nav-right-items {
     display: none !important;
@@ -346,6 +349,7 @@
 }
 
 /* --- From 1130px: Full Navbar --- */
+
 @media (min-width: 1130px) {
   .navbar-toggler {
     display: none !important;

@@ -1,3 +1,4 @@
+/* ==================== MODALS - GLOBAL ==================== */
 .global-modal-body {
   padding-top: 0;
   padding-bottom: 4.5rem;
@@ -8,11 +9,11 @@
 .global-modal-content {
   width: 100%;
   max-width: 900px;
-  position: relative;     /* absolute positioning of close button */
+  position: relative;     
   border-radius: 8px;
   border: none;
   display: flex;
-  flex-direction: column; /* Stack the header and body */
+  flex-direction: column; 
 }
 
 .global-modal-toolbar {

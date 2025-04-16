@@ -1,5 +1,4 @@
 /* =============================== STAY CONNECTED =============================== */
-
 #stay-connected {
   margin-bottom: 5rem;
   padding: 0;
@@ -75,7 +74,7 @@
 
   #stay-connected .stay-conn-card-body-content {
     margin-bottom: 2rem;
-}
+  } 
 }
 
 @media (max-width: 576px) {
