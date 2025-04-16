@@ -7,5 +7,5 @@
 Swiftlink International is a fictional transportation and logistics company. This project is a clean, responsive landing page created to practice HTML, CSS, and JavaScript.
 
 - [Full Documentation](https://joseeden.github.io/joeden/docs/Software-Engineering/Web-Development/Projects/Swiftlink/)
-- [Live Demo](https://swiftly-express.netlify.app/) 
+- [Live Demo](https://swiftlink-global.netlify.app/) 
 
