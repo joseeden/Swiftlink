@@ -7,13 +7,13 @@ document.querySelector('.stay-conn-dload-btn').addEventListener('click', functio
 
   const playStoreUrl = 'https://play.google.com/store';
   const appStoreUrl = 'https://www.apple.com/app-store/';
-  
+
   if (/android/i.test(userAgent)) {
     window.location.href = playStoreUrl;
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.location.href = appStoreUrl;
   } else {
     // Optional fallback for desktop or unknown devices
-    window.location.href = 'https://yourwebsite.com/download'; // Or show a modal instead
+    window.location.href = 'https://yourwebsite.com/download'; 
   }
 });
