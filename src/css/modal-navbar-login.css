@@ -198,7 +198,7 @@
 @media (max-width: 575.98px) {
   #modal-navbar-login .modal-dialog,
   #modal-navbar-search .modal-dialog {
-    margin: 5vh auto; /* balanced spacing */
+    margin: 1vh auto; /* balanced spacing */
     width: auto;
     max-width: 90vw;
     display: flex;
@@ -226,6 +226,20 @@
     padding-right: 3rem;
     padding-bottom: 3rem;
   }
+
+  #modal-navbar-login .login-modal-logo {
+    max-width: 120px;
+  }
+  
+  #modal-navbar-login .login-modal-heading { 
+    font-size: 23px;
+  }
+
+  #login-panel .login-modal-form input,
+  #signup-panel .login-modal-form input,
+  #signup-panel .login-modal-signup-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -235,6 +249,7 @@
   #modal-navbar-search {
     padding: 0 !important;          
   }
+
 
   #modal-navbar-login .modal-dialog,
   #modal-navbar-search .modal-dialog {
@@ -272,26 +287,23 @@
   .global-modal-body {
     flex-grow: 1;
     overflow-y: auto;
-    padding-top: 2rem;
+    padding-top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
   }
 
-  #modal-navbar-login .login-modal-heading { 
-    font-size: 25px;
-  }
+  
 
-  #login-panel .login-modal-heading {
-    padding-top: 2rem !important;   
-  }
 
   #login-panel .login-modal-social-section {
-    padding-top: 17% !important;
+    padding-top: 10% !important;
   }
 
   #signup-panel .login-modal-heading {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
+
 }

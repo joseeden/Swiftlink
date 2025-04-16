@@ -1,7 +1,7 @@
 section.banner {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -84,8 +84,8 @@ section.banner {
 @media (max-width: 991px) {
   
   .video-header {
-    top: 90px; 
-    /* height: 80vh; */
+    top: 100px; 
+    height: 80vh;
   }
   
   #video-header .sec-banner-desc {
