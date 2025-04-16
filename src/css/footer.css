@@ -31,7 +31,9 @@
   color: #fff;
   text-decoration: none;
   background: 0 0;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  transition: color .15s ease-in-out, 
+              background-color .15s ease-in-out, 
+              border-color .15s ease-in-out;
 
 }
 
