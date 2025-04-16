@@ -7,7 +7,7 @@ searchInput.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     e.preventDefault();
 
-    // Blur the input and the navbar <a> trigger
+    // Blur input and navbar <a> trigger
     searchInput.blur();
     navbarSearchTriggerLink.blur();
 

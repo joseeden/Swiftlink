@@ -32,6 +32,11 @@
 
 /* =============================== GLOBAL - BUTTONS =============================== */
 
+button {
+  white-space: nowrap;
+}
+
+
 .btn-primary {
   background-color: #EA7300;
   border: none;
