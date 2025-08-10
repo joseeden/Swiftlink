@@ -21,11 +21,11 @@ function adjustVideo() {
   const screenH = window.innerHeight;
 
   if (screenW / screenH > 16 / 9) {
-    // Wider than 16:9 — set width to full viewport, calculate height
+    // Wider than 16:9, set width to full viewport, calculate height
     iframe.style.width = '100vw';
     iframe.style.height = '56.25vw'; // 16:9 aspect ratio
   } else {
-    // Taller than 16:9 — set height to full viewport, calculate width
+    // Taller than 16:9, set height to full viewport, calculate width
     iframe.style.width = '177.78vh'; // 16:9 aspect ratio
     iframe.style.height = '100vh';
   }
